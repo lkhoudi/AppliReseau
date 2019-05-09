@@ -8,6 +8,8 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+import org.json.JSONObject;
+
 
 public class Client {
 	
@@ -46,10 +48,14 @@ public class Client {
 			socketClient = new Socket(serveurAdresse, portServeur);
 			reader= new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
 			writer = new PrintWriter(socketClient.getOutputStream(),true);
-			writer.println(user.getName());
+			JSONObject object = new JSONObject();
+	        object.put("number", user.getNumber());
+	        object.put("name", user.getName());
+	        object.put("avatar", user.getAvatar());
+			writer.println(object.toString());
 			return true;
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(" problème : le serveur n'est pas disponible");
 			return false;
 		} 
 	}
@@ -80,7 +86,7 @@ public class Client {
 	public static void main(String[] agrs) {
 		Client client= new Client("78","soume","avatar");
 		
-		client.setServerLocation("192.168.56.1", 8989);
+		client.setServerLocation("192.168.56.1", 8990);
 		
 		if(client.connectionServer()) {
 			client.communication();

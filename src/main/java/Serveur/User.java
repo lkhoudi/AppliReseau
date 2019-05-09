@@ -1,5 +1,7 @@
 package Serveur;
 
+import org.json.JSONObject;
+
 public class User {
 	
 	private String number;
@@ -43,6 +45,19 @@ public class User {
 		User user=(User) anObject;
 		
 		return user.name.equals(name)&&(user.avatar.equals(avatar))&&(user.number.equals(number));
+	}
+	
+	
+	public String toJson() {
+		JSONObject object =new JSONObject();
+		JSONObject userJson= new JSONObject();
+		
+		userJson.put("name", name);
+		userJson.put("number", number);
+		userJson.put("avatar", avatar);
+		object.put("type", "user");
+		object.put("user", userJson);
+		return object.toString();
 	}
 
 }
