@@ -1,4 +1,4 @@
-package CommunicationReseau;
+package Serveur;
 
 import java.util.List;
 
