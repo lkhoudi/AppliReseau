@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import entities.User;
 import org.json.JSONObject;
 
 public class ThreadUserForServer extends Thread{
@@ -22,7 +23,7 @@ public class ThreadUserForServer extends Thread{
 			writer= new PrintWriter(socketUser.getOutputStream(),true);
 			String reponse=reader.readLine();
 			JSONObject object= new  JSONObject(reponse);
-			user= new User(object.getString("number"),object.getString("name"),object.getString("avatar"));
+			user= new User(object.getString("email"),object.getString("firstname"), object.getString("lastname"), object.getString("avatar"));
 			serveur.addUser(user);
 			informerAutre();
 			writer.println("bonjour vous venez de vous connecter sur le port "+socketUser.getLocalPort());
@@ -37,8 +38,8 @@ public class ThreadUserForServer extends Thread{
 				JSONObject message= new JSONObject();
 				message.put("type", "salutation");
 				JSONObject salutation = new JSONObject();
-				salutation.put("number", user.getNumber());
-				salutation.put("name", user.getName());
+				salutation.put("number", user.getEmail());
+				salutation.put("name", user.getFirstname());
 				
 				message.put("salutation", salutation);
 				message.put("message",i);

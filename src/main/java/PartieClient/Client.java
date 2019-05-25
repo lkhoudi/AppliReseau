@@ -8,6 +8,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+import entities.User;
 import org.json.JSONObject;
 
 
@@ -20,13 +21,13 @@ public class Client {
 	private BufferedReader reader; 
 	private PrintWriter writer; 
 	
-	public Client(String number, String name, String avatar,int port, InetAddress adresse) {
-		user= new User( number,name,  avatar);
+	public Client(String email, String firstname, String lastname, String avatar,int port, InetAddress adresse) {
+		user= new User( email, firstname, lastname, avatar);
 		setServerLocation(adresse,port);
 	}
 	
-	public Client(String number, String name, String avatar) {
-		user= new User( number,name,  avatar);
+	public Client(String email, String firstname, String lastname, String avatar) {
+		user= new User( email, firstname, lastname, avatar);
 	}
 	
 	public void setServerLocation(InetAddress adresse, int port ) {
@@ -49,13 +50,13 @@ public class Client {
 			reader= new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
 			writer = new PrintWriter(socketClient.getOutputStream(),true);
 			JSONObject object = new JSONObject();
-	        object.put("number", user.getNumber());
-	        object.put("name", user.getName());
+	        object.put("number", user.getEmail());
+	        object.put("name", user.getFirstname());
 	        object.put("avatar", user.getAvatar());
 			writer.println(object.toString());
 			return true;
 		} catch (IOException e) {
-			System.out.println(" problème : le serveur n'est pas disponible");
+			System.out.println(" problï¿½me : le serveur n'est pas disponible");
 			return false;
 		} 
 	}
@@ -84,7 +85,7 @@ public class Client {
 	
 	
 	public static void main(String[] agrs) {
-		Client client= new Client("78","soume","avatar");
+		Client client= new Client("soume@gmail.com","ibrahima","soume","avatar");
 		
 		client.setServerLocation("192.168.56.1", 8990);
 		

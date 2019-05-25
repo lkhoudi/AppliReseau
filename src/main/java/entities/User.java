@@ -1,65 +1,101 @@
 package entities;
 
+import org.json.JSONObject;
 
 public class User {
+	
+	private String email;
+	private String firstname;
+	private String lastname;
+	private String password;
+	private boolean active;
+	private String avatar;
+	
+	public User(String email, String firstname, String lastname, String password, boolean active, String avatar) {
+		this.email = email;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.password = password;
+		this.active = active;
+		this.avatar=avatar;
+	}
 
-    private String email;
+	public User(String email, String firstname, String lastname, String avatar) {
+		this.email = email;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.avatar = avatar;
+	}
 
-    public boolean isActive() {
-        return active;
-    }
+	public String getLastname() {
+		return lastname;
+	}
 
-    private String firstname;
-    private String lastname;
-    private String password;
-    private boolean active;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
 
-    public User(String email, String firstname, String lastname, String password, boolean active) {
-        this.email = email;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.password = password;
-        this.active = active;
-    }
+	public String getPassword() {
+		return password;
+	}
 
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public boolean isActive() {
+		return active;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public void setActive(boolean active) {
+		this.active = active;
+	}
 
-    public String getFirstname() {
-        return firstname;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String getLastname() {
-        return lastname;
-    }
+	public String getFirstname() {
+		return firstname;
+	}
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public String getAvatar() {
+		return avatar;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
+	}
 
-    public boolean getActive() {
-        return active;
-    }
+	public boolean equals(Object anObject) {
+		if( !(anObject instanceof User)) {
+			return false;
+		}
+		User user=(User) anObject;
+		
+		return user.firstname.equals(firstname)&&(user.avatar.equals(avatar))&&(user.email.equals(email));
+	}
+	
+	
+	public String toJson() {
+		JSONObject object =new JSONObject();
+		JSONObject userJson= new JSONObject();
+		
+		userJson.put("firstname", firstname);
+		userJson.put("lastname", lastname);
+		userJson.put("email", email);
+		userJson.put("avatar", avatar);
+		object.put("type", "user");
+		object.put("user", userJson);
+		return object.toString();
+	}
 
-    public void setActive(boolean active) {
-        this.active = active;
-    }
 }

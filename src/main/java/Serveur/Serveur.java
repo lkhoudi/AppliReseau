@@ -2,12 +2,11 @@ package Serveur;
 
 import java.io.IOException;
 import java.net.BindException;
-import java.net.InetSocketAddress;
 import java.net.ServerSocket;
-import java.nio.channels.AsynchronousServerSocketChannel;
 import java.util.ArrayList;
 import java.util.List;
 
+import entities.User;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -63,7 +62,7 @@ public class Serveur extends Thread{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(" le serveur est éteint bye ...");
+		System.out.println(" le serveur est ï¿½teint bye ...");
 	}
 	public void addUserSocket(ThreadUserForServer usersocket) {
 		listesUsersSocket.add(usersocket);

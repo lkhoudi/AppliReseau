@@ -1,9 +1,7 @@
 package Serveur;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Group {
 	private List<ThreadUserForServer> users;
@@ -55,7 +53,7 @@ public class Group {
 	 */
 	public void envoyerSauf(String number, String message) {
 		for(ThreadUserForServer elm: users) {
-			if(!elm.getUser().getNumber().equals(number))
+			if(!elm.getUser().getEmail().equals(number))
 				elm.envoyer(message);
 		}
 	}
