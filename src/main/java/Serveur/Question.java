@@ -1,6 +1,9 @@
 package Serveur;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import org.json.JSONObject;
 
 public class Question {
 
@@ -8,16 +11,23 @@ public class Question {
 	private String reponse;
 	private String question;
 	private List<String> propositions;
-	
+	private String anecdote;
 	
 	public Question(int id, String reponse, String question, List<String> propositions) {
-		this.id=id;
-		this.reponse=reponse;
-		this.question=question;
+		setter(id, reponse,question);
 		this.propositions=propositions;
 	}
 
-
+	public Question(int id, String reponse, String question) {
+		setter(id, reponse,question);
+		propositions=new ArrayList<String>();
+	}
+	
+	private void setter(int id, String reponse, String question) {
+		this.id=id;
+		this.reponse=reponse;
+		this.question=question;
+	}
 	public int getId() {
 		return id;
 	}
@@ -52,10 +62,30 @@ public class Question {
 		return propositions;
 	}
 
-
+	public void addProposition(String prop) {
+		propositions.add(prop);
+	}
 	public void setPropositions(List<String> propositions) {
 		this.propositions = propositions;
 	}
+
+	public String getAnecdode() {
+		return anecdote;
+	}
+
+	public void setAnecdode(String anectode) {
+		this.anecdote = anectode;
+	}
 	
+	public String toJson() {
+		JSONObject object=new JSONObject();
+		
+		object.put("question",question);
+		object.put("reponse", reponse);
+		object.put("anecdote", anecdote);
+		
+		
+		return object.toString();
+	}
 	
 }

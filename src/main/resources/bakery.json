@@ -1,10 +1,10 @@
 {
   "fournisseur": "OpenQuizzDB - Fournisseur de contenu libre (https://www.openquizzdb.org)",
-  "rÃ©dacteur": "Philippe Bresoux",
-  "thÃ¨me": "Desserts et pÃ¢tisseries (Aussi bon que chez le pÃ¢tissier)",
-  "difficultÃ©": "3 / 5",
+  "rédacteur": "Philippe Bresoux",
+  "thème": "Desserts et pÃ¢tisseries (Aussi bon que chez le pÃ¢tissier)",
+  "difficulté": "3 / 5",
   "quizz": {
-    "dÃ©butant": [
+    "débutant": [
       {
         "id": 1,
         "question": "Quel fromage italien rentre dans la composition du tiramisu ?",
@@ -14,104 +14,104 @@
           "Ricotta",
           "Grana padano"
         ],
-        "rÃ©ponse": "Mascarpone",
-        "anecdote": "Les ingrÃ©dients sont prÃ©parÃ©s sÃ©parÃ©ment et superposÃ©s en couches indÃ©pendantes."
+        "réponse": "Mascarpone",
+        "anecdote": "Les ingrédients sont préparés séparément et superposés en couches indépendantes."
       },
       {
         "id": 2,
-        "question": "De quel fruit est composÃ©e la tarte Tatin, inventÃ©e de maniÃ¨re accidentelle ?",
+        "question": "De quel fruit est composée la tarte Tatin, inventée de manière accidentelle ?",
         "propositions": [
           "Pommes",
           "Cerises",
           "Poires",
           "Prunes"
         ],
-        "rÃ©ponse": "Pommes",
-        "anecdote": "Les pommes sont caramÃ©lisÃ©es au sucre et au beurre avant la cuisson de la tarte."
+        "réponse": "Pommes",
+        "anecdote": "Les pommes sont caramélisées au sucre et au beurre avant la cuisson de la tarte."
       },
       {
         "id": 3,
-        "question": "Quel gÃ¢teau dÃ©core-t-on traditionnellement de sapins et de petits personnages ?",
+        "question": "Quel gÃ¢teau décore-t-on traditionnellement de sapins et de petits personnages ?",
         "propositions": [
           "Galette des Rois",
           "Palet de dame",
           "ForÃªt noire",
           "BÃ»che de NoÃ«l"
         ],
-        "rÃ©ponse": "BÃ»che de NoÃ«l",
-        "anecdote": "Cette coutume rÃ©pandue dans toute l'Europe est attestÃ©e depuis le Moyen Ã‚ge et hÃ©ritÃ©e de divers rites paÃ¯ens."
+        "réponse": "BÃ»che de NoÃ«l",
+        "anecdote": "Cette coutume répandue dans toute l'Europe est attestée depuis le Moyen Ã‚ge et héritée de divers rites paÃ¯ens."
       },
       {
         "id": 4,
-        "question": "Dans quel pays mange-t-on de maniÃ¨re rÃ©guliÃ¨re du Â« plum pudding Â» ?",
+        "question": "Dans quel pays mange-t-on de manière régulière du Â« plum pudding Â» ?",
         "propositions": [
-          "GrÃ¨ce",
+          "Grèce",
           "Chine",
           "Angleterre",
           "Portugal"
         ],
-        "rÃ©ponse": "Angleterre",
+        "réponse": "Angleterre",
         "anecdote": "Le plum pudding est un pudding lourd, cuit Ã  la vapeur avec des fruits secs."
       },
       {
         "id": 5,
-        "question": "Quel synonyme de dessert glacÃ© Ã  base de crÃ¨me fraÃ®che et d'Âœufs est Â« excellent Â» ?",
+        "question": "Quel synonyme de dessert glacé Ã  base de crème fraÃ®che et d'Âœufs est Â« excellent Â» ?",
         "propositions": [
           "Extra",
           "Super",
           "Parfait",
-          "GÃ©nial"
+          "Génial"
         ],
-        "rÃ©ponse": "Parfait",
-        "anecdote": "Un parfait est un dessert glacÃ© sans cuisson Ã  base de crÃ¨me fraÃ®che et d'Âœufs."
+        "réponse": "Parfait",
+        "anecdote": "Un parfait est un dessert glacé sans cuisson Ã  base de crème fraÃ®che et d'Âœufs."
       },
       {
         "id": 6,
-        "question": "Pour rÃ©aliser quel gÃ¢teau faut-il mÃ©langer Âœufs, beurre, farine et sucre en quantitÃ©s Ã©gales ?",
+        "question": "Pour réaliser quel gÃ¢teau faut-il mélanger Âœufs, beurre, farine et sucre en quantités égales ?",
         "propositions": [
           "Brownie",
           "Vacherin",
           "Muffin",
           "Quatre-quarts"
         ],
-        "rÃ©ponse": "Quatre-quarts",
-        "anecdote": "Chaque ingrÃ©dient du quatre-quarts reprÃ©sente donc un quart du gÃ¢teau, d'oÃ¹ son nom."
+        "réponse": "Quatre-quarts",
+        "anecdote": "Chaque ingrédient du quatre-quarts représente donc un quart du gÃ¢teau, d'oÃ¹ son nom."
       },
       {
         "id": 7,
-        "question": "Quel entremets de gÃ©noise, fourrÃ© de crÃ¨me au beurre, est parfumÃ© au cafÃ© ?",
+        "question": "Quel entremets de génoise, fourré de crème au beurre, est parfumé au café ?",
         "propositions": [
           "Religieuse",
           "Moka",
           "Bavarois",
           "Diplomate"
         ],
-        "rÃ©ponse": "Moka",
-        "anecdote": "La gÃ©noise, inventÃ©e vers le dÃ©but du XVIIIe siÃ¨cle, est un biscuit Ã  pÃ¢te battue qui entre la composition de nombreux entremets."
+        "réponse": "Moka",
+        "anecdote": "La génoise, inventée vers le début du XVIIIe siècle, est un biscuit Ã  pÃ¢te battue qui entre la composition de nombreux entremets."
       },
       {
         "id": 8,
-        "question": "Quel dessert dÃ©coupe-t-on traditionnellement Ã  la fin du repas de mariage ?",
+        "question": "Quel dessert découpe-t-on traditionnellement Ã  la fin du repas de mariage ?",
         "propositions": [
           "Diplomate",
-          "PiÃ¨ce montÃ©e",
+          "Pièce montée",
           "Financier",
           "Ambassadeur"
         ],
-        "rÃ©ponse": "PiÃ¨ce montÃ©e",
-        "anecdote": "Une figurine reprÃ©sentant deux mariÃ©s est gÃ©nÃ©ralement placÃ©e au sommet du dessert."
+        "réponse": "Pièce montée",
+        "anecdote": "Une figurine représentant deux mariés est généralement placée au sommet du dessert."
       },
       {
         "id": 9,
-        "question": "Quels petits fruits rouges entrent dans la prÃ©paration du clafoutis ?",
+        "question": "Quels petits fruits rouges entrent dans la préparation du clafoutis ?",
         "propositions": [
           "Framboises",
           "Cerises",
           "Groseilles",
           "Fraises"
         ],
-        "rÃ©ponse": "Cerises",
-        "anecdote": "Les ingrÃ©dients principaux sont, outre les cerises, le sucre, la farine, le lait et les Âœufs."
+        "réponse": "Cerises",
+        "anecdote": "Les ingrédients principaux sont, outre les cerises, le sucre, la farine, le lait et les Âœufs."
       },
       {
         "id": 10,
@@ -122,34 +122,34 @@
           "Rhum",
           "Whisky"
         ],
-        "rÃ©ponse": "Rhum",
-        "anecdote": "Le baba au rhum est un gÃ¢teau prÃ©parÃ© pour les principales fÃªtes religieuses (NoÃ«l ou PÃ¢ques), depuis des temps immÃ©moriaux."
+        "réponse": "Rhum",
+        "anecdote": "Le baba au rhum est un gÃ¢teau préparé pour les principales fÃªtes religieuses (NoÃ«l ou PÃ¢ques), depuis des temps immémoriaux."
       }
     ],
-    "confirmÃ©": [
+    "confirmé": [
       {
         "id": 11,
-        "question": "Quel parfum vient complÃ©ter la vanille et le chocolat dans le banana split traditionnel ?",
+        "question": "Quel parfum vient compléter la vanille et le chocolat dans le banana split traditionnel ?",
         "propositions": [
-          "PralinÃ©",
-          "CafÃ©",
+          "Praliné",
+          "Café",
           "Fraise",
           "Pistache"
         ],
-        "rÃ©ponse": "Fraise",
-        "anecdote": "En Belgique, le banana split traditionnel est composÃ© de trois boules vanille."
+        "réponse": "Fraise",
+        "anecdote": "En Belgique, le banana split traditionnel est composé de trois boules vanille."
       },
       {
         "id": 12,
-        "question": "Quel dessert italien porte un nom qui peut Ãªtre traduit par Â« crÃ¨me cuite Â» ?",
+        "question": "Quel dessert italien porte un nom qui peut Ãªtre traduit par Â« crème cuite Â» ?",
         "propositions": [
           "Panforte",
           "Tiramisu",
           "Panna cotta",
           "Amatriciana"
         ],
-        "rÃ©ponse": "Panna cotta",
-        "anecdote": "La panna cotta est fabriquÃ©e Ã  partir de crÃ¨me, de lait et de sucre auxquels on ajoute de la gÃ©latine."
+        "réponse": "Panna cotta",
+        "anecdote": "La panna cotta est fabriquée Ã  partir de crème, de lait et de sucre auxquels on ajoute de la gélatine."
       },
       {
         "id": 13,
@@ -160,56 +160,56 @@
           "Vodka",
           "Whisky"
         ],
-        "rÃ©ponse": "Vodka",
-        "anecdote": "Dans vos coupes, dÃ©posez deux boules de sorbet au citron, arrosez de vodka puis  dÃ©gustez."
+        "réponse": "Vodka",
+        "anecdote": "Dans vos coupes, déposez deux boules de sorbet au citron, arrosez de vodka puis  dégustez."
       },
       {
         "id": 14,
-        "question": "Quel plat de prÃ©sentation permet de proposer des gÃ¢teaux sur un ou plusieurs Ã©tages ?",
+        "question": "Quel plat de présentation permet de proposer des gÃ¢teaux sur un ou plusieurs étages ?",
         "propositions": [
           "Valet",
-          "DÃ©vouÃ©",
+          "Dévoué",
           "Serviteur",
           "Majordome"
         ],
-        "rÃ©ponse": "Serviteur",
-        "anecdote": "La taille d'un plat conditionne la bonne rÃ©partition de la nourriture qui s'y trouve."
+        "réponse": "Serviteur",
+        "anecdote": "La taille d'un plat conditionne la bonne répartition de la nourriture qui s'y trouve."
       },
       {
         "id": 15,
-        "question": "Quelle viennoiserie lÃ©gÃ¨re Ã  pÃ¢te levÃ©e dÃ©signe familiÃ¨rement un ventre rebondi ?",
+        "question": "Quelle viennoiserie légère Ã  pÃ¢te levée désigne familièrement un ventre rebondi ?",
         "propositions": [
           "Brioche",
           "Beignet",
           "Baba",
           "Bavarois"
         ],
-        "rÃ©ponse": "Brioche",
-        "anecdote": "Cette viennoiserie Ã  pÃ¢te levÃ©e et assez aÃ©rÃ©e contient du beurre et des Âœufs."
+        "réponse": "Brioche",
+        "anecdote": "Cette viennoiserie Ã  pÃ¢te levée et assez aérée contient du beurre et des Âœufs."
       },
       {
         "id": 16,
-        "question": "Quelle crÃ¨me est traditionnellement utilisÃ©e pour prÃ©parer une Ã®le flottante ?",
+        "question": "Quelle crème est traditionnellement utilisée pour préparer une Ã®le flottante ?",
         "propositions": [
-          "CrÃ¨me fraÃ®che",
-          "CrÃ¨me anglaise",
-          "CrÃ¨me de marrons",
-          "CrÃ¨me fouettÃ©e"
+          "Crème fraÃ®che",
+          "Crème anglaise",
+          "Crème de marrons",
+          "Crème fouettée"
         ],
-        "rÃ©ponse": "CrÃ¨me anglaise",
-        "anecdote": "Les Âœufs Ã  la neige sont quant Ã  eux composÃ©s de blancs d'Âœufs sucrÃ©s, fouettÃ©s, pochÃ©s ou cuits au bain-marie."
+        "réponse": "Crème anglaise",
+        "anecdote": "Les Âœufs Ã  la neige sont quant Ã  eux composés de blancs d'Âœufs sucrés, fouettés, pochés ou cuits au bain-marie."
       },
       {
         "id": 17,
-        "question": "Quelle crÃ¨me pÃ¢tissiÃ¨re garnit communÃ©ment la galette des Rois ?",
+        "question": "Quelle crème pÃ¢tissière garnit communément la galette des Rois ?",
         "propositions": [
           "Meringue",
-          "CrÃ¨me fouettÃ©e",
+          "Crème fouettée",
           "Frangipane",
-          "GÃ©latine"
+          "Gélatine"
         ],
-        "rÃ©ponse": "Frangipane",
-        "anecdote": "L'emploi de la fÃ¨ve dans la galette des Rois remonte aux Grecs, qui se servaient de fÃ¨ves pour l'Ã©lection de leurs magistrats."
+        "réponse": "Frangipane",
+        "anecdote": "L'emploi de la fève dans la galette des Rois remonte aux Grecs, qui se servaient de fèves pour l'élection de leurs magistrats."
       },
       {
         "id": 18,
@@ -220,57 +220,57 @@
           "PÃªche",
           "Banane"
         ],
-        "rÃ©ponse": "Pomme",
-        "anecdote": "Les contrÃ©es francophones le connaissent Ã©galement sous le nom de Â« chausson Â» ou parfois de Â« roulÃ©s Â»."
+        "réponse": "Pomme",
+        "anecdote": "Les contrées francophones le connaissent également sous le nom de Â« chausson Â» ou parfois de Â« roulés Â»."
       },
       {
         "id": 19,
-        "question": "Quel cÃ©lÃ¨bre gÃ¢teau breton est nÃ© dans la rÃ©gion de Douarnenez ?",
+        "question": "Quel célèbre gÃ¢teau breton est né dans la région de Douarnenez ?",
         "propositions": [
           "Diplomate",
           "Kouign-amann",
           "Tortillon",
           "Pogne"
         ],
-        "rÃ©ponse": "Kouign-amann",
-        "anecdote": "Sa prÃ©paration est rÃ©putÃ©e dÃ©licate, comme en tÃ©moigne ce dicton : Â« Le fait qui veut, le rÃ©ussit qui peut Â»."
+        "réponse": "Kouign-amann",
+        "anecdote": "Sa préparation est réputée délicate, comme en témoigne ce dicton : Â« Le fait qui veut, le réussit qui peut Â»."
       },
       {
         "id": 20,
-        "question": "Quelle pÃ¢tisserie alsacienne en forme de huit est saupoudrÃ©e de sel et de cumin ?",
+        "question": "Quelle pÃ¢tisserie alsacienne en forme de huit est saupoudrée de sel et de cumin ?",
         "propositions": [
           "Clafoutis",
           "Mille-feuilles",
           "Bretzel",
           "Tourte"
         ],
-        "rÃ©ponse": "Bretzel",
-        "anecdote": "Le bretzel est une sorte de brioche ou de pain pochÃ© dans une solution de bicarbonate de soude."
+        "réponse": "Bretzel",
+        "anecdote": "Le bretzel est une sorte de brioche ou de pain poché dans une solution de bicarbonate de soude."
       }
     ],
     "expert": [
       {
         "id": 21,
-        "question": "Dans quelle rÃ©gion de France mange-t-on les treize desserts de NoÃ«l ?",
+        "question": "Dans quelle région de France mange-t-on les treize desserts de NoÃ«l ?",
         "propositions": [
           "Alsace",
           "Provence",
           "Auvergne",
           "Bretagne"
         ],
-        "rÃ©ponse": "Provence",
+        "réponse": "Provence",
         "anecdote": "Les desserts peuvent Ãªtre bus avec du vin cuit ou du vin muscat, tandis qu'Ã  la fin apparaissent toutes les liqueurs maisons."
       },
       {
         "id": 22,
-        "question": "En pÃ¢tisserie, quelle Â« noix Â» entre dans la prÃ©paration du congolais ?",
+        "question": "En pÃ¢tisserie, quelle Â« noix Â» entre dans la préparation du congolais ?",
         "propositions": [
           "Noix de cajou",
-          "Noix de pÃ©can",
+          "Noix de pécan",
           "Noix de muscade",
           "Noix de coco"
         ],
-        "rÃ©ponse": "Noix de coco",
+        "réponse": "Noix de coco",
         "anecdote": "Le congolais est un petit gÃ¢teau granuleux et moelleux Ã  la forme arrondie."
       },
       {
@@ -280,10 +280,10 @@
           "La Rochefoucauld",
           "Montaigne",
           "Brillat-Savarin",
-          "La BruyÃ¨re"
+          "La Bruyère"
         ],
-        "rÃ©ponse": "Brillat-Savarin",
-        "anecdote": "Brillat-Savarin est un hÃ©doniste et un Ã©picurien, au sens proprement philosophique du terme."
+        "réponse": "Brillat-Savarin",
+        "anecdote": "Brillat-Savarin est un hédoniste et un épicurien, au sens proprement philosophique du terme."
       },
       {
         "id": 24,
@@ -294,80 +294,80 @@
           "Sacristain",
           "Macaron"
         ],
-        "rÃ©ponse": "Meringue",
-        "anecdote": "Des variantes existent en changeant les quantitÃ©s et le type de sucre, mais surtout dans la faÃ§on de l'incorporer Ã  la masse."
+        "réponse": "Meringue",
+        "anecdote": "Des variantes existent en changeant les quantités et le type de sucre, mais surtout dans la faÃ§on de l'incorporer Ã  la masse."
       },
       {
         "id": 25,
-        "question": "En pÃ¢tisserie, quel Ã©clair voit son dessus glacÃ© au fondant ou au caramel ?",
+        "question": "En pÃ¢tisserie, quel éclair voit son dessus glacé au fondant ou au caramel ?",
         "propositions": [
-          "Chou allongÃ©",
+          "Chou allongé",
           "Concorde",
           "Petite duchesse",
           "BÃ¢ton de Jacob"
         ],
-        "rÃ©ponse": "BÃ¢ton de Jacob",
-        "anecdote": "Le plus commun est composÃ© de pÃ¢te Ã  choux enveloppant une crÃ¨me pÃ¢tissiÃ¨re."
+        "réponse": "BÃ¢ton de Jacob",
+        "anecdote": "Le plus commun est composé de pÃ¢te Ã  choux enveloppant une crème pÃ¢tissière."
       },
       {
         "id": 26,
-        "question": "Quelle ville de Lorraine est cÃ©lÃ¨bre pour ses madeleines ?",
+        "question": "Quelle ville de Lorraine est célèbre pour ses madeleines ?",
         "propositions": [
           "Ã‰pinal",
           "Metz",
           "Commercy",
           "Verdun"
         ],
-        "rÃ©ponse": "Commercy",
-        "anecdote": "Symbole de convivialitÃ©, les madeleines y sont fabriquÃ©es depuis le XVIIIe siÃ¨cle."
+        "réponse": "Commercy",
+        "anecdote": "Symbole de convivialité, les madeleines y sont fabriquées depuis le XVIIIe siècle."
       },
       {
         "id": 27,
-        "question": "Quelle tarte Ã©laborÃ©e Ã  partir de petites prunes jaunes est une spÃ©cialitÃ© lorraine ?",
+        "question": "Quelle tarte élaborée Ã  partir de petites prunes jaunes est une spécialité lorraine ?",
         "propositions": [
           "Diplomate",
           "Sabayon",
           "ForÃªt noire",
           "Tarte aux mirabelles"
         ],
-        "rÃ©ponse": "Tarte aux mirabelles",
-        "anecdote": "La tarte aux mirabelles se prÃ©pare aussi bien avec une pÃ¢te brisÃ©e que feuilletÃ©e, des fruits frais ou congelÃ©s."
+        "réponse": "Tarte aux mirabelles",
+        "anecdote": "La tarte aux mirabelles se prépare aussi bien avec une pÃ¢te brisée que feuilletée, des fruits frais ou congelés."
       },
       {
         "id": 28,
-        "question": "Quel beignet soufflÃ© Ã©voque une religieuse plutÃ´t flatulente ?",
+        "question": "Quel beignet soufflé évoque une religieuse plutÃ´t flatulente ?",
         "propositions": [
           "Feu de dieu",
           "Vent de messe",
-          "Gaz de mÃ¨re",
+          "Gaz de mère",
           "Pet de nonne"
         ],
-        "rÃ©ponse": "Pet de nonne",
-        "anecdote": "Les pets de nonnes, saupoudrÃ©s de sucre et de cannelle, sont notamment une spÃ©cialitÃ© de Franche-ComtÃ©."
+        "réponse": "Pet de nonne",
+        "anecdote": "Les pets de nonnes, saupoudrés de sucre et de cannelle, sont notamment une spécialité de Franche-Comté."
       },
       {
         "id": 29,
-        "question": "Quel dessert doit son nom Ã  une opÃ©rette de Jacques Offenbach ?",
+        "question": "Quel dessert doit son nom Ã  une opérette de Jacques Offenbach ?",
         "propositions": [
-          "Poire Belle-HÃ©lÃ¨ne",
+          "Poire Belle-Hélène",
           "Fraise Melba",
-          "CrÃ¨me Chiboust",
+          "Crème Chiboust",
           "Tarte de Vic"
         ],
-        "rÃ©ponse": "Poire Belle-HÃ©lÃ¨ne",
-        "anecdote": "Ce dessert Ã  base de poires pochÃ©es dans un sirop est nappÃ© de chocolat chaud accompagnÃ© d'une glace Ã  la vanille."
+        "réponse": "Poire Belle-Hélène",
+        "anecdote": "Ce dessert Ã  base de poires pochées dans un sirop est nappé de chocolat chaud accompagné d'une glace Ã  la vanille."
       },
       {
         "id": 30,
-        "question": "De quelle ville de France proviennent les cannelÃ©s en forme de petits cylindres striÃ©s ?",
+        "question": "De quelle ville de France proviennent les cannelés en forme de petits cylindres striés ?",
         "propositions": [
           "Strasbourg",
           "Rennes",
           "Nancy",
           "Bordeaux"
         ],
-        "rÃ©ponse": "Bordeaux",
-        "anecdote": "La lÃ©gende veut que les cannelÃ©s soient nÃ©s lors du dÃ©barquement des bateaux de farine sur les quais de Bordeaux."
+        "réponse": "Bordeaux",
+        "anecdote": "La légende veut que les cannelés soient nés lors du débarquement des bateaux de farine sur les quais de Bordeaux."
       }
     ]
   }

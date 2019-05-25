@@ -13,10 +13,10 @@
         "propositions": [
           "Manger",
           "Dormir",
-          "Se rafraîchir",
+          "Se rafraichir",
           "Se reposer"
         ],
-        "réponse": "Se rafraîchir",
+        "réponse": "Se rafraichir",
         "anecdote": "Les ours polaires peuvent rapidement avoir trop chaud sous leur fourrure très épaisse et leur couche de graisse isolante."
       },
       {
@@ -41,40 +41,40 @@
           "Trop aigu"
         ],
         "réponse": "Trop aigu",
-        "anecdote": "Les chauves-souris émettent et reçoivent des ultrasons que notre oreille ne peux percevoir (max 20 000 hertz)."
+        "anecdote": "Les chauves-souris émettent et reàçoivent des ultrasons que notre oreille ne peux percevoir (max 20 000 hertz)."
       },
       {
         "id": 4,
-        "question": "À quoi servait la coquille du tridacne géant dans de nombreuses églises ?",
+        "question": "à€ quoi servait la coquille du tridacne géant dans de nombreuses églises ?",
         "propositions": [
           "Bénitier",
           "Tronc",
           "Chandelier",
-          "Corbeille à pain"
+          "Corbeille à  pain"
         ],
         "réponse": "Bénitier",
-        "anecdote": "Il y a 300 ans, les coquilles étaient considérées comme des objets précieux et servaient de bénitier à l'entrée des églises."
+        "anecdote": "Il y a 300 ans, les coquilles étaient considérées comme des objets précieux et servaient de bénitier à  l'entrée des églises."
       },
       {
         "id": 5,
-        "question": "Quelle lourde et pénible tâche incombe à la reine des fourmis ?",
+        "question": "Quelle lourde et pénible tà¢che incombe à  la reine des fourmis ?",
         "propositions": [
-          "Chercher à manger",
-          "Pondre des ufs",
+          "Chercher à  manger",
+          "Pondre des Âœufs",
           "Défendre le nid",
-          "Tuer les mâles"
+          "Tuer les mà¢les"
         ],
-        "réponse": "Pondre des ufs",
-        "anecdote": "La reine est la seule fourmi du nid à pondre des ufs qui sont en réalité des larves écloses dont naîtront les futures fourmis."
+        "réponse": "Pondre des Âœufs",
+        "anecdote": "La reine est la seule fourmi du nid à  pondre des Âœufs qui sont en réalité des larves écloses dont naitront les futures fourmis."
       },
       {
         "id": 6,
         "question": "Qu'est-ce que les coccinelles aiment tout particulièrement manger ?",
         "propositions": [
-          "Écorces",
+          "à‰corces",
           "Pétales",
           "Pucerons",
-          "Éxcréments"
+          "à‰xcréments"
         ],
         "réponse": "Pucerons",
         "anecdote": "Considérées comme animaux utiles, on élève les coccinelles puis on les utilise pour combattre écologiquement les parasites."
@@ -89,7 +89,7 @@
           "De l'or"
         ],
         "réponse": "Des cadavres",
-        "anecdote": "Un couple de nécrophores enterre un animal mort dans le sol et y pond ses ufs dont les larves sont nourries."
+        "anecdote": "Un couple de nécrophores enterre un animal mort dans le sol et y pond ses Âœufs dont les larves sont nourries."
       },
       {
         "id": 8,
@@ -113,7 +113,7 @@
           "Palais"
         ],
         "réponse": "Langue",
-        "anecdote": "Telle une lime, la langue rêche de la limace râpe les plantes tendres en petits morceaux et dépouille ainsi les jeunes salades."
+        "anecdote": "Telle une lime, la langue rêche de la limace rà¢pe les plantes tendres en petits morceaux et dépouille ainsi les jeunes salades."
       },
       {
         "id": 10,
@@ -125,7 +125,7 @@
           "Ses dents"
         ],
         "réponse": "Son ventre",
-        "anecdote": "Le loup inférieur n'est ainsi pas blessé mais devra à l'avenir se soumettre au mâle dominant, selon leur hiérarchie prononcée."
+        "anecdote": "Le loup inférieur n'est ainsi pas blessé mais devra à  l'avenir se soumettre au mà¢le dominant, selon leur hiérarchie prononcée."
       }
     ],
     "confirmé": [
@@ -143,7 +143,7 @@
       },
       {
         "id": 12,
-        "question": "Grâce à quelle partie de son corps la taupe s'oriente-t-elle sous terre ?",
+        "question": "Grà¢ce à  quelle partie de son corps la taupe s'oriente-t-elle sous terre ?",
         "propositions": [
           "Yeux",
           "Vibrisses",
@@ -151,14 +151,14 @@
           "Oreilles"
         ],
         "réponse": "Vibrisses",
-        "anecdote": "Les taupes s'orientent presque exclusivement en utilisant une sorte de moustaches et tâtent leur nourriture de cette manière."
+        "anecdote": "Les taupes s'orientent presque exclusivement en utilisant une sorte de moustaches et tà¢tent leur nourriture de cette manière."
       },
       {
         "id": 13,
-        "question": "À part le cheval, à quel autre animal le tapir est-il apparenté ?",
+        "question": "à€ part le cheval, à  quel autre animal le tapir est-il apparenté ?",
         "propositions": [
           "Hamster",
-          "Éléphant",
+          "à‰léphant",
           "Cochon",
           "Rhinocéros"
         ],
@@ -175,7 +175,7 @@
           "Par camouflage"
         ],
         "réponse": "Par leurs sécrétions",
-        "anecdote": "En cas de danger, les mille-pattes émettent une substance rouge caustique à l'odeur nauséabonde via des glandes sur leurs anneaux."
+        "anecdote": "En cas de danger, les mille-pattes émettent une substance rouge caustique à  l'odeur nauséabonde via des glandes sur leurs anneaux."
       },
       {
         "id": 15,
@@ -199,7 +199,7 @@
           "2 grammes"
         ],
         "réponse": "2 grammes",
-        "anecdote": "Notre musaraigne pygmée locale est, quant à elle, deux fois plus grande et plus lourde que ce pachyure étrusque."
+        "anecdote": "Notre musaraigne pygmée locale est, quant à  elle, deux fois plus grande et plus lourde que ce pachyure étrusque."
       },
       {
         "id": 17,
@@ -207,15 +207,15 @@
         "propositions": [
           "Poils",
           "Excréments",
-          "Éraflures",
+          "à‰raflures",
           "Souris mortes"
         ],
-        "réponse": "Éraflures",
+        "réponse": "à‰raflures",
         "anecdote": "Outre des éraflures, les lynx utilisent parfois également leur urine comme marque odorante afin de délimiter leur domaine."
       },
       {
         "id": 18,
-        "question": "Taillé pour la course, jusqu'à quelle vitesse un guépard peut-il courir ?",
+        "question": "Taillé pour la course, jusqu'à  quelle vitesse un guépard peut-il courir ?",
         "propositions": [
           "90 km/h",
           "120 km/h",
@@ -253,7 +253,7 @@
     "expert": [
       {
         "id": 21,
-        "question": "Après combien de temps un bébé tigre reçoit-il de la viande pour la première fois ?",
+        "question": "Après combien de temps un bébé tigre reàçoit-il de la viande pour la première fois ?",
         "propositions": [
           "Six ans",
           "Un mois",
@@ -285,11 +285,11 @@
           "Voir"
         ],
         "réponse": "Boire",
-        "anecdote": "Le liquide que le fennec absorbe grâce à son alimentation lui suffit et est donc admirablement adapté à la vie dans le désert."
+        "anecdote": "Le liquide que le fennec absorbe grà¢ce à  son alimentation lui suffit et est donc admirablement adapté à  la vie dans le désert."
       },
       {
         "id": 24,
-        "question": "Quel est le plus grand des aras parmi les perroquets connus à ce jour ?",
+        "question": "Quel est le plus grand des aras parmi les perroquets connus à  ce jour ?",
         "propositions": [
           "Chloroptère",
           "Ararauna",
@@ -301,7 +301,7 @@
       },
       {
         "id": 25,
-        "question": "De manière générale, combien d'heures par jour un panda géant est-il occupé à manger ?",
+        "question": "De manière générale, combien d'heures par jour un panda géant est-il occupé à  manger ?",
         "propositions": [
           "Huit",
           "Douze",
@@ -321,7 +321,7 @@
           "6 mois"
         ],
         "réponse": "18 mois",
-        "anecdote": "Après une période de 12 mois de gestation, le bébé morse pèse plus de 50 kg et sait déjà nager au bout de deux semaines seulement."
+        "anecdote": "Après une période de 12 mois de gestation, le bébé morse pèse plus de 50 kg et sait déjà  nager au bout de deux semaines seulement."
       },
       {
         "id": 27,
@@ -333,11 +333,11 @@
           "Foie"
         ],
         "réponse": "Sang",
-        "anecdote": "Les martres boivent uniquement le sang et laissent le reste, préférant manger des lapins, des ufs, des lézards ou des insectes."
+        "anecdote": "Les martres boivent uniquement le sang et laissent le reste, préférant manger des lapins, des Âœufs, des lézards ou des insectes."
       },
       {
         "id": 28,
-        "question": "De quoi est constituée la sonnette du serpent à sonnette ?",
+        "question": "De quoi est constituée la sonnette du serpent à  sonnette ?",
         "propositions": [
           "Corne",
           "Bois",
@@ -345,23 +345,23 @@
           "Calcaire"
         ],
         "réponse": "Corne",
-        "anecdote": "Les six à dix anneaux de corne situés à l'extrémité de la queue du serpent à sonnette proviennent des mues précédentes."
+        "anecdote": "Les six à  dix anneaux de corne situés à  l'extrémité de la queue du serpent à  sonnette proviennent des mues précédentes."
       },
       {
         "id": 29,
         "question": "Durant quelle saison de l'année peut-on entendre le hibou crier ?",
         "propositions": [
-          "Été",
+          "à‰té",
           "Automne",
           "Printemps",
           "Hiver"
         ],
         "réponse": "Printemps",
-        "anecdote": "Le hibou mâle crie en avril et en mai pour attirer l'attention d'une femelle qui restera alors toute sa vie fidèlement à ses côtés."
+        "anecdote": "Le hibou mà¢le crie en avril et en mai pour attirer l'attention d'une femelle qui restera alors toute sa vie fidèlement à  ses cà´tés."
       },
       {
         "id": 30,
-        "question": "De combien de piquants est composée la fourrure du hérisson mâle ?",
+        "question": "De combien de piquants est composée la fourrure du hérisson mà¢le ?",
         "propositions": [
           "4 000",
           "8 000",
@@ -749,7 +749,7 @@
       "débutant": [
       {
         "id": 1,
-        "question": "Warum liegen Eisbären beim Laufen im Schnee ?",
+        "question": "Warum liegen Eisbà¤ren beim Laufen im Schnee ?",
         "propositions": [
           "Zu essen",
           "Schlafen",
@@ -757,23 +757,23 @@
           "Zu aktualisieren"
         ],
         "réponse": "Zu aktualisieren",
-        "anecdote": "Eisbären können unter ihrem sehr dicken Fell und ihrer isolierenden Fettschicht schnell zu heiß werden."
+        "anecdote": "Eisbà¤ren kà¶nnen unter ihrem sehr dicken Fell und ihrer isolierenden Fettschicht schnell zu heiàŸ werden."
       },
       {
         "id": 2,
-        "question": "In welchem Körperteil können Seepferdchen schwimmen ?",
+        "question": "In welchem Kà¶rperteil kà¶nnen Seepferdchen schwimmen ?",
         "propositions": [
           "Schwanz",
-          "Rückenflosse",
+          "Rà¼ckenflosse",
           "Kopf",
           "Ventralflosse"
         ],
-        "réponse": "Rückenflosse",
+        "réponse": "Rà¼ckenflosse",
         "anecdote": "Obwohl sie Fische sind, schwimmen Seepferdchen sehr langsam mit welligen Bewegungen."
       },
       {
         "id": 3,
-        "question": "Warum können wir nicht die Schreie der Fledermaus hören ?",
+        "question": "Warum kà¶nnen wir nicht die Schreie der Fledermaus hà¶ren ?",
         "propositions": [
           "Zu akut",
           "Zu ernst",
@@ -781,11 +781,11 @@
           "Zu stark"
         ],
         "réponse": "Zu akut",
-        "anecdote": "Die Fledermäuse senden und empfangen Ultraschall, den unser Ohr nicht wahrnehmen kann (max. 20.000 Hertz)."
+        "anecdote": "Die Fledermà¤use senden und empfangen Ultraschall, den unser Ohr nicht wahrnehmen kann (max. 20.000 Hertz)."
       },
       {
         "id": 4,
-        "question": "Wie hieß die riesige Tridacne-Muschel in vielen Kirchen ?",
+        "question": "Wie hieàŸ die riesige Tridacne-Muschel in vielen Kirchen ?",
         "propositions": [
           "Betonier",
           "Kronleuchter",
@@ -793,35 +793,35 @@
           "Brotkorb"
         ],
         "réponse": "Betonier",
-        "anecdote": "Vor 300 Jahren galten Muscheln als kostbare Gegenstände und dienten den Kircheneingängen als Gewinn."
+        "anecdote": "Vor 300 Jahren galten Muscheln als kostbare Gegenstà¤nde und dienten den Kircheneingà¤ngen als Gewinn."
       },
       {
         "id": 5,
-        "question": "Welche schwere und schmerzhafte Aufgabe liegt bei der Ameisenkönigin ?",
+        "question": "Welche schwere und schmerzhafte Aufgabe liegt bei der Ameisenkà¶nigin ?",
         "propositions": [
           "Verteidige das Nest",
           "Ich suche essen",
-          "Töte die Männchen",
+          "Tà¶te die Mà¤nnchen",
           "Eier legen"
         ],
         "réponse": "Eier legen",
-        "anecdote": "Die Königin ist die einzige Ameise im Nest, die Eier brütet, aus denen tatsächlich Larven geschlüpft sind, aus denen die zukünftigen Ameisen geboren werden."
+        "anecdote": "Die Kà¶nigin ist die einzige Ameise im Nest, die Eier brà¼tet, aus denen tatsà¤chlich Larven geschlà¼pft sind, aus denen die zukà¼nftigen Ameisen geboren werden."
       },
       {
         "id": 6,
-        "question": "Was essen Marienkäfer besonders gerne ?",
+        "question": "Was essen Marienkà¤fer besonders gerne ?",
         "propositions": [
-          "Blütenblätter",
-          "Blattläuse",
+          "Blà¼tenblà¤tter",
+          "Blattlà¤use",
           "Kristalle",
           "Elécces"
         ],
-        "réponse": "Blattläuse",
-        "anecdote": "Als nützliche Tiere werden Marienkäfer gezüchtet, die dann zur ökologischen Bekämpfung von Schädlingen eingesetzt werden."
+        "réponse": "Blattlà¤use",
+        "anecdote": "Als nà¼tzliche Tiere werden Marienkà¤fer gezà¼chtet, die dann zur à¶kologischen Bekà¤mpfung von Schà¤dlingen eingesetzt werden."
       },
       {
         "id": 7,
-        "question": "Warum bekämpfen sich die Nekrophoren ?",
+        "question": "Warum bekà¤mpfen sich die Nekrophoren ?",
         "propositions": [
           "Frauen",
           "Gold",
@@ -829,7 +829,7 @@
           "Leichen"
         ],
         "réponse": "Leichen",
-        "anecdote": "Ein paar Nekrophoren begraben ein totes Tier in der Erde und legen dort Eier, deren Larven gefüttert werden."
+        "anecdote": "Ein paar Nekrophoren begraben ein totes Tier in der Erde und legen dort Eier, deren Larven gefà¼ttert werden."
       },
       {
         "id": 8,
@@ -841,49 +841,49 @@
           "Nass"
         ],
         "réponse": "Nass",
-        "anecdote": "Ohne die Milben, die in unseren Matratzen nisten, vor allem an feuchten Orten, würden die Wälder mit toten Blättern bedeckt sein."
+        "anecdote": "Ohne die Milben, die in unseren Matratzen nisten, vor allem an feuchten Orten, wà¼rden die Wà¤lder mit toten Blà¤ttern bedeckt sein."
       },
       {
         "id": 9,
-        "question": "Mit welchem Körperteil der Schnecke können die Pflanzen geschnitten werden ?",
+        "question": "Mit welchem Kà¶rperteil der Schnecke kà¶nnen die Pflanzen geschnitten werden ?",
         "propositions": [
-          "Zähne",
+          "Zà¤hne",
           "Bras",
           "Palast",
           "Sprache"
         ],
         "réponse": "Sprache",
-        "anecdote": "Wie eine Feile zieht die träge Zunge der Schnecke die zarten Pflanzen in kleine Stücke und streift so die jungen Salate ab."
+        "anecdote": "Wie eine Feile zieht die trà¤ge Zunge der Schnecke die zarten Pflanzen in kleine Stà¼cke und streift so die jungen Salate ab."
       },
       {
         "id": 10,
-        "question": "Was zeigt der schwächste Wolf nach einem Kampf um die Hierarchie ?",
+        "question": "Was zeigt der schwà¤chste Wolf nach einem Kampf um die Hierarchie ?",
         "propositions": [
-          "Seine Zähne",
+          "Seine Zà¤hne",
           "Seine Sprache",
           "Ihr Bauch",
           "Sein schwanz"
         ],
         "réponse": "Ihr Bauch",
-        "anecdote": "Der niedere Wolf wird also nicht verletzt, muss sich aber nach seiner ausgeprägten Hierarchie dem dominanten Partner unterwerfen."
+        "anecdote": "Der niedere Wolf wird also nicht verletzt, muss sich aber nach seiner ausgeprà¤gten Hierarchie dem dominanten Partner unterwerfen."
       }
     ],
     "confirmé": [
       {
         "id": 11,
-        "question": "Was ist die häufigste Todesursache bei Elefanten in Freiheit ?",
+        "question": "Was ist die hà¤ufigste Todesursache bei Elefanten in Freiheit ?",
         "propositions": [
           "Krankheit",
           "Biss von Schlangen",
           "Gebrochene Trompete",
-          "Verschleiß der Zähne"
+          "VerschleiàŸ der Zà¤hne"
         ],
-        "réponse": "Verschleiß der Zähne",
-        "anecdote": "Wenn der letzte Molar durch Kauen verschlissen ist, kann der Elefant nicht mehr genug füttern und stirbt traurig an Hunger."
+        "réponse": "VerschleiàŸ der Zà¤hne",
+        "anecdote": "Wenn der letzte Molar durch Kauen verschlissen ist, kann der Elefant nicht mehr genug fà¼ttern und stirbt traurig an Hunger."
       },
       {
         "id": 12,
-        "question": "Mit welchem Teil ihres Körpers bewegt sich der Maulwurf unter der Erde ?",
+        "question": "Mit welchem Teil ihres Kà¶rpers bewegt sich der Maulwurf unter der Erde ?",
         "propositions": [
           "Vibrisses",
           "Augen",
@@ -891,11 +891,11 @@
           "Ohren"
         ],
         "réponse": "Vibrisses",
-        "anecdote": "Die Maulwürfe orientieren sich fast ausschließlich an einer Art Schnurrbart und töten so ihre Nahrung."
+        "anecdote": "Die Maulwà¼rfe orientieren sich fast ausschlieàŸlich an einer Art Schnurrbart und tà¶ten so ihre Nahrung."
       },
       {
         "id": 13,
-        "question": "Mit welchem anderen Tier ist der Tapir außer mit dem Pferd verwandt ?",
+        "question": "Mit welchem anderen Tier ist der Tapir auàŸer mit dem Pferd verwandt ?",
         "propositions": [
           "Nashorn",
           "Schwein",
@@ -903,35 +903,35 @@
           "Elefant"
         ],
         "réponse": "Nashorn",
-        "anecdote": "Die Tapire der Familie der Huftiere benutzen ihren Kofferraum wie eine Hand und können ihn daher zurückziehen, wenn dieser sie stört."
+        "anecdote": "Die Tapire der Familie der Huftiere benutzen ihren Kofferraum wie eine Hand und kà¶nnen ihn daher zurà¼ckziehen, wenn dieser sie stà¶rt."
       },
       {
         "id": 14,
-        "question": "Wie schützen sich Tausendfüßler vor ihren Feinden ?",
+        "question": "Wie schà¼tzen sich Tausendfà¼àŸler vor ihren Feinden ?",
         "propositions": [
           "Schreien",
-          "Durch Beißen",
+          "Durch BeiàŸen",
           "Durch Tarnung",
           "Durch ihre Sekretionen"
         ],
         "réponse": "Durch ihre Sekretionen",
-        "anecdote": "Bei Gefahr geben die Tausendfüßler eine ätzende rote Substanz aus, die über Drüsen an ihren Ringen zu den übelriechenden Gerüchen führt."
+        "anecdote": "Bei Gefahr geben die Tausendfà¼àŸler eine à¤tzende rote Substanz aus, die à¼ber Drà¼sen an ihren Ringen zu den à¼belriechenden Gerà¼chen fà¼hrt."
       },
       {
         "id": 15,
-        "question": "Welche Tiere stehlen oft die Beute, die sie gejagt haben, von Hyänen ?",
+        "question": "Welche Tiere stehlen oft die Beute, die sie gejagt haben, von Hyà¤nen ?",
         "propositions": [
-          "Löwen",
+          "Là¶wen",
           "Gnus",
           "Buffalo",
           "Wachen"
         ],
-        "réponse": "Löwen",
-        "anecdote": "Hyänen jagen in der Regel in Rudeln von etwa vierzig Tieren wie Zebras oder Gnus."
+        "réponse": "Là¶wen",
+        "anecdote": "Hyà¤nen jagen in der Regel in Rudeln von etwa vierzig Tieren wie Zebras oder Gnus."
       },
       {
         "id": 16,
-        "question": "Wie viel ist über die kleinste Spitzmausart bekannt ?",
+        "question": "Wie viel ist à¼ber die kleinste Spitzmausart bekannt ?",
         "propositions": [
           "2 Gramm",
           "130 g",
@@ -939,23 +939,23 @@
           "70 g"
         ],
         "réponse": "2 Gramm",
-        "anecdote": "Unser einheimischer Zwergspitzmaus ist etwa doppelt so groß und schwerer als diese eigentümliche Garnele."
+        "anecdote": "Unser einheimischer Zwergspitzmaus ist etwa doppelt so groàŸ und schwerer als diese eigentà¼mliche Garnele."
       },
       {
         "id": 17,
         "question": "Wie markiert der Luchs normalerweise sein Territorium ?",
         "propositions": [
           "Erektionen",
-          "Tote Mäuse",
+          "Tote Mà¤use",
           "Exkremente",
           "Haar"
         ],
         "réponse": "Erektionen",
-        "anecdote": "Zusätzlich zum Abreiben verwenden Luchse manchmal auch ihren Urin als Duftmarke, um ihren Bereich zu definieren."
+        "anecdote": "Zusà¤tzlich zum Abreiben verwenden Luchse manchmal auch ihren Urin als Duftmarke, um ihren Bereich zu definieren."
       },
       {
         "id": 18,
-        "question": "Schnitt fürs Rennen, wie schnell kann eine Hürde laufen ?",
+        "question": "Schnitt fà¼rs Rennen, wie schnell kann eine Hà¼rde laufen ?",
         "propositions": [
           "90 km / h",
           "150 km / h",
@@ -967,7 +967,7 @@
       },
       {
         "id": 19,
-        "question": "Wie schützen sich die Insekten vor Angriffen ?",
+        "question": "Wie schà¼tzen sich die Insekten vor Angriffen ?",
         "propositions": [
           "Durch wegfliegen",
           "Durch das Einwickeln von",
@@ -975,19 +975,19 @@
           "Im Flug"
         ],
         "réponse": "Durch das Einwickeln von",
-        "anecdote": "Der Körper eines Holzlaus, in diesem Fall unbeweglich, besteht aus mehreren massiven Ringen, die an die Rüstung eines Ritters erinnern."
+        "anecdote": "Der Kà¶rper eines Holzlaus, in diesem Fall unbeweglich, besteht aus mehreren massiven Ringen, die an die Rà¼stung eines Ritters erinnern."
       },
       {
         "id": 20,
-        "question": "Welches Tier ist der größte bekannte Feind der variablen Düse ?",
+        "question": "Welches Tier ist der grà¶àŸte bekannte Feind der variablen Dà¼se ?",
         "propositions": [
           "Renard",
           "Mann",
-          "Braunbär",
+          "Braunbà¤r",
           "Aigle"
         ],
         "réponse": "Mann",
-        "anecdote": "Viele Bussarde werden von Menschen zerquetscht, während sie versuchen, tote Tiere von Autobahnen zu bergen."
+        "anecdote": "Viele Bussarde werden von Menschen zerquetscht, wà¤hrend sie versuchen, tote Tiere von Autobahnen zu bergen."
       }
     ],
     "expert": [
@@ -1005,7 +1005,7 @@
       },
       {
         "id": 22,
-        "question": "Wie viele Liter Milch produziert eine Hochleistungskuh täglich ?",
+        "question": "Wie viele Liter Milch produziert eine Hochleistungskuh tà¤glich ?",
         "propositions": [
           "35",
           "5",
@@ -1013,7 +1013,7 @@
           "15"
         ],
         "réponse": "35",
-        "anecdote": "Diese stark ausgebeuteten Kühe leiden meistens an einer Euterentzündung und benötigen viele Medikamente."
+        "anecdote": "Diese stark ausgebeuteten Kà¼he leiden meistens an einer Euterentzà¼ndung und benà¶tigen viele Medikamente."
       },
       {
         "id": 23,
@@ -1025,11 +1025,11 @@
           "Schlafen"
         ],
         "réponse": "Trinken",
-        "anecdote": "Die Flüssigkeit, die der Fennek dank seiner Nahrung aufnimmt, reicht ihm aus und ist daher wunderbar an das Leben in der Wüste angepasst."
+        "anecdote": "Die Flà¼ssigkeit, die der Fennek dank seiner Nahrung aufnimmt, reicht ihm aus und ist daher wunderbar an das Leben in der Wà¼ste angepasst."
       },
       {
         "id": 24,
-        "question": "Was ist der größte der Aras unter den bisher bekannten Papageien ?",
+        "question": "Was ist der grà¶àŸte der Aras unter den bisher bekannten Papageien ?",
         "propositions": [
           "Chloroptera",
           "Macao",
@@ -1037,19 +1037,19 @@
           "Hyacinthe"
         ],
         "réponse": "Hyacinthe",
-        "anecdote": "Dieser Papagei von etwa 150 cm, einschließlich Schwanz, hat ein einfaches blaues Gefieder und lebt hauptsächlich in Bolivien und Brasilien."
+        "anecdote": "Dieser Papagei von etwa 150 cm, einschlieàŸlich Schwanz, hat ein einfaches blaues Gefieder und lebt hauptsà¤chlich in Bolivien und Brasilien."
       },
       {
         "id": 25,
-        "question": "Wie viele Stunden am Tag ist ein Riesenpanda damit beschäftigt, zu essen ?",
+        "question": "Wie viele Stunden am Tag ist ein Riesenpanda damit beschà¤ftigt, zu essen ?",
         "propositions": [
           "Vier",
           "Sechzehn",
-          "Zwölf",
+          "Zwà¶lf",
           "Acht"
         ],
         "réponse": "Sechzehn",
-        "anecdote": "Der große Panda frisst nur junge Bambussprossen, aber diese sind nicht sehr nahrhaft."
+        "anecdote": "Der groàŸe Panda frisst nur junge Bambussprossen, aber diese sind nicht sehr nahrhaft."
       },
       {
         "id": 26,
@@ -1065,7 +1065,7 @@
       },
       {
         "id": 27,
-        "question": "Warum töten Marder manchmal Hühner ?",
+        "question": "Warum tà¶ten Marder manchmal Hà¼hner ?",
         "propositions": [
           "Blut",
           "Pfoten",
@@ -1073,7 +1073,7 @@
           "Oberschenkel"
         ],
         "réponse": "Blut",
-        "anecdote": "Marder trinken nur Blut und lassen den Rest übrig. Sie essen lieber Kaninchen, Eier, Eidechsen oder Insekten."
+        "anecdote": "Marder trinken nur Blut und lassen den Rest à¼brig. Sie essen lieber Kaninchen, Eier, Eidechsen oder Insekten."
       },
       {
         "id": 28,
@@ -1089,19 +1089,19 @@
       },
       {
         "id": 29,
-        "question": "In welcher Jahreszeit können wir die Eule schreien hören ?",
+        "question": "In welcher Jahreszeit kà¶nnen wir die Eule schreien hà¶ren ?",
         "propositions": [
           "Sommer",
           "Winter",
-          "Frühling",
+          "Frà¼hling",
           "Herbst"
         ],
-        "réponse": "Frühling",
+        "réponse": "Frà¼hling",
         "anecdote": "Die Eule schreit im April und Mai, um die Aufmerksamkeit einer Frau auf sich zu ziehen, die dann zeitlebens treu bleiben wird."
       },
       {
         "id": 30,
-        "question": "Wie viele Federn besteht aus dem Fell des männlichen Igels ?",
+        "question": "Wie viele Federn besteht aus dem Fell des mà¤nnlichen Igels ?",
         "propositions": [
           "16.000",
           "12.000",
@@ -1109,7 +1109,7 @@
           "4.000"
         ],
         "réponse": "16.000",
-        "anecdote": "Im Gefahrenfall kann der Igel seine vielen Federn aufstellen und sich zusammenrollen, um die Feinde zu schützen."
+        "anecdote": "Im Gefahrenfall kann der Igel seine vielen Federn aufstellen und sich zusammenrollen, um die Feinde zu schà¼tzen."
       }
       ]
       }
@@ -1119,7 +1119,7 @@
       "débutant": [
       {
         "id": 1,
-        "question": "¿Por qué los osos polares yacen en la nieve cuando corren ?",
+        "question": "Â¿Por qué los osos polares yacen en la nieve cuando corren ?",
         "propositions": [
           "Durmiendo",
           "Para comer",
@@ -1127,11 +1127,11 @@
           "Para descansar"
         ],
         "réponse": "Para actualizar",
-        "anecdote": "Los osos polares pueden calentarse rápidamente bajo su pelaje muy grueso y su capa de grasa aislante."
+        "anecdote": "Los osos polares pueden calentarse rà¡pidamente bajo su pelaje muy grueso y su capa de grasa aislante."
       },
       {
         "id": 2,
-        "question": "¿Qué parte del cuerpo permite que los caballitos de mar naden ?",
+        "question": "Â¿Qué parte del cuerpo permite que los caballitos de mar naden ?",
         "propositions": [
           "Aleta ventral",
           "Aleta dorsal",
@@ -1143,7 +1143,7 @@
       },
       {
         "id": 3,
-        "question": "¿Por qué no podemos escuchar los gritos del murciélago ?",
+        "question": "Â¿Por qué no podemos escuchar los gritos del murciélago ?",
         "propositions": [
           "Demasiado fuerte",
           "Demasiado agudo",
@@ -1151,23 +1151,23 @@
           "Demasiado serio"
         ],
         "réponse": "Demasiado agudo",
-        "anecdote": "Los murciélagos emiten y reciben ultrasonidos que nuestro oído no puede percibir (máximo 20 000 hertz)."
+        "anecdote": "Los murciélagos emiten y reciben ultrasonidos que nuestro oà­do no puede percibir (mà¡ximo 20 000 hertz)."
       },
       {
         "id": 4,
-        "question": "¿Cuál era el nombre del caparazón de tridacne gigante en muchas iglesias ?",
+        "question": "Â¿Cuà¡l era el nombre del caparazà³n de tridacne gigante en muchas iglesias ?",
         "propositions": [
           "Betonier",
           "Canasta De Pan",
-          "Araña de luces",
+          "Araà±a de luces",
           "Tronco"
         ],
         "réponse": "Betonier",
-        "anecdote": "Hace 300 años, las conchas se consideraban objetos preciosos y servían como un beneficio en las entradas a las iglesias."
+        "anecdote": "Hace 300 aà±os, las conchas se consideraban objetos preciosos y servà­an como un beneficio en las entradas a las iglesias."
       },
       {
         "id": 5,
-        "question": "¿Qué tarea pesada y dolorosa recae en la reina de las hormigas ?",
+        "question": "Â¿Qué tarea pesada y dolorosa recae en la reina de las hormigas ?",
         "propositions": [
           "Defender el nido",
           "Buscando comer",
@@ -1175,35 +1175,35 @@
           "Poner huevos"
         ],
         "réponse": "Poner huevos",
-        "anecdote": "La reina es la única hormiga en el nido para incubar huevos, que en realidad son larvas de las cuales nacerán las futuras hormigas."
+        "anecdote": "La reina es la àºnica hormiga en el nido para incubar huevos, que en realidad son larvas de las cuales nacerà¡n las futuras hormigas."
       },
       {
         "id": 6,
-        "question": "¿Qué les gusta comer especialmente a las mariquitas ?",
+        "question": "Â¿Qué les gusta comer especialmente a las mariquitas ?",
         "propositions": [
           "Pétalos",
           "Elécces",
-          "Áfidos",
+          "à�fidos",
           "Cristales"
         ],
-        "réponse": "Áfidos",
-        "anecdote": "Considerados animales útiles, las mariquitas se crían y luego se usan para combatir las plagas ecológicamente."
+        "réponse": "à�fidos",
+        "anecdote": "Considerados animales àºtiles, las mariquitas se crà­an y luego se usan para combatir las plagas ecolà³gicamente."
       },
       {
         "id": 7,
-        "question": "¿Por qué los necróforos luchan entre sí ?",
+        "question": "Â¿Por qué los necrà³foros luchan entre sà­ ?",
         "propositions": [
           "Hembras",
           "Oro",
-          "Cadáveres",
+          "Cadà¡veres",
           "Territorio"
         ],
-        "réponse": "Cadáveres",
-        "anecdote": "Un par de necróforos entierran a un animal muerto en el suelo y ponen huevos cuyas larvas son alimentadas."
+        "réponse": "Cadà¡veres",
+        "anecdote": "Un par de necrà³foros entierran a un animal muerto en el suelo y ponen huevos cuyas larvas son alimentadas."
       },
       {
         "id": 8,
-        "question": "¿Qué tipo de ambiente necesita un ácaro para vivir ?",
+        "question": "Â¿Qué tipo de ambiente necesita un à¡caro para vivir ?",
         "propositions": [
           "Gordo",
           "Soleado",
@@ -1211,11 +1211,11 @@
           "Mojado"
         ],
         "réponse": "Mojado",
-        "anecdote": "Sin los ácaros, que anidan en nuestros colchones, pero especialmente en lugares húmedos, los bosques se sumergirían con hojas muertas."
+        "anecdote": "Sin los à¡caros, que anidan en nuestros colchones, pero especialmente en lugares hàºmedos, los bosques se sumergirà­an con hojas muertas."
       },
       {
         "id": 9,
-        "question": "¿Qué parte del cuerpo de la babosa permite cortar las plantas ?",
+        "question": "Â¿Qué parte del cuerpo de la babosa permite cortar las plantas ?",
         "propositions": [
           "Dientes",
           "Bras",
@@ -1223,11 +1223,11 @@
           "Palacio"
         ],
         "réponse": "Idioma",
-        "anecdote": "Como una lima, la lengua lenta de la babosa hace que las plantas tiernas se conviertan en trozos pequeños y de esta manera se quitan las ensaladas jóvenes."
+        "anecdote": "Como una lima, la lengua lenta de la babosa hace que las plantas tiernas se conviertan en trozos pequeà±os y de esta manera se quitan las ensaladas jà³venes."
       },
       {
         "id": 10,
-        "question": "¿Qué muestra el lobo más débil después de una lucha por la jerarquía ?",
+        "question": "Â¿Qué muestra el lobo mà¡s débil después de una lucha por la jerarquà­a ?",
         "propositions": [
           "Su idioma",
           "Su vientre",
@@ -1235,13 +1235,13 @@
           "Sus dientes"
         ],
         "réponse": "Su vientre",
-        "anecdote": "Por lo tanto, el lobo inferior no está lesionado, pero en el futuro tendrá que someterse a la pareja dominante, de acuerdo con su jerarquía pronunciada."
+        "anecdote": "Por lo tanto, el lobo inferior no està¡ lesionado, pero en el futuro tendrà¡ que someterse a la pareja dominante, de acuerdo con su jerarquà­a pronunciada."
       }
     ],
     "confirmé": [
       {
         "id": 11,
-        "question": "¿Cuál es la causa más común de muerte entre los elefantes en libertad ?",
+        "question": "Â¿Cuà¡l es la causa mà¡s comàºn de muerte entre los elefantes en libertad ?",
         "propositions": [
           "Mordedura de serpientes",
           "Trompeta rota",
@@ -1249,11 +1249,11 @@
           "Enfermedad"
         ],
         "réponse": "Desgaste de los dientes",
-        "anecdote": "Cuando el último molar se agota al masticar, el elefante ya no puede alimentarse lo suficiente y muere tristemente de hambre."
+        "anecdote": "Cuando el àºltimo molar se agota al masticar, el elefante ya no puede alimentarse lo suficiente y muere tristemente de hambre."
       },
       {
         "id": 12,
-        "question": "¿Con qué parte de su cuerpo se mueve el lunar debajo del suelo ?",
+        "question": "Â¿Con qué parte de su cuerpo se mueve el lunar debajo del suelo ?",
         "propositions": [
           "Ojos",
           "Bozal",
@@ -1265,10 +1265,10 @@
       },
       {
         "id": 13,
-        "question": "Aparte del caballo, ¿con qué otro animal está relacionado el tapir ?",
+        "question": "Aparte del caballo, Â¿con qué otro animal està¡ relacionado el tapir ?",
         "propositions": [
           "Rinoceronte",
-          "Hámster",
+          "Hà¡mster",
           "Cerdo",
           "Elefante"
         ],
@@ -1277,7 +1277,7 @@
       },
       {
         "id": 14,
-        "question": "¿Cómo se protegen los milpiés de sus depredadores ?",
+        "question": "Â¿Cà³mo se protegen los milpiés de sus depredadores ?",
         "propositions": [
           "Gritando",
           "Por sus secreciones",
@@ -1285,23 +1285,23 @@
           "Por camuflaje"
         ],
         "réponse": "Por sus secreciones",
-        "anecdote": "En caso de peligro, los ciempiés emiten una sustancia cáustica roja al olor nauseabundo que abunda a través de las glándulas en sus anillos."
+        "anecdote": "En caso de peligro, los ciempiés emiten una sustancia cà¡ustica roja al olor nauseabundo que abunda a través de las glà¡ndulas en sus anillos."
       },
       {
         "id": 15,
-        "question": "¿Qué animales a menudo roban de las hienas la presa que han cazado ?",
+        "question": "Â¿Qué animales a menudo roban de las hienas la presa que han cazado ?",
         "propositions": [
           "Guardias",
           "Leones",
-          "Búfalo",
-          "Ñu"
+          "Bàºfalo",
+          "à‘u"
         ],
         "réponse": "Leones",
-        "anecdote": "Las hienas generalmente cazan en paquetes de aproximadamente cuarenta individuos de animales como cebras o ñus."
+        "anecdote": "Las hienas generalmente cazan en paquetes de aproximadamente cuarenta individuos de animales como cebras o à±us."
       },
       {
         "id": 16,
-        "question": "¿Cuánto se trata de la especie más pequeña de musaraña conocida ?",
+        "question": "Â¿Cuà¡nto se trata de la especie mà¡s pequeà±a de musaraà±a conocida ?",
         "propositions": [
           "70 gramos",
           "20 gramos",
@@ -1309,11 +1309,11 @@
           "130 gramos"
         ],
         "réponse": "2 gramos",
-        "anecdote": "Nuestra musaraña pigmea local es aproximadamente dos veces más grande y más pesada que este camarón peculiar."
+        "anecdote": "Nuestra musaraà±a pigmea local es aproximadamente dos veces mà¡s grande y mà¡s pesada que este camarà³n peculiar."
       },
       {
         "id": 17,
-        "question": "¿Cómo suele marcar el lince su territorio ?",
+        "question": "Â¿Cà³mo suele marcar el lince su territorio ?",
         "propositions": [
           "Ratones muertos",
           "Excremento",
@@ -1321,11 +1321,11 @@
           "Erecciones"
         ],
         "réponse": "Erecciones",
-        "anecdote": "Además de desgastar, los linces a veces también usan su orina como una marca de olor para definir su área."
+        "anecdote": "Ademà¡s de desgastar, los linces a veces también usan su orina como una marca de olor para definir su à¡rea."
       },
       {
         "id": 18,
-        "question": "Corte para la carrera, ¿qué tan rápido puede correr un obstáculo ?",
+        "question": "Corte para la carrera, Â¿qué tan rà¡pido puede correr un obstà¡culo ?",
         "propositions": [
           "90 km / h",
           "150 km / h",
@@ -1333,23 +1333,23 @@
           "60 km / h"
         ],
         "réponse": "120 km / h",
-        "anecdote": "El animal más rápido solo puede mantener esta velocidad unos cientos de metros, lo que le da una oportunidad a las gacelas."
+        "anecdote": "El animal mà¡s rà¡pido solo puede mantener esta velocidad unos cientos de metros, lo que le da una oportunidad a las gacelas."
       },
       {
         "id": 19,
-        "question": "¿Cómo se protegen los sowbugs de los ataques ?",
+        "question": "Â¿Cà³mo se protegen los sowbugs de los ataques ?",
         "propositions": [
           "Volando lejos",
           "Al terminar",
           "En vuelo",
-          "Enterrándose a sí mismo"
+          "Enterrà¡ndose a sà­ mismo"
         ],
         "réponse": "Al terminar",
-        "anecdote": "El cuerpo de un woodlouse, en este caso inmóvil, se compone de varios anillos sólidos que recuerdan la armadura de un caballero."
+        "anecdote": "El cuerpo de un woodlouse, en este caso inmà³vil, se compone de varios anillos sà³lidos que recuerdan la armadura de un caballero."
       },
       {
         "id": 20,
-        "question": "¿Qué animal es el mayor enemigo conocido de la boquilla variable ?",
+        "question": "Â¿Qué animal es el mayor enemigo conocido de la boquilla variable ?",
         "propositions": [
           "Aigle",
           "Oso pardo",
@@ -1363,19 +1363,19 @@
     "expert": [
       {
         "id": 21,
-        "question": "¿Después de cuánto tiempo obtiene carne un bebé por primera vez ?",
+        "question": "Â¿Después de cuà¡nto tiempo obtiene carne un bebé por primera vez ?",
         "propositions": [
           "Seis meses",
           "Un mes",
-          "Seis años",
-          "Un año"
+          "Seis aà±os",
+          "Un aà±o"
         ],
         "réponse": "Seis meses",
         "anecdote": "En los primeros seis meses, los tigres bebés que no conocen a su padre son amamantados por su madre."
       },
       {
         "id": 22,
-        "question": "¿Cuántos litros de leche produce una vaca de alto rendimiento cada día ?",
+        "question": "Â¿Cuà¡ntos litros de leche produce una vaca de alto rendimiento cada dà­a ?",
         "propositions": [
           "15",
           "5",
@@ -1383,11 +1383,11 @@
           "25"
         ],
         "réponse": "35",
-        "anecdote": "Estas vacas muy explotadas suelen sufrir de inflamación de las ubres y requieren muchos medicamentos."
+        "anecdote": "Estas vacas muy explotadas suelen sufrir de inflamacià³n de las ubres y requieren muchos medicamentos."
       },
       {
         "id": 23,
-        "question": "¿Con qué función vital pueden hacer asombrosamente los Fennec ?",
+        "question": "Â¿Con qué funcià³n vital pueden hacer asombrosamente los Fennec ?",
         "propositions": [
           "Bebida",
           "Durmiendo",
@@ -1395,11 +1395,11 @@
           "Ver"
         ],
         "réponse": "Bebida",
-        "anecdote": "El líquido que el fennec absorbe gracias a su dieta es suficiente para él y, por lo tanto, se adapta admirablemente a la vida en el desierto."
+        "anecdote": "El là­quido que el fennec absorbe gracias a su dieta es suficiente para él y, por lo tanto, se adapta admirablemente a la vida en el desierto."
       },
       {
         "id": 24,
-        "question": "¿Cuál es la más grande de las guacamayas entre los loros conocidos hasta la fecha ?",
+        "question": "Â¿Cuà¡l es la mà¡s grande de las guacamayas entre los loros conocidos hasta la fecha ?",
         "propositions": [
           "Hyacinthe",
           "Macao",
@@ -1411,7 +1411,7 @@
       },
       {
         "id": 25,
-        "question": "En general, ¿cuántas horas al día come un panda gigante ocupado ?",
+        "question": "En general, Â¿cuà¡ntas horas al dà­a come un panda gigante ocupado ?",
         "propositions": [
           "Ocho",
           "Doce",
@@ -1419,25 +1419,25 @@
           "Dieciséis"
         ],
         "réponse": "Dieciséis",
-        "anecdote": "El panda gigante solo come brotes de bambú jóvenes, pero estos no son muy nutritivos."
+        "anecdote": "El panda gigante solo come brotes de bambàº jà³venes, pero estos no son muy nutritivos."
       },
       {
         "id": 26,
-        "question": "¿Por cuánto tiempo es amamantado un bebé por su madre ?",
+        "question": "Â¿Por cuà¡nto tiempo es amamantado un bebé por su madre ?",
         "propositions": [
           "6 meses",
-          "1 año",
+          "1 aà±o",
           "18 meses",
           "1 mes"
         ],
         "réponse": "18 meses",
-        "anecdote": "Después de un período de 12 meses de gestación, la morsa bebé pesa más de 50 kg y ya puede nadar después de solo dos semanas."
+        "anecdote": "Después de un perà­odo de 12 meses de gestacià³n, la morsa bebé pesa mà¡s de 50 kg y ya puede nadar después de solo dos semanas."
       },
       {
         "id": 27,
-        "question": "¿Por qué martens a veces matan pollos ?",
+        "question": "Â¿Por qué martens a veces matan pollos ?",
         "propositions": [
-          "Hígado",
+          "Hà­gado",
           "Patas",
           "Muslos",
           "Sangre"
@@ -1447,7 +1447,7 @@
       },
       {
         "id": 28,
-        "question": "¿De qué está hecha la campana de la serpiente de cascabel ?",
+        "question": "Â¿De qué està¡ hecha la campana de la serpiente de cascabel ?",
         "propositions": [
           "Cuerno",
           "Madera",
@@ -1459,19 +1459,19 @@
       },
       {
         "id": 29,
-        "question": "¿En qué estación del año podemos escuchar el grito del búho ?",
+        "question": "Â¿En qué estacià³n del aà±o podemos escuchar el grito del bàºho ?",
         "propositions": [
-          "Otoño",
+          "Otoà±o",
           "Invierno",
           "Verano",
           "Primavera"
         ],
         "réponse": "Primavera",
-        "anecdote": "El búho grita en abril y mayo para atraer la atención de una mujer que permanecerá leal a su lado durante toda su vida."
+        "anecdote": "El bàºho grita en abril y mayo para atraer la atencià³n de una mujer que permanecerà¡ leal a su lado durante toda su vida."
       },
       {
         "id": 30,
-        "question": "¿Cuántas plumas está compuesta de la piel del erizo masculino ?",
+        "question": "Â¿Cuà¡ntas plumas està¡ compuesta de la piel del erizo masculino ?",
         "propositions": [
           "16,000",
           "4,000",
@@ -1479,7 +1479,7 @@
           "12,000"
         ],
         "réponse": "16,000",
-        "anecdote": "En caso de peligro, el erizo puede colocar sus muchas púas y acurrucarse sobre sí mismo para proteger a los enemigos."
+        "anecdote": "En caso de peligro, el erizo puede colocar sus muchas pàºas y acurrucarse sobre sà­ mismo para proteger a los enemigos."
       }
       ]
       }
@@ -1545,7 +1545,7 @@
           "Difendere il nido"
         ],
         "réponse": "Lay uova",
-        "anecdote": "La regina è l'unica formica nel nido a covare uova, che sono in realtà larve tratteggiate da cui nasceranno le future formiche."
+        "anecdote": "La regina è l'unica formica nel nido a covare uova, che sono in realtà  larve tratteggiate da cui nasceranno le future formiche."
       },
       {
         "id": 6,
@@ -1597,7 +1597,7 @@
       },
       {
         "id": 10,
-        "question": "Cosa mostra il lupo più debole dopo una lotta per la gerarchia ?",
+        "question": "Cosa mostra il lupo pià¹ debole dopo una lotta per la gerarchia ?",
         "propositions": [
           "La sua pancia",
           "Il suo cazzo",
@@ -1605,13 +1605,13 @@
           "La sua lingua"
         ],
         "réponse": "La sua pancia",
-        "anecdote": "Il lupo inferiore non è quindi ferito, ma dovrà in futuro presentarsi al compagno dominante, secondo la loro pronunciata gerarchia."
+        "anecdote": "Il lupo inferiore non è quindi ferito, ma dovrà  in futuro presentarsi al compagno dominante, secondo la loro pronunciata gerarchia."
       }
     ],
     "confirmé": [
       {
         "id": 11,
-        "question": "Qual è la causa più comune di morte tra gli elefanti in libertà ?",
+        "question": "Qual è la causa pià¹ comune di morte tra gli elefanti in libertà  ?",
         "propositions": [
           "Malattia",
           "Morso di serpenti",
@@ -1619,7 +1619,7 @@
           "Usura dei denti"
         ],
         "réponse": "Usura dei denti",
-        "anecdote": "Quando l'ultimo molare è consumato masticando, l'elefante non può più nutrirsi abbastanza e muore tristemente per la fame."
+        "anecdote": "Quando l'ultimo molare è consumato masticando, l'elefante non puà² pià¹ nutrirsi abbastanza e muore tristemente per la fame."
       },
       {
         "id": 12,
@@ -1671,7 +1671,7 @@
       },
       {
         "id": 16,
-        "question": "Quanto parla della più piccola specie di toporagno conosciuta ?",
+        "question": "Quanto parla della pià¹ piccola specie di toporagno conosciuta ?",
         "propositions": [
           "2 grammi",
           "20 grammi",
@@ -1679,7 +1679,7 @@
           "130 grammi"
         ],
         "réponse": "2 grammi",
-        "anecdote": "Il nostro toporagno pigmeo locale è circa due volte più grande e più pesante di questo gambero particolare."
+        "anecdote": "Il nostro toporagno pigmeo locale è circa due volte pià¹ grande e pià¹ pesante di questo gambero particolare."
       },
       {
         "id": 17,
@@ -1695,7 +1695,7 @@
       },
       {
         "id": 18,
-        "question": "Tagliare per la gara, quanto velocemente può correre un ostacolo ?",
+        "question": "Tagliare per la gara, quanto velocemente puà² correre un ostacolo ?",
         "propositions": [
           "120 km / h",
           "150 km / h",
@@ -1703,7 +1703,7 @@
           "90 km / h"
         ],
         "réponse": "120 km / h",
-        "anecdote": "L'animale più veloce può mantenere questa velocità solo per poche centinaia di metri, dando una possibilità alle gazzelle."
+        "anecdote": "L'animale pià¹ veloce puà² mantenere questa velocità  solo per poche centinaia di metri, dando una possibilità  alle gazzelle."
       },
       {
         "id": 19,
@@ -1719,7 +1719,7 @@
       },
       {
         "id": 20,
-        "question": "Quale animale è il più grande nemico conosciuto della bocchetta variabile ?",
+        "question": "Quale animale è il pià¹ grande nemico conosciuto della bocchetta variabile ?",
         "propositions": [
           "Aigle",
           "Orso bruno",
@@ -1757,7 +1757,7 @@
       },
       {
         "id": 23,
-        "question": "Di quale funzione vitale può davvero rinunciare il fennec ?",
+        "question": "Di quale funzione vitale puà² davvero rinunciare il fennec ?",
         "propositions": [
           "Mangiare",
           "Bere",
@@ -1769,7 +1769,7 @@
       },
       {
         "id": 24,
-        "question": "Qual è la più grande tra are pappagalli noti fino ad oggi ?",
+        "question": "Qual è la pià¹ grande tra are pappagalli noti fino ad oggi ?",
         "propositions": [
           "Macau",
           "Chloroptera",
@@ -1789,7 +1789,7 @@
           "Quattro"
         ],
         "réponse": "Sedici",
-        "anecdote": "Il panda gigante mangia solo giovani germogli di bambù, ma questi non sono molto nutrienti."
+        "anecdote": "Il panda gigante mangia solo giovani germogli di bambà¹, ma questi non sono molto nutrienti."
       },
       {
         "id": 26,
@@ -1801,7 +1801,7 @@
           "18 mesi"
         ],
         "réponse": "18 mesi",
-        "anecdote": "Dopo un periodo di 12 mesi di gestazione, il tricheco pesa più di 50 kg e può già nuotare dopo solo due settimane."
+        "anecdote": "Dopo un periodo di 12 mesi di gestazione, il tricheco pesa pià¹ di 50 kg e puà² già  nuotare dopo solo due settimane."
       },
       {
         "id": 27,
@@ -1837,7 +1837,7 @@
           "Inverno"
         ],
         "réponse": "Primavera",
-        "anecdote": "Il gufo urla in aprile e maggio per attirare l'attenzione di una donna che rimarrà fedele al suo fianco per tutta la vita."
+        "anecdote": "Il gufo urla in aprile e maggio per attirare l'attenzione di una donna che rimarrà  fedele al suo fianco per tutta la vita."
       },
       {
         "id": 30,
@@ -1849,7 +1849,7 @@
           "16.000"
         ],
         "réponse": "16.000",
-        "anecdote": "In caso di pericolo, il riccio può impostare le sue numerose penne e rannicchiarsi su se stesso per proteggere i nemici."
+        "anecdote": "In caso di pericolo, il riccio puà² impostare le sue numerose penne e rannicchiarsi su se stesso per proteggere i nemici."
       }
       ]
       }
@@ -1967,7 +1967,7 @@
       },
       {
         "id": 10,
-        "question": "Wat laat de zwakste wolf zien na een strijd om de hiërarchie ?",
+        "question": "Wat laat de zwakste wolf zien na een strijd om de hià«rarchie ?",
         "propositions": [
           "Zijn pik",
           "Zijn taal",
@@ -1975,7 +1975,7 @@
           "Haar buik"
         ],
         "réponse": "Haar buik",
-        "anecdote": "De lagere wolf is dus niet gewond maar zal zich in de toekomst moeten onderwerpen aan de dominante partner, volgens hun uitgesproken hiërarchie."
+        "anecdote": "De lagere wolf is dus niet gewond maar zal zich in de toekomst moeten onderwerpen aan de dominante partner, volgens hun uitgesproken hià«rarchie."
       }
     ],
     "confirmé": [
@@ -2001,7 +2001,7 @@
           "Oren"
         ],
         "réponse": "Vibrisses",
-        "anecdote": "De moedervogels oriënteren zich bijna uitsluitend door een soort snor te gebruiken en doden hun voedsel op deze manier."
+        "anecdote": "De moedervogels orià«nteren zich bijna uitsluitend door een soort snor te gebruiken en doden hun voedsel op deze manier."
       },
       {
         "id": 13,
@@ -2061,7 +2061,7 @@
           "Uitwerpselen"
         ],
         "réponse": "Erecties",
-        "anecdote": "Naast het schuren gebruiken lynxen soms ook hun urine als geurvlek om hun gebied te definiëren."
+        "anecdote": "Naast het schuren gebruiken lynxen soms ook hun urine als geurvlek om hun gebied te definià«ren."
       },
       {
         "id": 18,
@@ -2147,7 +2147,7 @@
           "Hyacinthe"
         ],
         "réponse": "Hyacinthe",
-        "anecdote": "Deze papegaai van ongeveer 150 cm, inclusief staart, heeft een effen blauw verenkleed en leeft voornamelijk in Bolivia en Brazilië."
+        "anecdote": "Deze papegaai van ongeveer 150 cm, inclusief staart, heeft een effen blauw verenkleed en leeft voornamelijk in Bolivia en Brazilià«."
       },
       {
         "id": 25,
