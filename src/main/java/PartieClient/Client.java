@@ -10,6 +10,8 @@ import java.net.UnknownHostException;
 
 import org.json.JSONObject;
 
+import Serveur.User;
+
 
 public class Client {
 	

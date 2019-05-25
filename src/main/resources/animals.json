@@ -1,12 +1,12 @@
 {
   "fournisseur": "OpenQuizzDB - Fournisseur de contenu libre (https://www.openquizzdb.org)",
-  "rédacteur": "Philippe Bresoux",
-  "thème": "Animaux en tout genre (Les animaux sont les anges de cette terre)",
-  "difficulté": 2,
+  "redacteur": "Philippe Bresoux",
+  "theme": "Animaux en tout genre (Les animaux sont les anges de cette terre)",
+  "difficulte": 2,
   "quizz": {
     "fr": [
       {
-      "débutant": [
+      "debutant": [
       {
         "id": 1,
         "question": "Pourquoi les ours polaires se couchent-ils dans la neige lorsqu'ils courent ?",
@@ -16,7 +16,7 @@
           "Se rafraichir",
           "Se reposer"
         ],
-        "réponse": "Se rafraichir",
+        "reponse": "Se rafraichir",
         "anecdote": "Les ours polaires peuvent rapidement avoir trop chaud sous leur fourrure très épaisse et leur couche de graisse isolante."
       },
       {
@@ -28,7 +28,7 @@
           "Nageoire dorsale",
           "Nageoire ventrale"
         ],
-        "réponse": "Nageoire dorsale",
+        "reponse": "Nageoire dorsale",
         "anecdote": "Malgré qu'ils soient des poissons, les hippocampes ne nagent que très lentement en effectuant des mouvements onduleux."
       },
       {
@@ -40,7 +40,7 @@
           "Trop faible",
           "Trop aigu"
         ],
-        "réponse": "Trop aigu",
+        "reponse": "Trop aigu",
         "anecdote": "Les chauves-souris émettent et reàçoivent des ultrasons que notre oreille ne peux percevoir (max 20 000 hertz)."
       },
       {
@@ -52,7 +52,7 @@
           "Chandelier",
           "Corbeille à  pain"
         ],
-        "réponse": "Bénitier",
+        "reponse": "Bénitier",
         "anecdote": "Il y a 300 ans, les coquilles étaient considérées comme des objets précieux et servaient de bénitier à  l'entrée des églises."
       },
       {
@@ -64,7 +64,7 @@
           "Défendre le nid",
           "Tuer les mà¢les"
         ],
-        "réponse": "Pondre des Âœufs",
+        "reponse": "Pondre des Âœufs",
         "anecdote": "La reine est la seule fourmi du nid à  pondre des Âœufs qui sont en réalité des larves écloses dont naitront les futures fourmis."
       },
       {
@@ -76,7 +76,7 @@
           "Pucerons",
           "à‰xcréments"
         ],
-        "réponse": "Pucerons",
+        "reponse": "Pucerons",
         "anecdote": "Considérées comme animaux utiles, on élève les coccinelles puis on les utilise pour combattre écologiquement les parasites."
       },
       {
@@ -88,7 +88,7 @@
           "Un territoire",
           "De l'or"
         ],
-        "réponse": "Des cadavres",
+        "reponse": "Des cadavres",
         "anecdote": "Un couple de nécrophores enterre un animal mort dans le sol et y pond ses Âœufs dont les larves sont nourries."
       },
       {
@@ -100,7 +100,7 @@
           "Sec",
           "Gras"
         ],
-        "réponse": "Humide",
+        "reponse": "Humide",
         "anecdote": "Sans les acariens, qui nichent dans nos matelas mais surtout dans les endroits humides, les forêts seraient submergées de feuilles mortes."
       },
       {
@@ -112,7 +112,7 @@
           "Langue",
           "Palais"
         ],
-        "réponse": "Langue",
+        "reponse": "Langue",
         "anecdote": "Telle une lime, la langue rêche de la limace rà¢pe les plantes tendres en petits morceaux et dépouille ainsi les jeunes salades."
       },
       {
@@ -124,7 +124,7 @@
           "Sa queue",
           "Ses dents"
         ],
-        "réponse": "Son ventre",
+        "reponse": "Son ventre",
         "anecdote": "Le loup inférieur n'est ainsi pas blessé mais devra à  l'avenir se soumettre au mà¢le dominant, selon leur hiérarchie prononcée."
       }
     ],
@@ -138,7 +138,7 @@
           "Trompe cassée",
           "Maladie"
         ],
-        "réponse": "Usure des dents",
+        "reponse": "Usure des dents",
         "anecdote": "Lorsque la dernière molaire est usée par la mastication, l'éléphant ne peut plus de nourrir suffisamment et meurt tristement de faim."
       },
       {
@@ -150,7 +150,7 @@
           "Museau",
           "Oreilles"
         ],
-        "réponse": "Vibrisses",
+        "reponse": "Vibrisses",
         "anecdote": "Les taupes s'orientent presque exclusivement en utilisant une sorte de moustaches et tà¢tent leur nourriture de cette manière."
       },
       {
@@ -162,7 +162,7 @@
           "Cochon",
           "Rhinocéros"
         ],
-        "réponse": "Rhinocéros",
+        "reponse": "Rhinocéros",
         "anecdote": "Les tapirs, de la famille des ongulés, utilisent leur trompe comme main et peuvent ainsi la rétracter lorsque celle-ci les gêne."
       },
       {
@@ -174,7 +174,7 @@
           "En criant",
           "Par camouflage"
         ],
-        "réponse": "Par leurs sécrétions",
+        "reponse": "Par leurs sécrétions",
         "anecdote": "En cas de danger, les mille-pattes émettent une substance rouge caustique à  l'odeur nauséabonde via des glandes sur leurs anneaux."
       },
       {
@@ -186,7 +186,7 @@
           "Gnous",
           "Lions"
         ],
-        "réponse": "Lions",
+        "reponse": "Lions",
         "anecdote": "Les hyènes chassent généralement en meute d'environ quarante individus des animaux tels que les zèbres ou les gnous."
       },
       {
@@ -198,7 +198,7 @@
           "130 grammes",
           "2 grammes"
         ],
-        "réponse": "2 grammes",
+        "reponse": "2 grammes",
         "anecdote": "Notre musaraigne pygmée locale est, quant à  elle, deux fois plus grande et plus lourde que ce pachyure étrusque."
       },
       {
@@ -210,7 +210,7 @@
           "à‰raflures",
           "Souris mortes"
         ],
-        "réponse": "à‰raflures",
+        "reponse": "à‰raflures",
         "anecdote": "Outre des éraflures, les lynx utilisent parfois également leur urine comme marque odorante afin de délimiter leur domaine."
       },
       {
@@ -222,7 +222,7 @@
           "150 km/h",
           "60 km/h"
         ],
-        "réponse": "120 km/h",
+        "reponse": "120 km/h",
         "anecdote": "Le plus rapide des animaux ne peut maintenir cette vitesse que sur quelques centaines de mètres, laissant une chance aux gazelles."
       },
       {
@@ -234,7 +234,7 @@
           "En s'envolant",
           "En s'enfuyant"
         ],
-        "réponse": "En s'enroulant",
+        "reponse": "En s'enroulant",
         "anecdote": "Le corps d'un cloporte, dans ce cas immobile, est composé de plusieurs anneaux solides qui rappellent une armure de chevalier."
       },
       {
@@ -246,7 +246,7 @@
           "Ours brun",
           "Homme"
         ],
-        "réponse": "Homme",
+        "reponse": "Homme",
         "anecdote": "De nombreuses buses sont écrasées par l'homme lorsqu'elles tentent de récupérer des cadavres d'animaux sur les autoroutes."
       }
     ],
@@ -260,7 +260,7 @@
           "Un an",
           "Six mois"
         ],
-        "réponse": "Six mois",
+        "reponse": "Six mois",
         "anecdote": "Au cours des six premiers mois, les bébés tigres qui ne connaissent pas leur père sont allaités par leur mère."
       },
       {
@@ -272,7 +272,7 @@
           "15 l",
           "25 l"
         ],
-        "réponse": "35 l",
+        "reponse": "35 l",
         "anecdote": "Ces vaches fortement exploitées souffrent le plus souvent d'une inflammation des pis et nécessitent beaucoup de médicaments."
       },
       {
@@ -284,7 +284,7 @@
           "Dormir",
           "Voir"
         ],
-        "réponse": "Boire",
+        "reponse": "Boire",
         "anecdote": "Le liquide que le fennec absorbe grà¢ce à  son alimentation lui suffit et est donc admirablement adapté à  la vie dans le désert."
       },
       {
@@ -296,7 +296,7 @@
           "Hyacinthe",
           "Macao"
         ],
-        "réponse": "Hyacinthe",
+        "reponse": "Hyacinthe",
         "anecdote": "Ce perroquet d'environ 150 cm, queue comprise, possède un plumage bleu clair uni et vit principalement en Bolivie et au Brésil."
       },
       {
@@ -308,7 +308,7 @@
           "Seize",
           "Quatre"
         ],
-        "réponse": "Seize",
+        "reponse": "Seize",
         "anecdote": "Le panda géant mange uniquement des jeunes pousses de bambou mais celles-ci ne sont toutefois pas très nourrissantes."
       },
       {
@@ -320,7 +320,7 @@
           "18 mois",
           "6 mois"
         ],
-        "réponse": "18 mois",
+        "reponse": "18 mois",
         "anecdote": "Après une période de 12 mois de gestation, le bébé morse pèse plus de 50 kg et sait déjà  nager au bout de deux semaines seulement."
       },
       {
@@ -332,7 +332,7 @@
           "Sang",
           "Foie"
         ],
-        "réponse": "Sang",
+        "reponse": "Sang",
         "anecdote": "Les martres boivent uniquement le sang et laissent le reste, préférant manger des lapins, des Âœufs, des lézards ou des insectes."
       },
       {
@@ -344,7 +344,7 @@
           "Pierres",
           "Calcaire"
         ],
-        "réponse": "Corne",
+        "reponse": "Corne",
         "anecdote": "Les six à  dix anneaux de corne situés à  l'extrémité de la queue du serpent à  sonnette proviennent des mues précédentes."
       },
       {
@@ -356,7 +356,7 @@
           "Printemps",
           "Hiver"
         ],
-        "réponse": "Printemps",
+        "reponse": "Printemps",
         "anecdote": "Le hibou mà¢le crie en avril et en mai pour attirer l'attention d'une femelle qui restera alors toute sa vie fidèlement à  ses cà´tés."
       },
       {
@@ -368,7 +368,7 @@
           "16 000",
           "12 000"
         ],
-        "réponse": "16 000",
+        "reponse": "16 000",
         "anecdote": "En cas de danger, le hérisson peut ainsi dresser ses nombreux piquants et s'enrouler sur lui-même pour se protéger des ennemis."
       }
       ]
@@ -376,7 +376,7 @@
     ],
     "en": [
     {
-      "débutant": [
+      "debutant": [
       {
         "id": 1,
         "question": "Why do polar bears lie in the snow when they run ?",
@@ -386,7 +386,7 @@
           "To rest",
           "To refresh"
         ],
-        "réponse": "To refresh",
+        "reponse": "To refresh",
         "anecdote": "Polar bears can quickly become too hot under their very thick fur and their layer of insulating fat."
       },
       {
@@ -398,7 +398,7 @@
           "Head",
           "Dorsal fin"
         ],
-        "réponse": "Dorsal fin",
+        "reponse": "Dorsal fin",
         "anecdote": "Although they are fish, seahorses swim very slowly with wavy movements."
       },
       {
@@ -410,7 +410,7 @@
           "Too weak",
           "Too serious"
         ],
-        "réponse": "Too acute",
+        "reponse": "Too acute",
         "anecdote": "The bats emit and receive ultrasounds that our ear can not perceive (max 20 000 hertz)."
       },
       {
@@ -422,7 +422,7 @@
           "Trunk",
           "Betonier"
         ],
-        "réponse": "Betonier",
+        "reponse": "Betonier",
         "anecdote": "300 years ago, shells were considered precious objects and served as a bene fi t at the entrances to churches."
       },
       {
@@ -434,7 +434,7 @@
           "Seeking to eat",
           "Defend the nest"
         ],
-        "réponse": "Lay eggs",
+        "reponse": "Lay eggs",
         "anecdote": "The queen is the only ant in the nest to hatch eggs, which are actually hatched larvae from which the future ants will be born."
       },
       {
@@ -446,7 +446,7 @@
           "Petals",
           "Aphids"
         ],
-        "réponse": "Aphids",
+        "reponse": "Aphids",
         "anecdote": "Considered useful animals, ladybugs are raised and then used to fight pests ecologically."
       },
       {
@@ -458,7 +458,7 @@
           "Gold",
           "Corpses"
         ],
-        "réponse": "Corpses",
+        "reponse": "Corpses",
         "anecdote": "A couple of necrophores bury a dead animal in the ground and lay eggs there whose larvae are fed."
       },
       {
@@ -470,7 +470,7 @@
           "Fat",
           "Wet"
         ],
-        "réponse": "Wet",
+        "reponse": "Wet",
         "anecdote": "Without the mites, which nest in our mattresses but especially in damp places, the forests would be submerged with dead leaves."
       },
       {
@@ -482,7 +482,7 @@
           "Teeth",
           "Bras"
         ],
-        "réponse": "Language",
+        "reponse": "Language",
         "anecdote": "Like a file, the slug's sluggish tongue grows the tender plants into small pieces and thus strips the young salads."
       },
       {
@@ -494,7 +494,7 @@
           "His cock",
           "Her belly"
         ],
-        "réponse": "Her belly",
+        "reponse": "Her belly",
         "anecdote": "The lower wolf is thus not injured but will in the future have to submit to the dominant mate, according to their pronounced hierarchy."
       }
     ],
@@ -508,7 +508,7 @@
           "Wear of teeth",
           "Disease"
         ],
-        "réponse": "Wear of teeth",
+        "reponse": "Wear of teeth",
         "anecdote": "When the last molar is worn out by chewing, the elephant can no longer feed enough and dies sadly of hunger."
       },
       {
@@ -520,7 +520,7 @@
           "Vibrisses",
           "Ears"
         ],
-        "réponse": "Vibrisses",
+        "reponse": "Vibrisses",
         "anecdote": "The moles orient themselves almost exclusively by using a kind of mustache and kill their food in this way."
       },
       {
@@ -532,7 +532,7 @@
           "Hamster",
           "Pig"
         ],
-        "réponse": "Rhinoceros",
+        "reponse": "Rhinoceros",
         "anecdote": "The tapirs, of the family of the ungulates, use their trunk like hand and can thus retract it when this one disturbs them."
       },
       {
@@ -544,7 +544,7 @@
           "By their secretations",
           "Shouting"
         ],
-        "réponse": "By their secretations",
+        "reponse": "By their secretations",
         "anecdote": "In case of danger, the centipedes emit a caustic red substance to the nauseating odor abounds via glands on their rings."
       },
       {
@@ -556,7 +556,7 @@
           "Wildebeest",
           "Guards"
         ],
-        "réponse": "Lions",
+        "reponse": "Lions",
         "anecdote": "Hyenas usually hunt in packs of about forty individuals of animals such as zebras or wildebeest."
       },
       {
@@ -568,7 +568,7 @@
           "20 grams",
           "70 grams"
         ],
-        "réponse": "2 grams",
+        "reponse": "2 grams",
         "anecdote": "Our local pygmy shrew is about twice as big and heavier than this peculiar shrimp."
       },
       {
@@ -580,7 +580,7 @@
           "Hair",
           "Erections"
         ],
-        "réponse": "Erections",
+        "reponse": "Erections",
         "anecdote": "In addition to scuffing, lynxes sometimes also use their urine as a scent mark to define their area."
       },
       {
@@ -592,7 +592,7 @@
           "150 km / h",
           "60 km / h"
         ],
-        "réponse": "120 km / h",
+        "reponse": "120 km / h",
         "anecdote": "The fastest animal can only maintain this speed for a few hundred meters, giving the gazelles a chance."
       },
       {
@@ -604,7 +604,7 @@
           "By burying himself",
           "By wrapping up"
         ],
-        "réponse": "By wrapping up",
+        "reponse": "By wrapping up",
         "anecdote": "The body of a woodlouse, in this case immobile, is composed of several solid rings that recall a knight's armor."
       },
       {
@@ -616,7 +616,7 @@
           "Man",
           "Aigle"
         ],
-        "réponse": "Man",
+        "reponse": "Man",
         "anecdote": "Many buzzards are crushed by humans as they attempt to recover dead animals from highways."
       }
     ],
@@ -630,7 +630,7 @@
           "One year",
           "Six months"
         ],
-        "réponse": "Six months",
+        "reponse": "Six months",
         "anecdote": "In the first six months, baby tigers who do not know their father are breastfed by their mother."
       },
       {
@@ -642,7 +642,7 @@
           "25",
           "35"
         ],
-        "réponse": "35",
+        "reponse": "35",
         "anecdote": "These heavily exploited cows most often suffer from inflammation of the udders and require many medications."
       },
       {
@@ -654,7 +654,7 @@
           "Drink",
           "See"
         ],
-        "réponse": "Drink",
+        "reponse": "Drink",
         "anecdote": "The liquid that the fennec absorbs thanks to its diet is enough for him and is therefore admirably adapted to life in the desert."
       },
       {
@@ -666,7 +666,7 @@
           "Ararauna",
           "Hyacinthe"
         ],
-        "réponse": "Hyacinthe",
+        "reponse": "Hyacinthe",
         "anecdote": "This parrot of about 150 cm, tail included, has a plain blue plumage and lives mainly in Bolivia and Brazil."
       },
       {
@@ -678,7 +678,7 @@
           "Twelve",
           "Eight"
         ],
-        "réponse": "Sixteen",
+        "reponse": "Sixteen",
         "anecdote": "The giant panda eats only young bamboo shoots but these are not very nutritious."
       },
       {
@@ -690,7 +690,7 @@
           "18 months",
           "6 months"
         ],
-        "réponse": "18 months",
+        "reponse": "18 months",
         "anecdote": "After a period of 12 months of gestation, the baby walrus weighs more than 50 kg and can already swim after only two weeks."
       },
       {
@@ -702,7 +702,7 @@
           "Thighs",
           "Blood"
         ],
-        "réponse": "Blood",
+        "reponse": "Blood",
         "anecdote": "Martens only drink blood and leave the rest, preferring to eat rabbits, eggs, lettuce or insects."
       },
       {
@@ -714,7 +714,7 @@
           "Limestone",
           "Stones"
         ],
-        "réponse": "Horn",
+        "reponse": "Horn",
         "anecdote": "The six to ten rings of horn located at the end of the rattlesnake's tail come from the previous moults."
       },
       {
@@ -726,7 +726,7 @@
           "Autumn",
           "Spring"
         ],
-        "réponse": "Spring",
+        "reponse": "Spring",
         "anecdote": "The owl shrieks in April and May to attract the attention of a female who will then remain loyal to his side all his life."
       },
       {
@@ -738,7 +738,7 @@
           "12,000",
           "16,000"
         ],
-        "réponse": "16,000",
+        "reponse": "16,000",
         "anecdote": "In case of danger, the hedgehog can set its many quills and curl up on itself to protect the enemies."
       }
       ]
@@ -746,7 +746,7 @@
     ],
     "de": [
     {
-      "débutant": [
+      "debutant": [
       {
         "id": 1,
         "question": "Warum liegen Eisbà¤ren beim Laufen im Schnee ?",
@@ -756,7 +756,7 @@
           "Sich ausruhen",
           "Zu aktualisieren"
         ],
-        "réponse": "Zu aktualisieren",
+        "reponse": "Zu aktualisieren",
         "anecdote": "Eisbà¤ren kà¶nnen unter ihrem sehr dicken Fell und ihrer isolierenden Fettschicht schnell zu heiàŸ werden."
       },
       {
@@ -768,7 +768,7 @@
           "Kopf",
           "Ventralflosse"
         ],
-        "réponse": "Rà¼ckenflosse",
+        "reponse": "Rà¼ckenflosse",
         "anecdote": "Obwohl sie Fische sind, schwimmen Seepferdchen sehr langsam mit welligen Bewegungen."
       },
       {
@@ -780,7 +780,7 @@
           "Zu schwach",
           "Zu stark"
         ],
-        "réponse": "Zu akut",
+        "reponse": "Zu akut",
         "anecdote": "Die Fledermà¤use senden und empfangen Ultraschall, den unser Ohr nicht wahrnehmen kann (max. 20.000 Hertz)."
       },
       {
@@ -792,7 +792,7 @@
           "Kofferraum",
           "Brotkorb"
         ],
-        "réponse": "Betonier",
+        "reponse": "Betonier",
         "anecdote": "Vor 300 Jahren galten Muscheln als kostbare Gegenstà¤nde und dienten den Kircheneingà¤ngen als Gewinn."
       },
       {
@@ -804,7 +804,7 @@
           "Tà¶te die Mà¤nnchen",
           "Eier legen"
         ],
-        "réponse": "Eier legen",
+        "reponse": "Eier legen",
         "anecdote": "Die Kà¶nigin ist die einzige Ameise im Nest, die Eier brà¼tet, aus denen tatsà¤chlich Larven geschlà¼pft sind, aus denen die zukà¼nftigen Ameisen geboren werden."
       },
       {
@@ -816,7 +816,7 @@
           "Kristalle",
           "Elécces"
         ],
-        "réponse": "Blattlà¤use",
+        "reponse": "Blattlà¤use",
         "anecdote": "Als nà¼tzliche Tiere werden Marienkà¤fer gezà¼chtet, die dann zur à¶kologischen Bekà¤mpfung von Schà¤dlingen eingesetzt werden."
       },
       {
@@ -828,7 +828,7 @@
           "Gebiet",
           "Leichen"
         ],
-        "réponse": "Leichen",
+        "reponse": "Leichen",
         "anecdote": "Ein paar Nekrophoren begraben ein totes Tier in der Erde und legen dort Eier, deren Larven gefà¼ttert werden."
       },
       {
@@ -840,7 +840,7 @@
           "Fett",
           "Nass"
         ],
-        "réponse": "Nass",
+        "reponse": "Nass",
         "anecdote": "Ohne die Milben, die in unseren Matratzen nisten, vor allem an feuchten Orten, wà¼rden die Wà¤lder mit toten Blà¤ttern bedeckt sein."
       },
       {
@@ -852,7 +852,7 @@
           "Palast",
           "Sprache"
         ],
-        "réponse": "Sprache",
+        "reponse": "Sprache",
         "anecdote": "Wie eine Feile zieht die trà¤ge Zunge der Schnecke die zarten Pflanzen in kleine Stà¼cke und streift so die jungen Salate ab."
       },
       {
@@ -864,7 +864,7 @@
           "Ihr Bauch",
           "Sein schwanz"
         ],
-        "réponse": "Ihr Bauch",
+        "reponse": "Ihr Bauch",
         "anecdote": "Der niedere Wolf wird also nicht verletzt, muss sich aber nach seiner ausgeprà¤gten Hierarchie dem dominanten Partner unterwerfen."
       }
     ],
@@ -878,7 +878,7 @@
           "Gebrochene Trompete",
           "VerschleiàŸ der Zà¤hne"
         ],
-        "réponse": "VerschleiàŸ der Zà¤hne",
+        "reponse": "VerschleiàŸ der Zà¤hne",
         "anecdote": "Wenn der letzte Molar durch Kauen verschlissen ist, kann der Elefant nicht mehr genug fà¼ttern und stirbt traurig an Hunger."
       },
       {
@@ -890,7 +890,7 @@
           "Schnauze",
           "Ohren"
         ],
-        "réponse": "Vibrisses",
+        "reponse": "Vibrisses",
         "anecdote": "Die Maulwà¼rfe orientieren sich fast ausschlieàŸlich an einer Art Schnurrbart und tà¶ten so ihre Nahrung."
       },
       {
@@ -902,7 +902,7 @@
           "Hamster",
           "Elefant"
         ],
-        "réponse": "Nashorn",
+        "reponse": "Nashorn",
         "anecdote": "Die Tapire der Familie der Huftiere benutzen ihren Kofferraum wie eine Hand und kà¶nnen ihn daher zurà¼ckziehen, wenn dieser sie stà¶rt."
       },
       {
@@ -914,7 +914,7 @@
           "Durch Tarnung",
           "Durch ihre Sekretionen"
         ],
-        "réponse": "Durch ihre Sekretionen",
+        "reponse": "Durch ihre Sekretionen",
         "anecdote": "Bei Gefahr geben die Tausendfà¼àŸler eine à¤tzende rote Substanz aus, die à¼ber Drà¼sen an ihren Ringen zu den à¼belriechenden Gerà¼chen fà¼hrt."
       },
       {
@@ -926,7 +926,7 @@
           "Buffalo",
           "Wachen"
         ],
-        "réponse": "Là¶wen",
+        "reponse": "Là¶wen",
         "anecdote": "Hyà¤nen jagen in der Regel in Rudeln von etwa vierzig Tieren wie Zebras oder Gnus."
       },
       {
@@ -938,7 +938,7 @@
           "20 g",
           "70 g"
         ],
-        "réponse": "2 Gramm",
+        "reponse": "2 Gramm",
         "anecdote": "Unser einheimischer Zwergspitzmaus ist etwa doppelt so groàŸ und schwerer als diese eigentà¼mliche Garnele."
       },
       {
@@ -950,7 +950,7 @@
           "Exkremente",
           "Haar"
         ],
-        "réponse": "Erektionen",
+        "reponse": "Erektionen",
         "anecdote": "Zusà¤tzlich zum Abreiben verwenden Luchse manchmal auch ihren Urin als Duftmarke, um ihren Bereich zu definieren."
       },
       {
@@ -962,7 +962,7 @@
           "60 km / h",
           "120 km / h"
         ],
-        "réponse": "120 km / h",
+        "reponse": "120 km / h",
         "anecdote": "Das schnellste Tier kann diese Geschwindigkeit nur einige hundert Meter beibehalten, was den Gazellen eine Chance gibt."
       },
       {
@@ -974,7 +974,7 @@
           "Indem er sich begraben hat",
           "Im Flug"
         ],
-        "réponse": "Durch das Einwickeln von",
+        "reponse": "Durch das Einwickeln von",
         "anecdote": "Der Kà¶rper eines Holzlaus, in diesem Fall unbeweglich, besteht aus mehreren massiven Ringen, die an die Rà¼stung eines Ritters erinnern."
       },
       {
@@ -986,7 +986,7 @@
           "Braunbà¤r",
           "Aigle"
         ],
-        "réponse": "Mann",
+        "reponse": "Mann",
         "anecdote": "Viele Bussarde werden von Menschen zerquetscht, wà¤hrend sie versuchen, tote Tiere von Autobahnen zu bergen."
       }
     ],
@@ -1000,7 +1000,7 @@
           "Ein Jahr",
           "Ein Monat"
         ],
-        "réponse": "Sechs Monate",
+        "reponse": "Sechs Monate",
         "anecdote": "In den ersten sechs Monaten werden Baby-Tiger, die ihren Vater nicht kennen, von ihrer Mutter gestillt."
       },
       {
@@ -1012,7 +1012,7 @@
           "25",
           "15"
         ],
-        "réponse": "35",
+        "reponse": "35",
         "anecdote": "Diese stark ausgebeuteten Kà¼he leiden meistens an einer Euterentzà¼ndung und benà¶tigen viele Medikamente."
       },
       {
@@ -1024,7 +1024,7 @@
           "Siehe",
           "Schlafen"
         ],
-        "réponse": "Trinken",
+        "reponse": "Trinken",
         "anecdote": "Die Flà¼ssigkeit, die der Fennek dank seiner Nahrung aufnimmt, reicht ihm aus und ist daher wunderbar an das Leben in der Wà¼ste angepasst."
       },
       {
@@ -1036,7 +1036,7 @@
           "Ararauna",
           "Hyacinthe"
         ],
-        "réponse": "Hyacinthe",
+        "reponse": "Hyacinthe",
         "anecdote": "Dieser Papagei von etwa 150 cm, einschlieàŸlich Schwanz, hat ein einfaches blaues Gefieder und lebt hauptsà¤chlich in Bolivien und Brasilien."
       },
       {
@@ -1048,7 +1048,7 @@
           "Zwà¶lf",
           "Acht"
         ],
-        "réponse": "Sechzehn",
+        "reponse": "Sechzehn",
         "anecdote": "Der groàŸe Panda frisst nur junge Bambussprossen, aber diese sind nicht sehr nahrhaft."
       },
       {
@@ -1060,7 +1060,7 @@
           "1 Jahr",
           "18 Monate"
         ],
-        "réponse": "18 Monate",
+        "reponse": "18 Monate",
         "anecdote": "Nach 12 Monaten der Schwangerschaft wiegt das Walrossbaby mehr als 50 kg und kann bereits nach zwei Wochen schwimmen."
       },
       {
@@ -1072,7 +1072,7 @@
           "Leber",
           "Oberschenkel"
         ],
-        "réponse": "Blut",
+        "reponse": "Blut",
         "anecdote": "Marder trinken nur Blut und lassen den Rest à¼brig. Sie essen lieber Kaninchen, Eier, Eidechsen oder Insekten."
       },
       {
@@ -1084,7 +1084,7 @@
           "Kalkstein",
           "Holz"
         ],
-        "réponse": "Horn",
+        "reponse": "Horn",
         "anecdote": "Die sechs bis zehn Hornringe am Ende des Schwanzes der Klapperschlange stammen von den vorherigen Moults."
       },
       {
@@ -1096,7 +1096,7 @@
           "Frà¼hling",
           "Herbst"
         ],
-        "réponse": "Frà¼hling",
+        "reponse": "Frà¼hling",
         "anecdote": "Die Eule schreit im April und Mai, um die Aufmerksamkeit einer Frau auf sich zu ziehen, die dann zeitlebens treu bleiben wird."
       },
       {
@@ -1108,7 +1108,7 @@
           "8.000",
           "4.000"
         ],
-        "réponse": "16.000",
+        "reponse": "16.000",
         "anecdote": "Im Gefahrenfall kann der Igel seine vielen Federn aufstellen und sich zusammenrollen, um die Feinde zu schà¼tzen."
       }
       ]
@@ -1116,7 +1116,7 @@
     ],
     "es": [
     {
-      "débutant": [
+      "debutant": [
       {
         "id": 1,
         "question": "Â¿Por qué los osos polares yacen en la nieve cuando corren ?",
@@ -1126,7 +1126,7 @@
           "Para actualizar",
           "Para descansar"
         ],
-        "réponse": "Para actualizar",
+        "reponse": "Para actualizar",
         "anecdote": "Los osos polares pueden calentarse rà¡pidamente bajo su pelaje muy grueso y su capa de grasa aislante."
       },
       {
@@ -1138,7 +1138,7 @@
           "Cabeza",
           "Cola"
         ],
-        "réponse": "Aleta dorsal",
+        "reponse": "Aleta dorsal",
         "anecdote": "Aunque son peces, los caballitos de mar nadan muy lentamente con movimientos ondulados."
       },
       {
@@ -1150,7 +1150,7 @@
           "Demasiado débil",
           "Demasiado serio"
         ],
-        "réponse": "Demasiado agudo",
+        "reponse": "Demasiado agudo",
         "anecdote": "Los murciélagos emiten y reciben ultrasonidos que nuestro oà­do no puede percibir (mà¡ximo 20 000 hertz)."
       },
       {
@@ -1162,7 +1162,7 @@
           "Araà±a de luces",
           "Tronco"
         ],
-        "réponse": "Betonier",
+        "reponse": "Betonier",
         "anecdote": "Hace 300 aà±os, las conchas se consideraban objetos preciosos y servà­an como un beneficio en las entradas a las iglesias."
       },
       {
@@ -1174,7 +1174,7 @@
           "Mata a los machos",
           "Poner huevos"
         ],
-        "réponse": "Poner huevos",
+        "reponse": "Poner huevos",
         "anecdote": "La reina es la àºnica hormiga en el nido para incubar huevos, que en realidad son larvas de las cuales nacerà¡n las futuras hormigas."
       },
       {
@@ -1186,7 +1186,7 @@
           "à�fidos",
           "Cristales"
         ],
-        "réponse": "à�fidos",
+        "reponse": "à�fidos",
         "anecdote": "Considerados animales àºtiles, las mariquitas se crà­an y luego se usan para combatir las plagas ecolà³gicamente."
       },
       {
@@ -1198,7 +1198,7 @@
           "Cadà¡veres",
           "Territorio"
         ],
-        "réponse": "Cadà¡veres",
+        "reponse": "Cadà¡veres",
         "anecdote": "Un par de necrà³foros entierran a un animal muerto en el suelo y ponen huevos cuyas larvas son alimentadas."
       },
       {
@@ -1210,7 +1210,7 @@
           "Sec",
           "Mojado"
         ],
-        "réponse": "Mojado",
+        "reponse": "Mojado",
         "anecdote": "Sin los à¡caros, que anidan en nuestros colchones, pero especialmente en lugares hàºmedos, los bosques se sumergirà­an con hojas muertas."
       },
       {
@@ -1222,7 +1222,7 @@
           "Idioma",
           "Palacio"
         ],
-        "réponse": "Idioma",
+        "reponse": "Idioma",
         "anecdote": "Como una lima, la lengua lenta de la babosa hace que las plantas tiernas se conviertan en trozos pequeà±os y de esta manera se quitan las ensaladas jà³venes."
       },
       {
@@ -1234,7 +1234,7 @@
           "Su polla",
           "Sus dientes"
         ],
-        "réponse": "Su vientre",
+        "reponse": "Su vientre",
         "anecdote": "Por lo tanto, el lobo inferior no està¡ lesionado, pero en el futuro tendrà¡ que someterse a la pareja dominante, de acuerdo con su jerarquà­a pronunciada."
       }
     ],
@@ -1248,7 +1248,7 @@
           "Desgaste de los dientes",
           "Enfermedad"
         ],
-        "réponse": "Desgaste de los dientes",
+        "reponse": "Desgaste de los dientes",
         "anecdote": "Cuando el àºltimo molar se agota al masticar, el elefante ya no puede alimentarse lo suficiente y muere tristemente de hambre."
       },
       {
@@ -1260,7 +1260,7 @@
           "Orejas",
           "Vibris"
         ],
-        "réponse": "Vibris",
+        "reponse": "Vibris",
         "anecdote": "Los lunares se orientan casi exclusivamente usando una especie de bigote y matan su comida de esta manera."
       },
       {
@@ -1272,7 +1272,7 @@
           "Cerdo",
           "Elefante"
         ],
-        "réponse": "Rinoceronte",
+        "reponse": "Rinoceronte",
         "anecdote": "Los tapires, de la familia de los ungulados, usan su tronco como una mano y, por lo tanto, pueden retraerlo cuando éste los perturba."
       },
       {
@@ -1284,7 +1284,7 @@
           "Mordiendo",
           "Por camuflaje"
         ],
-        "réponse": "Por sus secreciones",
+        "reponse": "Por sus secreciones",
         "anecdote": "En caso de peligro, los ciempiés emiten una sustancia cà¡ustica roja al olor nauseabundo que abunda a través de las glà¡ndulas en sus anillos."
       },
       {
@@ -1296,7 +1296,7 @@
           "Bàºfalo",
           "à‘u"
         ],
-        "réponse": "Leones",
+        "reponse": "Leones",
         "anecdote": "Las hienas generalmente cazan en paquetes de aproximadamente cuarenta individuos de animales como cebras o à±us."
       },
       {
@@ -1308,7 +1308,7 @@
           "2 gramos",
           "130 gramos"
         ],
-        "réponse": "2 gramos",
+        "reponse": "2 gramos",
         "anecdote": "Nuestra musaraà±a pigmea local es aproximadamente dos veces mà¡s grande y mà¡s pesada que este camarà³n peculiar."
       },
       {
@@ -1320,7 +1320,7 @@
           "Pelo",
           "Erecciones"
         ],
-        "réponse": "Erecciones",
+        "reponse": "Erecciones",
         "anecdote": "Ademà¡s de desgastar, los linces a veces también usan su orina como una marca de olor para definir su à¡rea."
       },
       {
@@ -1332,7 +1332,7 @@
           "120 km / h",
           "60 km / h"
         ],
-        "réponse": "120 km / h",
+        "reponse": "120 km / h",
         "anecdote": "El animal mà¡s rà¡pido solo puede mantener esta velocidad unos cientos de metros, lo que le da una oportunidad a las gacelas."
       },
       {
@@ -1344,7 +1344,7 @@
           "En vuelo",
           "Enterrà¡ndose a sà­ mismo"
         ],
-        "réponse": "Al terminar",
+        "reponse": "Al terminar",
         "anecdote": "El cuerpo de un woodlouse, en este caso inmà³vil, se compone de varios anillos sà³lidos que recuerdan la armadura de un caballero."
       },
       {
@@ -1356,7 +1356,7 @@
           "Renard",
           "Hombre"
         ],
-        "réponse": "Hombre",
+        "reponse": "Hombre",
         "anecdote": "Muchos buitres son aplastados por los humanos cuando intentan recuperar animales muertos de las carreteras."
       }
     ],
@@ -1370,7 +1370,7 @@
           "Seis aà±os",
           "Un aà±o"
         ],
-        "réponse": "Seis meses",
+        "reponse": "Seis meses",
         "anecdote": "En los primeros seis meses, los tigres bebés que no conocen a su padre son amamantados por su madre."
       },
       {
@@ -1382,7 +1382,7 @@
           "35",
           "25"
         ],
-        "réponse": "35",
+        "reponse": "35",
         "anecdote": "Estas vacas muy explotadas suelen sufrir de inflamacià³n de las ubres y requieren muchos medicamentos."
       },
       {
@@ -1394,7 +1394,7 @@
           "Para comer",
           "Ver"
         ],
-        "réponse": "Bebida",
+        "reponse": "Bebida",
         "anecdote": "El là­quido que el fennec absorbe gracias a su dieta es suficiente para él y, por lo tanto, se adapta admirablemente a la vida en el desierto."
       },
       {
@@ -1406,7 +1406,7 @@
           "Cloropteros",
           "Ararauna"
         ],
-        "réponse": "Hyacinthe",
+        "reponse": "Hyacinthe",
         "anecdote": "Este loro de unos 150 cm, con la cola incluida, tiene un plumaje azul claro y vive principalmente en Bolivia y Brasil."
       },
       {
@@ -1418,7 +1418,7 @@
           "Cuatro",
           "Dieciséis"
         ],
-        "réponse": "Dieciséis",
+        "reponse": "Dieciséis",
         "anecdote": "El panda gigante solo come brotes de bambàº jà³venes, pero estos no son muy nutritivos."
       },
       {
@@ -1430,7 +1430,7 @@
           "18 meses",
           "1 mes"
         ],
-        "réponse": "18 meses",
+        "reponse": "18 meses",
         "anecdote": "Después de un perà­odo de 12 meses de gestacià³n, la morsa bebé pesa mà¡s de 50 kg y ya puede nadar después de solo dos semanas."
       },
       {
@@ -1442,7 +1442,7 @@
           "Muslos",
           "Sangre"
         ],
-        "réponse": "Sangre",
+        "reponse": "Sangre",
         "anecdote": "Martens solo bebe sangre y deja el resto, prefiriendo comer conejos, huevos, lagartijas o insectos."
       },
       {
@@ -1454,7 +1454,7 @@
           "Piedra caliza",
           "Piedras"
         ],
-        "réponse": "Cuerno",
+        "reponse": "Cuerno",
         "anecdote": "Los seis a diez anillos de cuerno ubicados al final de la cola de la serpiente de cascabel provienen de las mudas anteriores."
       },
       {
@@ -1466,7 +1466,7 @@
           "Verano",
           "Primavera"
         ],
-        "réponse": "Primavera",
+        "reponse": "Primavera",
         "anecdote": "El bàºho grita en abril y mayo para atraer la atencià³n de una mujer que permanecerà¡ leal a su lado durante toda su vida."
       },
       {
@@ -1478,7 +1478,7 @@
           "8,000",
           "12,000"
         ],
-        "réponse": "16,000",
+        "reponse": "16,000",
         "anecdote": "En caso de peligro, el erizo puede colocar sus muchas pàºas y acurrucarse sobre sà­ mismo para proteger a los enemigos."
       }
       ]
@@ -1486,7 +1486,7 @@
     ],
     "it": [
     {
-      "débutant": [
+      "debutant": [
       {
         "id": 1,
         "question": "Perché gli orsi polari giacciono nella neve quando corrono ?",
@@ -1496,7 +1496,7 @@
           "Per aggiornare",
           "Dormire"
         ],
-        "réponse": "Per aggiornare",
+        "reponse": "Per aggiornare",
         "anecdote": "Gli orsi polari possono diventare troppo caldi sotto la loro pelliccia molto spessa e il loro strato di grasso isolante."
       },
       {
@@ -1508,7 +1508,7 @@
           "Pinne ventrali",
           "Pinna dorsale"
         ],
-        "réponse": "Pinna dorsale",
+        "reponse": "Pinna dorsale",
         "anecdote": "Sebbene siano pesci, i cavallucci marini nuotano molto lentamente con movimenti ondulati."
       },
       {
@@ -1520,7 +1520,7 @@
           "Troppo debole",
           "Troppo forte"
         ],
-        "réponse": "Troppo acuto",
+        "reponse": "Troppo acuto",
         "anecdote": "I pipistrelli emettono e ricevono gli ultrasuoni che il nostro orecchio non riesce a percepire (max 20.000 hertz)."
       },
       {
@@ -1532,7 +1532,7 @@
           "Betonier",
           "Lampadario"
         ],
-        "réponse": "Betonier",
+        "reponse": "Betonier",
         "anecdote": "300 anni fa, le conchiglie erano considerate oggetti preziosi e servivano come vantaggio agli ingressi delle chiese."
       },
       {
@@ -1544,7 +1544,7 @@
           "Lay uova",
           "Difendere il nido"
         ],
-        "réponse": "Lay uova",
+        "reponse": "Lay uova",
         "anecdote": "La regina è l'unica formica nel nido a covare uova, che sono in realtà  larve tratteggiate da cui nasceranno le future formiche."
       },
       {
@@ -1556,7 +1556,7 @@
           "Petali",
           "Elécces"
         ],
-        "réponse": "Afidi",
+        "reponse": "Afidi",
         "anecdote": "Considerati animali utili, le coccinelle vengono allevate e quindi utilizzate per combattere ecologicamente i parassiti."
       },
       {
@@ -1568,7 +1568,7 @@
           "Femmine",
           "Territorio"
         ],
-        "réponse": "Cadaveri",
+        "reponse": "Cadaveri",
         "anecdote": "Un paio di necrophores seppelliscono un animale morto nel terreno e depongono uova le cui larve vengono nutrite."
       },
       {
@@ -1580,7 +1580,7 @@
           "Soleggiato",
           "Sec"
         ],
-        "réponse": "Bagnato",
+        "reponse": "Bagnato",
         "anecdote": "Senza gli acari, che nidificano nei nostri materassi ma soprattutto in luoghi umidi, le foreste sarebbero sommerse da foglie morte."
       },
       {
@@ -1592,7 +1592,7 @@
           "Denti",
           "Lingua"
         ],
-        "réponse": "Lingua",
+        "reponse": "Lingua",
         "anecdote": "Come una lima, la lingua pigra della lumaca coltiva le piante teneri in piccoli pezzi e quindi spoglia le giovani insalate."
       },
       {
@@ -1604,7 +1604,7 @@
           "I suoi denti",
           "La sua lingua"
         ],
-        "réponse": "La sua pancia",
+        "reponse": "La sua pancia",
         "anecdote": "Il lupo inferiore non è quindi ferito, ma dovrà  in futuro presentarsi al compagno dominante, secondo la loro pronunciata gerarchia."
       }
     ],
@@ -1618,7 +1618,7 @@
           "Tromba rotta",
           "Usura dei denti"
         ],
-        "réponse": "Usura dei denti",
+        "reponse": "Usura dei denti",
         "anecdote": "Quando l'ultimo molare è consumato masticando, l'elefante non puà² pià¹ nutrirsi abbastanza e muore tristemente per la fame."
       },
       {
@@ -1630,7 +1630,7 @@
           "Occhi",
           "Orecchie"
         ],
-        "réponse": "Vibrisses",
+        "reponse": "Vibrisses",
         "anecdote": "Le talpe si orientano quasi esclusivamente usando una sorta di baffi e uccidono il loro cibo in questo modo."
       },
       {
@@ -1642,7 +1642,7 @@
           "Rinoceronte",
           "Maiale"
         ],
-        "réponse": "Rinoceronte",
+        "reponse": "Rinoceronte",
         "anecdote": "I tapiri, della famiglia degli ungulati, usano il loro tronco come una mano e possono quindi ritrarlo quando questo li disturba."
       },
       {
@@ -1654,7 +1654,7 @@
           "Gridare",
           "Con le loro secretazioni"
         ],
-        "réponse": "Con le loro secretazioni",
+        "reponse": "Con le loro secretazioni",
         "anecdote": "In caso di pericolo, i millepiedi emettono una sostanza rossa caustica per l'odore nauseabondo abbonda di ghiandole sui loro anelli."
       },
       {
@@ -1666,7 +1666,7 @@
           "Lions",
           "Gnu"
         ],
-        "réponse": "Lions",
+        "reponse": "Lions",
         "anecdote": "Le iene di solito cacciano in branchi di una quarantina di animali come zebre o gnu."
       },
       {
@@ -1678,7 +1678,7 @@
           "70 grammi",
           "130 grammi"
         ],
-        "réponse": "2 grammi",
+        "reponse": "2 grammi",
         "anecdote": "Il nostro toporagno pigmeo locale è circa due volte pià¹ grande e pià¹ pesante di questo gambero particolare."
       },
       {
@@ -1690,7 +1690,7 @@
           "Escrementi",
           "Capelli"
         ],
-        "réponse": "Erezioni",
+        "reponse": "Erezioni",
         "anecdote": "Oltre a raschiare, le linci a volte usano anche le loro urine come segni di odore per definire la loro area."
       },
       {
@@ -1702,7 +1702,7 @@
           "60 km / h",
           "90 km / h"
         ],
-        "réponse": "120 km / h",
+        "reponse": "120 km / h",
         "anecdote": "L'animale pià¹ veloce puà² mantenere questa velocità  solo per poche centinaia di metri, dando una possibilità  alle gazzelle."
       },
       {
@@ -1714,7 +1714,7 @@
           "Seppellendosi",
           "Volando via"
         ],
-        "réponse": "Concludendo",
+        "reponse": "Concludendo",
         "anecdote": "Il corpo di un woodlouse, in questo caso immobile, è composto da diversi anelli solidi che ricordano l'armatura di un cavaliere."
       },
       {
@@ -1726,7 +1726,7 @@
           "Renard",
           "Man"
         ],
-        "réponse": "Man",
+        "reponse": "Man",
         "anecdote": "Molte poiane sono schiacciate dagli umani mentre tentano di recuperare animali morti dalle autostrade."
       }
     ],
@@ -1740,7 +1740,7 @@
           "Un mese",
           "Sei anni"
         ],
-        "réponse": "Sei mesi",
+        "reponse": "Sei mesi",
         "anecdote": "Nei primi sei mesi, le tigri che non conoscono il padre sono allattate dalla madre."
       },
       {
@@ -1752,7 +1752,7 @@
           "35",
           "5"
         ],
-        "réponse": "35",
+        "reponse": "35",
         "anecdote": "Queste mucche fortemente sfruttate soffrono molto spesso di infiammazione delle mammelle e richiedono molti farmaci."
       },
       {
@@ -1764,7 +1764,7 @@
           "Vedi",
           "Dormire"
         ],
-        "réponse": "Bere",
+        "reponse": "Bere",
         "anecdote": "Il liquido che il fennec assorbe grazie alla sua dieta è sufficiente per lui ed è quindi mirabilmente adattato alla vita nel deserto."
       },
       {
@@ -1776,7 +1776,7 @@
           "Hyacinthe",
           "ararauna"
         ],
-        "réponse": "Hyacinthe",
+        "reponse": "Hyacinthe",
         "anecdote": "Questo pappagallo di circa 150 cm, coda inclusa, ha un semplice piumaggio blu pallido e vive principalmente in Bolivia e in Brasile."
       },
       {
@@ -1788,7 +1788,7 @@
           "Dodici",
           "Quattro"
         ],
-        "réponse": "Sedici",
+        "reponse": "Sedici",
         "anecdote": "Il panda gigante mangia solo giovani germogli di bambà¹, ma questi non sono molto nutrienti."
       },
       {
@@ -1800,7 +1800,7 @@
           "1 anno",
           "18 mesi"
         ],
-        "réponse": "18 mesi",
+        "reponse": "18 mesi",
         "anecdote": "Dopo un periodo di 12 mesi di gestazione, il tricheco pesa pià¹ di 50 kg e puà² già  nuotare dopo solo due settimane."
       },
       {
@@ -1812,7 +1812,7 @@
           "Cosce",
           "Fegato"
         ],
-        "réponse": "Sangue",
+        "reponse": "Sangue",
         "anecdote": "Le martore bevono solo sangue e lasciano il resto, preferendo mangiare conigli, uova, lattuga o insetti."
       },
       {
@@ -1824,7 +1824,7 @@
           "Pietre",
           "Corno"
         ],
-        "réponse": "Corno",
+        "reponse": "Corno",
         "anecdote": "I sei - dieci anelli di corno situati alla fine della coda del serpente a sonagli provengono dalle mute precedenti."
       },
       {
@@ -1836,7 +1836,7 @@
           "Primavera",
           "Inverno"
         ],
-        "réponse": "Primavera",
+        "reponse": "Primavera",
         "anecdote": "Il gufo urla in aprile e maggio per attirare l'attenzione di una donna che rimarrà  fedele al suo fianco per tutta la vita."
       },
       {
@@ -1848,7 +1848,7 @@
           "4.000",
           "16.000"
         ],
-        "réponse": "16.000",
+        "reponse": "16.000",
         "anecdote": "In caso di pericolo, il riccio puà² impostare le sue numerose penne e rannicchiarsi su se stesso per proteggere i nemici."
       }
       ]
@@ -1856,7 +1856,7 @@
     ],
     "nl": [
     {
-      "débutant": [
+      "debutant": [
       {
         "id": 1,
         "question": "Waarom liggen ijsberen in de sneeuw als ze rennen ?",
@@ -1866,7 +1866,7 @@
           "Vernieuwen",
           "Rusten"
         ],
-        "réponse": "Vernieuwen",
+        "reponse": "Vernieuwen",
         "anecdote": "IJsberen kunnen snel te heet worden onder hun zeer dikke vacht en hun isolerende vetlaag."
       },
       {
@@ -1878,7 +1878,7 @@
           "Hoofd",
           "Staart"
         ],
-        "réponse": "Rugvin",
+        "reponse": "Rugvin",
         "anecdote": "Hoewel ze vis zijn, zwemmen zeepaardjes heel langzaam met golvende bewegingen."
       },
       {
@@ -1890,7 +1890,7 @@
           "Te zwak",
           "Te sterk"
         ],
-        "réponse": "Te acuut",
+        "reponse": "Te acuut",
         "anecdote": "De vleermuizen zenden en ontvangen echo's die ons oor niet kan waarnemen (max. 20.000 hertz)."
       },
       {
@@ -1902,7 +1902,7 @@
           "Betonier",
           "Kroonluchter"
         ],
-        "réponse": "Betonier",
+        "reponse": "Betonier",
         "anecdote": "300 jaar geleden werden schelpen beschouwd als waardevolle voorwerpen en dienden ze als een voordeel bij de toegang tot kerken."
       },
       {
@@ -1914,7 +1914,7 @@
           "Eieren leggen",
           "Verdedig het nest"
         ],
-        "réponse": "Eieren leggen",
+        "reponse": "Eieren leggen",
         "anecdote": "De koningin is de enige mier in het nest die eieren uitbroedt, wat eigenlijk uitgebroede larven zijn waaruit de toekomstige mieren geboren zullen worden."
       },
       {
@@ -1926,7 +1926,7 @@
           "Bladluizen",
           "Kristallen"
         ],
-        "réponse": "Bladluizen",
+        "reponse": "Bladluizen",
         "anecdote": "Als bruikbare dieren worden lieveheersbeestjes opgevoed en vervolgens gebruikt om ecologisch ongedierte te bestrijden."
       },
       {
@@ -1938,7 +1938,7 @@
           "Goud",
           "Grondgebied"
         ],
-        "réponse": "Corpses",
+        "reponse": "Corpses",
         "anecdote": "Een aantal necroforen begraven een dood dier in de grond en leggen daar eieren waarvan de larven worden gevoerd."
       },
       {
@@ -1950,7 +1950,7 @@
           "Zonnig",
           "Vet"
         ],
-        "réponse": "Nat",
+        "reponse": "Nat",
         "anecdote": "Zonder de mijten, die nestelen in onze matrassen maar vooral op vochtige plaatsen, zouden de bossen worden ondergedompeld in dode bladeren."
       },
       {
@@ -1962,7 +1962,7 @@
           "Paleis",
           "Tanden"
         ],
-        "réponse": "Taal",
+        "reponse": "Taal",
         "anecdote": "Net als een dossier, groeit de trage tong van de slak de tere planten in kleine stukjes en verwijdert zo de jonge salades."
       },
       {
@@ -1974,7 +1974,7 @@
           "Zijn tanden",
           "Haar buik"
         ],
-        "réponse": "Haar buik",
+        "reponse": "Haar buik",
         "anecdote": "De lagere wolf is dus niet gewond maar zal zich in de toekomst moeten onderwerpen aan de dominante partner, volgens hun uitgesproken hià«rarchie."
       }
     ],
@@ -1988,7 +1988,7 @@
           "Slijtage van tanden",
           "Gebroken trompet"
         ],
-        "réponse": "Slijtage van tanden",
+        "reponse": "Slijtage van tanden",
         "anecdote": "Als de laatste kies is versleten door te kauwen, kan de olifant niet meer genoeg eten geven en sterft hij verdrietig van de honger."
       },
       {
@@ -2000,7 +2000,7 @@
           "Muilkorf",
           "Oren"
         ],
-        "réponse": "Vibrisses",
+        "reponse": "Vibrisses",
         "anecdote": "De moedervogels orià«nteren zich bijna uitsluitend door een soort snor te gebruiken en doden hun voedsel op deze manier."
       },
       {
@@ -2012,7 +2012,7 @@
           "Varken",
           "Hamster"
         ],
-        "réponse": "Neushoorn",
+        "reponse": "Neushoorn",
         "anecdote": "De tapirs, van de familie van de hoefdieren, gebruiken hun slurfachtige hand en kunnen deze dus intrekken wanneer deze hen stoort."
       },
       {
@@ -2024,7 +2024,7 @@
           "Door hun geheimen",
           "Schreeuwen"
         ],
-        "réponse": "Door hun geheimen",
+        "reponse": "Door hun geheimen",
         "anecdote": "In geval van gevaar zenden de duizendpoten een bijtende rode substantie uit naar de misselijkmakende geur die via klieren op hun ringen aanwezig is."
       },
       {
@@ -2036,7 +2036,7 @@
           "Wildebeest",
           "Bewakers"
         ],
-        "réponse": "Lions",
+        "reponse": "Lions",
         "anecdote": "Hyena's jagen meestal in pakken van ongeveer veertig dieren, zoals zebra's of gnoes."
       },
       {
@@ -2048,7 +2048,7 @@
           "2 gram",
           "130 gram"
         ],
-        "réponse": "2 gram",
+        "reponse": "2 gram",
         "anecdote": "Onze lokale pygmee feeks is ongeveer twee keer zo groot en zwaarder dan deze eigenaardige garnaal."
       },
       {
@@ -2060,7 +2060,7 @@
           "Haar",
           "Uitwerpselen"
         ],
-        "réponse": "Erecties",
+        "reponse": "Erecties",
         "anecdote": "Naast het schuren gebruiken lynxen soms ook hun urine als geurvlek om hun gebied te definià«ren."
       },
       {
@@ -2072,7 +2072,7 @@
           "90 km / h",
           "60 km / h"
         ],
-        "réponse": "120 km / h",
+        "reponse": "120 km / h",
         "anecdote": "Het snelste dier kan deze snelheid maar een paar honderd meter volhouden, waardoor de gazelles een kans krijgen."
       },
       {
@@ -2084,7 +2084,7 @@
           "Door zichzelf te begraven",
           "Door het inpakken"
         ],
-        "réponse": "Door het inpakken",
+        "reponse": "Door het inpakken",
         "anecdote": "Het lichaam van een pissebed, in dit geval onbeweeglijk, is samengesteld uit verschillende massieve ringen die herinneren aan het pantser van een ridder."
       },
       {
@@ -2096,7 +2096,7 @@
           "Aigle",
           "Bruine beer"
         ],
-        "réponse": "Man",
+        "reponse": "Man",
         "anecdote": "Veel buizerden worden verpletterd door mensen als ze proberen om dode dieren te herstellen van snelwegen."
       }
     ],
@@ -2110,7 +2110,7 @@
           "Zes maanden",
           "Een jaar"
         ],
-        "réponse": "Zes maanden",
+        "reponse": "Zes maanden",
         "anecdote": "In de eerste zes maanden krijgen babytijgers die hun vader niet kennen, borstvoeding van hun moeder."
       },
       {
@@ -2122,7 +2122,7 @@
           "5",
           "15"
         ],
-        "réponse": "35",
+        "reponse": "35",
         "anecdote": "Deze zwaar uitgebuite koeien lijden het vaakst aan een ontsteking van de uiers en vereisen veel medicijnen."
       },
       {
@@ -2134,7 +2134,7 @@
           "Bekijk",
           "Slapen"
         ],
-        "réponse": "drinken",
+        "reponse": "drinken",
         "anecdote": "De vloeistof die de fennec absorbeert dankzij zijn voedsel is voldoende voor hem en is daarom bewonderenswaardig aangepast aan het leven in de woestijn."
       },
       {
@@ -2146,7 +2146,7 @@
           "Macao",
           "Hyacinthe"
         ],
-        "réponse": "Hyacinthe",
+        "reponse": "Hyacinthe",
         "anecdote": "Deze papegaai van ongeveer 150 cm, inclusief staart, heeft een effen blauw verenkleed en leeft voornamelijk in Bolivia en Brazilià«."
       },
       {
@@ -2158,7 +2158,7 @@
           "Acht",
           "Vier"
         ],
-        "réponse": "Zestien",
+        "reponse": "Zestien",
         "anecdote": "De gigantische panda eet alleen jonge bamboescheuten, maar deze zijn niet erg voedzaam."
       },
       {
@@ -2170,7 +2170,7 @@
           "1 maand",
           "1 jaar"
         ],
-        "réponse": "18 maanden",
+        "reponse": "18 maanden",
         "anecdote": "Na een periode van 12 maanden zwangerschap weegt de baby-walrus meer dan 50 kg en kan hij al na slechts twee weken zwemmen."
       },
       {
@@ -2182,7 +2182,7 @@
           "Lever",
           "Dijen"
         ],
-        "réponse": "Bloed",
+        "reponse": "Bloed",
         "anecdote": "Martens drinkt alleen bloed en laat de rest achter en eet liever konijnen, eieren, sla of insecten."
       },
       {
@@ -2194,7 +2194,7 @@
           "Hout",
           "Hoorn"
         ],
-        "réponse": "Hoorn",
+        "reponse": "Hoorn",
         "anecdote": "De zes tot tien ringen van hoorn gelegen aan het einde van de staart van de ratelslang komen uit de vorige ruien."
       },
       {
@@ -2206,7 +2206,7 @@
           "Herfst",
           "Lente"
         ],
-        "réponse": "Lente",
+        "reponse": "Lente",
         "anecdote": "De uil schreeuwt in april en mei om de aandacht van een vrouw te trekken die dan zijn hele leven trouw aan zijn zijde zal blijven."
       },
       {
@@ -2218,7 +2218,7 @@
           "12.000",
           "4.000"
         ],
-        "réponse": "16.000",
+        "reponse": "16.000",
         "anecdote": "In geval van gevaar kan de egel zijn vele stekels zetten en zichzelf opkrullen om de vijanden te beschermen."
       }
       ]

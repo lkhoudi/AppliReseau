@@ -1,10 +1,10 @@
 {
   "fournisseur": "OpenQuizzDB - Fournisseur de contenu libre (www.openquizzdb.org)",
   "rédacteur": "Philippe Bresoux",
-  "thème": "Culture générale",
+  "theme": "Culture générale",
   "difficulté": 2,
   "quizz": {
-    "débutant": [
+    "debutant": [
       {
         "id": 1,
         "question": "Quel film à  succès a réuni sur les écrans Sean Connery et Christophe Lambert ?",
@@ -14,7 +14,7 @@
           "Mad Max",
           "Highlander"
         ],
-        "réponse": "Highlander",
+        "reponse": "Highlander",
         "anecdote": "'A Kind of Magic' est un album du groupe Queen, sorti en juin 1986, dont six de ses neuf morceaux sont utilisés dans le film 'Highlander'."
       },
       {
@@ -26,7 +26,7 @@
           "Pakistan",
           "Corée du Nord"
         ],
-        "réponse": "Népal",
+        "reponse": "Népal",
         "anecdote": "Katmandou est la capitale politique et religieuse du Népal ainsi que la plus grande ville du pays."
       },
       {
@@ -38,7 +38,7 @@
           "Sam",
           "Jerry"
         ],
-        "réponse": "Michael",
+        "reponse": "Michael",
         "anecdote": "Deux journalistes enquàªtent sur un soi-disant vrai ange vivant chez une dame à¢gée."
       },
       {
@@ -50,7 +50,7 @@
           "Serge Lama",
           "Hervé Vilard"
         ],
-        "réponse": "Hervé Vilard",
+        "reponse": "Hervé Vilard",
         "anecdote": "Didier Barbelivien, Michel Fugain et Danyel Gérard ont composé pour Hervé Vilard."
       },
       {
@@ -62,7 +62,7 @@
           "Pablo Picasso",
           "Edgar Degas"
         ],
-        "réponse": "Henri Rousseau",
+        "reponse": "Henri Rousseau",
         "anecdote": "Le premier portrait réalisé par le peintre Henri Rousseau semble àªtre celui de sa première femme."
       },
       {
@@ -74,7 +74,7 @@
           "Tarzan",
           "Le Yéti"
         ],
-        "réponse": "Tarzan",
+        "reponse": "Tarzan",
         "anecdote": "Edgar Rice Burroughs a inspiré bon nombre d'auteurs de science-fiction et de fantastique."
       },
       {
@@ -86,7 +86,7 @@
           "Le cinquante",
           "Le treize"
         ],
-        "réponse": "Le zéro",
+        "reponse": "Le zéro",
         "anecdote": "à€ la roulette, chaque joueur mise sur un numéro qu'il espère àªtre tiré."
       },
       {
@@ -98,7 +98,7 @@
           "Basset",
           "Bichon"
         ],
-        "réponse": "Basset",
+        "reponse": "Basset",
         "anecdote": "Interrompue en 1978, la série 'Columbo' a été ressuscitée en 1989, toujours avec Peter Falk."
       },
       {
@@ -110,7 +110,7 @@
           "Giga",
           "Byte"
         ],
-        "réponse": "Bit",
+        "reponse": "Bit",
         "anecdote": "La mémoire est un composant matériel essentiel, présent dans tous les ordinateurs et consoles."
       },
       {
@@ -122,7 +122,7 @@
           "Marmotte",
           "Quenotte"
         ],
-        "réponse": "Quenotte",
+        "reponse": "Quenotte",
         "anecdote": "Il est particulièrement important de bien se brosser les dents de manière régulière."
       }
     ],
@@ -136,7 +136,7 @@
           "Cuba",
           "Mexique"
         ],
-        "réponse": "Cuba",
+        "reponse": "Cuba",
         "anecdote": "La base de Guantanamo détient des personnes et des individus qualifiés de Â« combattants hors-la-loi Â»."
       },
       {
@@ -148,7 +148,7 @@
           "Football",
           "Natation"
         ],
-        "réponse": "Natation",
+        "reponse": "Natation",
         "anecdote": "Oussama Mellouli est le premier champion olympique tunisien du milieu de la natation professionnelle."
       },
       {
@@ -160,7 +160,7 @@
           "Jean Gabin",
           "Claude Brasseur"
         ],
-        "réponse": "Alain Delon",
+        "reponse": "Alain Delon",
         "anecdote": "Le film 'Le Guépard' décrit la chute de l'aristocratie italienne, dont la scène du bal donne la clé."
       },
       {
@@ -172,7 +172,7 @@
           "Saint Luc",
           "Saint Jean"
         ],
-        "réponse": "Saint Luc",
+        "reponse": "Saint Luc",
         "anecdote": "Sans faire partie des Â« Douze Â», Saint Paul a marqué le christianisme par son interprétation de l'enseignement de Jésus."
       },
       {
@@ -184,7 +184,7 @@
           "Archiduc",
           "Marquis"
         ],
-        "réponse": "Vicomte",
+        "reponse": "Vicomte",
         "anecdote": "Â« Vicomte Â» est une distinction héréditaire à  laquelle ne sont attachés aucuns pouvoirs."
       },
       {
@@ -196,7 +196,7 @@
           "Dublin",
           "Sydney"
         ],
-        "réponse": "Wellington",
+        "reponse": "Wellington",
         "anecdote": "Troisième ville la plus peuplée du pays, Wellington fait partie des douze meilleures villes dans laquelle vivre."
       },
       {
@@ -208,7 +208,7 @@
           "Les ensorceleuses",
           "Diabolique"
         ],
-        "réponse": "Diabolique",
+        "reponse": "Diabolique",
         "anecdote": "La femme et la maà®tresse d'un professeur s'associent pour planifier son assassinat."
       },
       {
@@ -220,7 +220,7 @@
           "Vendée Globe",
           "Trophée du rhum"
         ],
-        "réponse": "Route du café",
+        "reponse": "Route du café",
         "anecdote": "La Transat Jacques Vabre, course transatlantique en double, se déroule tous les deux ans depuis 1993."
       },
       {
@@ -232,7 +232,7 @@
           "Pingouin",
           "Bécassine"
         ],
-        "réponse": "Pingouin",
+        "reponse": "Pingouin",
         "anecdote": "Par abus de langage, le pingouin est souvent confondu avec le manchot, de par sa ressemblance avec le Grand Pingouin."
       },
       {
@@ -244,7 +244,7 @@
           "Saturne",
           "Uranus"
         ],
-        "réponse": "Jupiter",
+        "reponse": "Jupiter",
         "anecdote": "Jupiter est une planète géante gazeuse, la plus grosse planète du Système solaire."
       }
     ],
@@ -258,7 +258,7 @@
           "Insectes",
           "Arachnides"
         ],
-        "réponse": "Arachnides",
+        "reponse": "Arachnides",
         "anecdote": "Les scorpions se distinguent des araignées par un aiguillon venimeux situé au bout de leur abdomen."
       },
       {
@@ -270,7 +270,7 @@
           "John Payne",
           "John Travolta"
         ],
-        "réponse": "John Badham",
+        "reponse": "John Badham",
         "anecdote": "'La fièvre du samedi soir' fut un des principaux vecteurs de diffusion de la musique et de la mode disco."
       },
       {
@@ -282,7 +282,7 @@
           "Bastide",
           "Tour"
         ],
-        "réponse": "Bastide",
+        "reponse": "Bastide",
         "anecdote": "Les bastides les plus connues sont celles de Monflanquin, Monpazier, Grenade ou bien encore Libourne."
       },
       {
@@ -294,7 +294,7 @@
           "Dartford",
           "Ramsgate"
         ],
-        "réponse": "Tunbridge Wells",
+        "reponse": "Tunbridge Wells",
         "anecdote": "De nombreuses personnes célèbres sont venues en cure à  Tunbridge Wells, comme la reine Victoria."
       },
       {
@@ -306,7 +306,7 @@
           "Vermouth",
           "Piccolo"
         ],
-        "réponse": "Vermouth",
+        "reponse": "Vermouth",
         "anecdote": "Du plus sec au plus doux, on trouve le vermouth sec, le blanc, le rosé et le rouge."
       },
       {
@@ -318,7 +318,7 @@
           "Camus",
           "Giono"
         ],
-        "réponse": "Mauriac",
+        "reponse": "Mauriac",
         "anecdote": "Dans ce roman en quatre parties, on peut supposer que l'action se passe vers 1920."
       },
       {
@@ -330,7 +330,7 @@
           "Félix Faure",
           "Raymond Poincaré"
         ],
-        "réponse": "Félix Faure",
+        "reponse": "Félix Faure",
         "anecdote": "On a dit de Félix Faure qu'il était plus célèbre par sa mort que par sa vie."
       },
       {
@@ -342,7 +342,7 @@
           "Adret",
           "Ubac"
         ],
-        "réponse": "Ubac",
+        "reponse": "Ubac",
         "anecdote": "Dans l'hémisphère Nord, l'ubac est généralement la face Nord d'une montagne."
       },
       {
@@ -354,7 +354,7 @@
           "Grène",
           "Grève"
         ],
-        "réponse": "Grèbe",
+        "reponse": "Grèbe",
         "anecdote": "La position des pattes, très courtes et très en arrière par rapport au corps, a valu au grèbe le nom de Â« pieds au derrière Â»."
       },
       {
@@ -366,7 +366,7 @@
           "Maillet",
           "Rabot"
         ],
-        "réponse": "Ciseau à  bois",
+        "reponse": "Ciseau à  bois",
         "anecdote": "Le bédane est un outil parfois utilisé pour réaliser des pièces en bois tournées entre pointes."
       }
     ]
