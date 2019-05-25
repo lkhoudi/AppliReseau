@@ -14,6 +14,9 @@ public class ThreadUserForServer extends Thread{
 	private BufferedReader reader;
 	private PrintWriter writer;
 	private User user;
+	private Group groupe;
+	private EtatGame etatOfUser=new EtatGame();
+	
 	public ThreadUserForServer(Socket clientServerSocket, Serveur serveur) {
 		socketUser=clientServerSocket;
 		this.serveur=serveur;
@@ -21,33 +24,21 @@ public class ThreadUserForServer extends Thread{
 			reader=new BufferedReader(new InputStreamReader(socketUser.getInputStream()));
 			writer= new PrintWriter(socketUser.getOutputStream(),true);
 			String reponse=reader.readLine();
-			JSONObject object= new  JSONObject(reponse);
-			user= new User(object.getString("number"),object.getString("name"),object.getString("avatar"));
-			serveur.addUser(user);
-			informerAutre();
+			treatMessage(reponse);
 			writer.println("bonjour vous venez de vous connecter sur le port "+socketUser.getLocalPort());
 		}catch(IOException e) {}
 	}
 
 	public void run() {
-		boolean ok=true;
+
 		int i=0;
 		while(i<15){
 			try{
-				JSONObject message= new JSONObject();
-				message.put("type", "salutation");
-				JSONObject salutation = new JSONObject();
-				salutation.put("number", user.getNumber());
-				salutation.put("name", user.getName());
 				
-				message.put("salutation", salutation);
-				message.put("message",i);
-				writer.println(message.toString());
-				Thread.sleep(500);
+				salutation(""+i);
+				Thread.sleep(1000);
 				i++;
-				if(message.equals("ok"))
-					ok=false;
-				
+
 			}
 			catch(Exception e){}
 			
@@ -60,18 +51,32 @@ public class ThreadUserForServer extends Thread{
 		
 	}
 	
+	/**
+	 * 
+	 */
 	public void envoyerAllUsers() {
-		writer.println(serveur.getUsersJSON());
+		sendMessage("users",serveur.getUsersJSON());
 	}
 	
-	public void envoyerAllUser(User user) {
-		writer.println(user.toJson());
+	/**
+	 * 
+	 * @param user
+	 */
+	public void envoyerUser(User user) {
+		sendMessage("user",user.toJson());
 	}
 	
+	/**
+	 * 
+	 * @param message
+	 */
 	public void envoyer(String message) {
 		writer.println(message);
 	}
 	
+	/**
+	 * 
+	 */
 	@Override
 	public boolean equals(Object object ) {
 		if(!(object instanceof ThreadUserForServer)) {
@@ -83,18 +88,158 @@ public class ThreadUserForServer extends Thread{
 		return user.equals(threadUser.user);
 	}
 	
+	/**
+	 * 
+	 */
 	public void informerAutre() {
+		sendMessage("users",serveur.getUsersJSONWithout(user));
 		for(ThreadUserForServer threadUser : serveur.getListesUsersSocket()) {
 			if(!threadUser.equals(this)) {
-				threadUser.envoyer(threadUser.getUser().toJson());
+				threadUser.sendMessage("user",user.toJson());
 			}
 		}
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public User getUser() {
 		return user;
 	}
 	
+	/**
+	 * 
+	 * @param number
+	 * @return
+	 */
+	public boolean estUser(String number) {
+		return user.getNumber().equals(number);
+	}
+	
+	/**
+	 * 
+	 * @param info
+	 */
+	public void salutation(String info) {
+		JSONObject message= new JSONObject();
+		message.put("type", "salutation");
+		JSONObject salutation = new JSONObject();
+		salutation.put("number", user.getNumber());
+		salutation.put("name", user.getName());
+		message.put("salutation", salutation);
+		message.put("message",info);
+		envoyer(message.toString());
+	}
+	
+	public void sendMessage(String type, String message) {
+		JSONObject object=new JSONObject();
+		object.put("type",type);
+		object.put("data", message);
+		envoyer(object.toString());
+	}
+
+	
+	/**
+	 * 
+	 * @param data
+	 * @return
+	 */
+	public boolean joindreUnGroupe(String data) {
+		JSONObject object= new JSONObject(data);
+		String labelGroupe=object.getString("label");
+		return serveur.ajouterDansGroupe(labelGroupe,this);
+	}
+	
+	/**
+	 * 
+	 * @param data
+	 * @return
+	 */
+	public boolean creerGroupe(String data) {
+		JSONObject object= new JSONObject(data);
+		String label=object.getString("label");
+		return serveur.creerGroupe(label,this);
+	}
+	
+	/**
+	 * 
+	 * @param message
+	 */
+	public void treatMessage(String message) {
+		if((message!=null)&&(!message.equals(""))){
+			JSONObject object= new JSONObject(message);
+			String type=object.getString("type");
+			
+			if(type.equals("reponse")) {
+				if(etatOfUser.estEnCours()) {
+					groupe.setResponse(this, object.getString("reponse"));
+				}
+			}
+			else
+			if(type.equals("creerGroupe")) {
+				creerGroupe(object.getJSONObject("data").toString());
+			}
+			else
+			if(type.equals("joindreGroupe")) {
+				 joindreUnGroupe(object.getJSONObject("data").toString());
+			}
+			else
+			if(type.equals("commencer")) {
+				etatOfUser.setEtat("pret");
+			}
+			else
+			if(type.equals("etatConnexion")) {
+				
+			}
+			else
+			if(type.equals("inscrire")) {
+					inscrire(object.getJSONObject("data").toString());
+			}
+			else
+			if(type.equals("connexion")) {
+				
+			}
+			
+			
+		}
+	}
+	
+	public void setEtatOfUser(String etat) {
+		etatOfUser.setEtat(etat);
+	}
+	
+	public boolean estPret() {
+		return etatOfUser.estPret();
+	}
+	
+	public void setGroup(Group group) {
+		groupe=group;
+	}
+	
+	public boolean hasGroup() {
+		return groupe!=null;
+	}
 	
 	
+	public boolean connexion(String jsonString) {
+		boolean test=false;
+		JSONObject objectUser=new JSONObject(jsonString);
+		String name=objectUser.getString("number");
+		String number=objectUser.getString("mdp");
+		//verification de la db
+		//instanciation de user et serveur puis informerautre
+		return test;
+	}
+	
+	public void inscrire(String jsonString) {
+		JSONObject objectUser=new JSONObject(jsonString);
+		String name=objectUser.getString("name");
+		String number=objectUser.getString("number");
+		String avatar=objectUser.getString("avatar");
+		user= new User(number,name,avatar);
+		serveur.addUser(user);
+		informerAutre();
+		//inserer l'utilisateur dans la base de données
+	}
 }

@@ -7,6 +7,7 @@ public class User {
 	private String number;
 	private String name;
 	private String avatar;
+	private String mdp;
 	
 	public User(String number, String name, String avatar) {
 		this.number=number;
@@ -47,6 +48,13 @@ public class User {
 		return user.name.equals(name)&&(user.avatar.equals(avatar))&&(user.number.equals(number));
 	}
 	
+	public void setMdp(String mdp) {
+		this.mdp=mdp;
+	}
+	
+	public String getMdp() {
+		return mdp;
+	}
 	
 	public String toJson() {
 		JSONObject object =new JSONObject();
@@ -55,9 +63,8 @@ public class User {
 		userJson.put("name", name);
 		userJson.put("number", number);
 		userJson.put("avatar", avatar);
-		object.put("type", "user");
-		object.put("user", userJson);
-		return object.toString();
+		userJson.put("mdp", mdp);
+		return userJson.toString();
 	}
 
 }
