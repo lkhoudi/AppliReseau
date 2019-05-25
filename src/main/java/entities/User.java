@@ -1,42 +1,27 @@
-package CommunicationReseau.user;
+package entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-@Table(name = "user_table")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-
-    @Column(name = "email")
     private String email;
 
-    @Column(name = "firstname")
+    public boolean isActive() {
+        return active;
+    }
+
     private String firstname;
-
-    @Column(name = "lastname")
     private String lastname;
-
-    @Column(name = "password")
     private String password;
+    private boolean active;
 
-    @Column(name = "active")
-    private int active;
-
-    public int getId() {
-        return id;
+    public User(String email, String firstname, String lastname, String password, boolean active) {
+        this.email = email;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.password = password;
+        this.active = active;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getEmail() {
         return email;
@@ -70,11 +55,11 @@ public class User {
         this.password = password;
     }
 
-    public int getActive() {
+    public boolean getActive() {
         return active;
     }
 
-    public void setActive(int active) {
+    public void setActive(boolean active) {
         this.active = active;
     }
 }
