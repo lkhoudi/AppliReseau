@@ -1,8 +1,12 @@
 /home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/Serveur/ThreadUserForServer.java
-/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/entities/UserDbManager.java
-/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/entities/DbConnectionManager.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/managers/DbConnectionManager.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/game/Jeu.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/entities/Question.java
 /home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/PartieClient/Client.java
-/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/Serveur/Group.java
-/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/Serveur/Quizz.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/entities/Group.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/entities/EtatGame.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/Serveur/parser/ParserJson.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/managers/UserDbManager.java
+/home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/entities/Quizz.java
 /home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/Serveur/Serveur.java
 /home/khoudi/Documents/M1 Dauphine/AppliReseau/src/main/java/entities/User.java

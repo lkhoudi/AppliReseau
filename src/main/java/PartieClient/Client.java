@@ -40,25 +40,24 @@ public class Client {
 			this.serveurAdresse=InetAddress.getByName(adresse);
 			this.portServeur=port;
 		} catch (UnknownHostException e) {
-			e.printStackTrace();
+			System.out.println("probleme pour prendre en charge l'adresse");
 		}
 	}
 	
 	private boolean connectionServer()  {
+		boolean test;
 		try {
 			socketClient = new Socket(serveurAdresse, portServeur);
 			reader= new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
 			writer = new PrintWriter(socketClient.getOutputStream(),true);
-			JSONObject object = new JSONObject();
-	        object.put("number", user.getEmail());
-	        object.put("name", user.getFirstname());
-	        object.put("avatar", user.getAvatar());
-			writer.println(object.toString());
-			return true;
+			inscrire();
+			test= true;
 		} catch (IOException e) {
-			System.out.println(" probl�me : le serveur n'est pas disponible");
-			return false;
-		} 
+			System.out.println(" probleme : le serveur n'est pas disponible");
+			test=false;
+		}
+		
+		return test;
 	}
 	
 	public boolean communication() {
@@ -72,7 +71,7 @@ public class Client {
 						reponse=reader.readLine();
 						System.out.println(reponse);
 					} catch (IOException e) {
-						e.printStackTrace();
+						//System.out.println("le client n'arrive pas � recevoir la r�ponse");
 					}
 				}
 			}
@@ -83,11 +82,48 @@ public class Client {
 		return true;
 	}
 	
+	public void repondre(int idQuestion, String response) {
+			JSONObject object= new JSONObject();
+			object.put("type", "reponse");
+			object.put("data", response);
+			envoyerSMS(object.toString());
+	}
+	
+	public void envoyerSMS(String str) {
+		writer.println(str);
+	}
+	
+	public void creerGroupe(String label) {
+		JSONObject object= new JSONObject();
+		object.put("type", "creerGroupe");
+		object.put("data", label);
+		envoyerSMS(object.toString());
+	}
+	
+	public void rejoindreGroupe(String label) {
+		JSONObject object =new JSONObject();
+		object.put("type", "joindreGroupe");
+		object.put("data", label);
+		
+		envoyerSMS(object.toString());
+	}
+	public void inscrire() {
+		JSONObject object= new JSONObject();
+		object.put("type", "inscrire");
+		JSONObject objectUser = new JSONObject();
+        objectUser.put("email", user.getEmail());
+        objectUser.put("firstname", user.getFirstname());
+        objectUser.put("lastname", user.getLastname());
+        objectUser.put("avatar", user.getAvatar());
+        objectUser.put("password", user.getPassword());
+        object.put("data", objectUser);
+        envoyerSMS(object.toString());
+	}
 	
 	public static void main(String[] agrs) {
 		Client client= new Client("soume@gmail.com","ibrahima","soume","avatar");
-		
-		client.setServerLocation("192.168.56.1", 8990);
+
+		client.setServerLocation("192.168.0.13", 8990);
 		
 		if(client.connectionServer()) {
 			client.communication();

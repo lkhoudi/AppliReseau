@@ -1,5 +1,5 @@
 import entities.User;
-import entities.UserDbManager;
+import managers.UserDbManager;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
