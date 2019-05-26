@@ -192,6 +192,14 @@ public class Group {
 		return i==users.size();
 	}
 	
+	
+	public int getSize() {
+		
+		return users.size();
+	}
+	public boolean isEmpty() {
+		return getSize()==0;
+	}
 	@Override
 	public boolean equals(Object object) {
 		if(!(object instanceof Group)) {

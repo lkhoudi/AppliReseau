@@ -198,6 +198,18 @@ public class Serveur extends Thread{
 		return test;
 	}
 	
+	
+	public void deconnecterUser(ThreadUserForServer element) {
+		listesUsersSocket.remove(element);
+		users.remove(element.getUser());
+		if(element.getGroupe()!=null) {
+			element.getGroupe().removeUser(element);
+			if(element.getGroupe().isEmpty()) {
+				listesGroupes.remove(element.getGroupe());
+			}
+		}
+	}
+	
 	/**
 	 * 
 	 * @param args

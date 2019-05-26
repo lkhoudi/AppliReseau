@@ -127,6 +127,7 @@ public class Client {
 		
 		if(client.connectionServer()) {
 			client.communication();
+			client.creerGroupe("team");
 		}
 		
 	}

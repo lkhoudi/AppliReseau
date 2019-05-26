@@ -45,6 +45,7 @@ public class ThreadUserForServer extends Thread{
 		}
 		writer.println("fin");
 		try{
+			serveur.deconnecterUser(this);
 			socketUser.close();
 		}
 		catch(IOException e){}
@@ -66,6 +67,10 @@ public class ThreadUserForServer extends Thread{
 		sendMessage("user",user.toJson());
 	}
 	
+	
+	public Group getGroupe() {
+		return groupe;
+	}
 	/**
 	 * 
 	 * @param message
