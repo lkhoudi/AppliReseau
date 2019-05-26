@@ -26,7 +26,14 @@ public class User {
 		this.lastname = lastname;
 		this.avatar = avatar;
 	}
-
+	
+	public User(String email, String firstname, String lastname) {
+		this.email = email;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.avatar="";
+	}
+	
 	public String getLastname() {
 		return lastname;
 	}

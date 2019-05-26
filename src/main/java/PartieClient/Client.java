@@ -8,8 +8,11 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import entities.User;
 import org.json.JSONObject;
+
+import entities.User;
+
+
 
 
 public class Client {
@@ -21,13 +24,14 @@ public class Client {
 	private BufferedReader reader; 
 	private PrintWriter writer; 
 	
-	public Client(String email, String firstname, String lastname, String avatar,int port, InetAddress adresse) {
-		user= new User( email, firstname, lastname, avatar);
+	public Client(String email, String firstname, String lastname,int port, InetAddress adresse) {
+		user= new User( email,firstname,  lastname);
 		setServerLocation(adresse,port);
 	}
 	
-	public Client(String email, String firstname, String lastname, String avatar) {
-		user= new User( email, firstname, lastname, avatar);
+	
+	public Client(String email, String firstname, String lastname) {
+		user= new User( email,firstname,  lastname);
 	}
 	
 	public void setServerLocation(InetAddress adresse, int port ) {
@@ -45,7 +49,7 @@ public class Client {
 	}
 	
 	private boolean connectionServer()  {
-		boolean test;
+		boolean test=false;
 		try {
 			socketClient = new Socket(serveurAdresse, portServeur);
 			reader= new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
@@ -53,9 +57,9 @@ public class Client {
 			inscrire();
 			test= true;
 		} catch (IOException e) {
-			System.out.println(" probleme : le serveur n'est pas disponible");
+			System.out.println(" problème : le serveur n'est pas disponible");
 			test=false;
-		}
+		} 
 		
 		return test;
 	}
@@ -71,7 +75,7 @@ public class Client {
 						reponse=reader.readLine();
 						System.out.println(reponse);
 					} catch (IOException e) {
-						//System.out.println("le client n'arrive pas ï¿½ recevoir la rï¿½ponse");
+						//System.out.println("le client n'arrive pas à recevoir la réponse");
 					}
 				}
 			}
@@ -107,6 +111,7 @@ public class Client {
 		
 		envoyerSMS(object.toString());
 	}
+	
 	public void inscrire() {
 		JSONObject object= new JSONObject();
 		object.put("type", "inscrire");
@@ -116,14 +121,15 @@ public class Client {
         objectUser.put("lastname", user.getLastname());
         objectUser.put("avatar", user.getAvatar());
         objectUser.put("password", user.getPassword());
+        
         object.put("data", objectUser);
         envoyerSMS(object.toString());
 	}
 	
 	public static void main(String[] agrs) {
-		Client client= new Client("soume@gmail.com","ibrahima","soume","avatar");
-
-		client.setServerLocation("192.168.0.13", 8990);
+		Client client= new Client("4de","soume","avatar");
+		
+		client.setServerLocation("192.168.56.1", 8990);
 		
 		if(client.connectionServer()) {
 			client.communication();

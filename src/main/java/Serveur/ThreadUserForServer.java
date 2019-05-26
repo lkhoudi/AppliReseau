@@ -136,6 +136,7 @@ public class ThreadUserForServer extends Thread{
 		salutation.put("email", user.getEmail());
 		salutation.put("firstname", user.getFirstname());
 		salutation.put("lastname", user.getLastname());
+		salutation.put("avatar", user.getAvatar());
 		message.put("salutation", salutation);
 		message.put("message",info);
 		envoyer(message.toString());
@@ -168,6 +169,7 @@ public class ThreadUserForServer extends Thread{
 	public boolean creerGroupe(String data) {
 		JSONObject object= new JSONObject(data);
 		String label=object.getString("label");
+		
 		return serveur.creerGroupe(label,this);
 	}
 	

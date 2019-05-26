@@ -48,6 +48,7 @@ public class Group {
 		this.label=label;
 		users=new HashMap<ThreadUserForServer,Map<Integer,String>>();
 		this.serveur=serveur;
+		System.out.println("Création d'un groupe nom : "+label  );
 	}
 	/**
 	 * 
@@ -64,6 +65,7 @@ public class Group {
 	 * @param user
 	 */
 	public void addUser(ThreadUserForServer user) {
+		System.out.println(" ajout d'un utilisateur : "+user.getName());
 		users.put(user,new HashMap<Integer,String>());
 	}
 	/**
