@@ -39,6 +39,7 @@ public class ThreadUserForServer extends Thread{
 			try{
 
 				salutation(""+i);
+				treatMessageIfReceive();
 				Thread.sleep(1000);
 				i++;
 
@@ -48,13 +49,33 @@ public class ThreadUserForServer extends Thread{
 		}
 		writer.println("fin");
 		try{
-			serveur.deconnecterUser(this);
+			deconnecter();
 			socketUser.close();
 		}
 		catch(IOException e){}
 		
 	}
 	
+	private void treatMessageIfReceive() {
+		String str="";
+		
+		try {
+			
+			if(reader.ready()) {
+				str=reader.readLine();
+				
+			}
+			
+			if((str!=null) && (! str.equals(""))) {
+				treatMessage(str);
+				
+			}
+		} catch (IOException e) {
+			System.out.println(" le serveur n'arrive pas à recevoir le message du client ");
+		}
+		
+	}
+
 	/**
 	 * 
 	 */
@@ -166,11 +187,19 @@ public class ThreadUserForServer extends Thread{
 	 * @param data
 	 * @return
 	 */
-	public boolean creerGroupe(String data) {
-		JSONObject object= new JSONObject(data);
-		String label=object.getString("label");
+	public boolean creerGroupe(String label) {
 		
-		return serveur.creerGroupe(label,this);
+		
+		boolean test=false;
+		
+		if(groupe==null) {
+			test=serveur.creerGroupe(label,this);
+		}
+		else {
+			sendMessage("creerGroupe","Vous avez dèjà un groupe : "+groupe.getLabel());
+		}
+
+		return test;
 	}
 	
 	/**
@@ -178,7 +207,9 @@ public class ThreadUserForServer extends Thread{
 	 * @param message
 	 */
 	public void treatMessage(String message) {
+		
 		if((message!=null)&&(!message.equals(""))){
+
 			JSONObject object= new JSONObject(message);
 			String type=object.getString("type");
 			
@@ -189,7 +220,8 @@ public class ThreadUserForServer extends Thread{
 			}
 			else
 			if(type.equals("creerGroupe")) {
-				creerGroupe(object.getJSONObject("data").toString());
+
+				creerGroupe(object.getString("data"));
 			}
 			else
 			if(type.equals("joindreGroupe")) {
@@ -214,8 +246,14 @@ public class ThreadUserForServer extends Thread{
 			
 			
 		}
+		
 	}
 	
+
+	public void deconnecter() {
+		writer.println("deconnexion");
+		serveur.deconnecterUser(this);
+	}
 	public void setEtatOfUser(String etat) {
 		etatOfUser.setEtat(etat);
 	}

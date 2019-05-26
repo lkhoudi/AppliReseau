@@ -91,9 +91,9 @@ public class Group {
 	 * @param number
 	 * @param message
 	 */
-	public void envoyerSauf(String number, String message) {
+	public void envoyerSauf(String email, String message) {
 		for(Entry<ThreadUserForServer,Map<Integer,String>> elm: users.entrySet()) {
-			if(!elm.getKey().getUser().getEmail().equals(number))
+			if(!elm.getKey().getUser().getEmail().equals(email))
 				elm.getKey().envoyer(message);
 		}
 	}
@@ -200,6 +200,7 @@ public class Group {
 		
 		return users.size();
 	}
+	
 	public boolean isEmpty() {
 		return getSize()==0;
 	}
