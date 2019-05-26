@@ -1,16 +1,7 @@
-package Serveur;
+package entities;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Iterator;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 public class Quizz {
 			

@@ -1,4 +1,4 @@
-package Serveur;
+package entities;
 
 public class EtatGame {
 

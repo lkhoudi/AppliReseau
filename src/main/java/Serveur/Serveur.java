@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import entities.Group;
+import entities.User;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -78,7 +80,7 @@ public class Serveur extends Thread{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(" le serveur est éteint bye ...");
+		System.out.println(" le serveur est ï¿½teint bye ...");
 	}
 	
 	/**

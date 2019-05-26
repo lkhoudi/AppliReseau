@@ -1,12 +1,13 @@
-package Serveur;
+package entities;
 
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
+import Serveur.Serveur;
+import Serveur.ThreadUserForServer;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -90,7 +91,7 @@ public class Group {
 	 */
 	public void envoyerSauf(String number, String message) {
 		for(Entry<ThreadUserForServer,Map<Integer,String>> elm: users.entrySet()) {
-			if(!elm.getKey().getUser().getNumber().equals(number))
+			if(!elm.getKey().getUser().getEmail().equals(number))
 				elm.getKey().envoyer(message);
 		}
 	}

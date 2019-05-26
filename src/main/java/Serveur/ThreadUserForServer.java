@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import entities.EtatGame;
+import entities.Group;
+import entities.User;
 import org.json.JSONObject;
 
 public class ThreadUserForServer extends Thread{
@@ -34,7 +37,7 @@ public class ThreadUserForServer extends Thread{
 		int i=0;
 		while(i<15){
 			try{
-				
+
 				salutation(""+i);
 				Thread.sleep(1000);
 				i++;
@@ -115,11 +118,11 @@ public class ThreadUserForServer extends Thread{
 	
 	/**
 	 * 
-	 * @param number
+	 * @param email
 	 * @return
 	 */
-	public boolean estUser(String number) {
-		return user.getNumber().equals(number);
+	public boolean estUser(String email) {
+		return user.getEmail().equals(email);
 	}
 	
 	/**
@@ -130,8 +133,9 @@ public class ThreadUserForServer extends Thread{
 		JSONObject message= new JSONObject();
 		message.put("type", "salutation");
 		JSONObject salutation = new JSONObject();
-		salutation.put("number", user.getNumber());
-		salutation.put("name", user.getName());
+		salutation.put("email", user.getEmail());
+		salutation.put("firstname", user.getFirstname());
+		salutation.put("lastname", user.getLastname());
 		message.put("salutation", salutation);
 		message.put("message",info);
 		envoyer(message.toString());
@@ -230,8 +234,8 @@ public class ThreadUserForServer extends Thread{
 	public boolean connexion(String jsonString) {
 		boolean test=false;
 		JSONObject objectUser=new JSONObject(jsonString);
-		String name=objectUser.getString("number");
-		String number=objectUser.getString("mdp");
+		String email=objectUser.getString("email");
+		String password=objectUser.getString("password");
 		//verification de la db
 		//instanciation de user et serveur puis informerautre
 		return test;
@@ -239,12 +243,13 @@ public class ThreadUserForServer extends Thread{
 	
 	public void inscrire(String jsonString) {
 		JSONObject objectUser=new JSONObject(jsonString);
-		String name=objectUser.getString("name");
-		String number=objectUser.getString("number");
+		String firstname=objectUser.getString("firstname");
+		String lastname=objectUser.getString("lastname");
+		String email=objectUser.getString("email");
 		String avatar=objectUser.getString("avatar");
-		user= new User(number,name,avatar);
+		user= new User(email,firstname, lastname,avatar);
 		serveur.addUser(user);
 		informerAutre();
-		//inserer l'utilisateur dans la base de données
+		//inserer l'utilisateur dans la base de donnï¿½es
 	}
 }

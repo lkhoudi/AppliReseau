@@ -1,5 +1,10 @@
-package Serveur;
+package game;
 
+
+import entities.EtatGame;
+import entities.Group;
+import entities.Question;
+import entities.Quizz;
 
 import java.util.HashMap;
 import java.util.List;

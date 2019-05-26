@@ -9,10 +9,9 @@ import java.util.Iterator;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
-import Serveur.Question;
-import Serveur.Quizz;
+import entities.Question;
+import entities.Quizz;
 
 public class ParserJson {
 
@@ -50,11 +49,8 @@ public static Quizz jsonparser(String filePath,String niveau) {
 				quizz.add(quest);
 				System.out.println(quest.toJson());
 			}
-		}
-		catch (FileNotFoundException e) { e.printStackTrace(); }
-		catch (IOException e) { e.printStackTrace(); }
-		catch (Exception e) {e.printStackTrace();}
-		return quizz;
+		} catch (Exception e) { e.printStackTrace(); }
+	return quizz;
 	}
 
 
