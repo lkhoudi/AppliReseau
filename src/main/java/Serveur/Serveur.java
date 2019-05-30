@@ -300,7 +300,6 @@ public class Serveur extends Thread{
 	public synchronized void runGame(String theme, String niveau) {
 		
 		if(!canRunGame(theme)) {
-			System.out.println("can not run the game");
 			return;
 		}
 			
