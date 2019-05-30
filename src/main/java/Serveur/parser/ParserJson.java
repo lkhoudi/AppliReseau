@@ -48,7 +48,7 @@ public static Quizz jsonparser(String filePath,String niveau) {
 				String anecdote = element.getString("anecdote");
 				quest.setAnecdode(anecdote);
 				quizz.add(quest);
-				System.out.println(quest.toJson());
+				//System.out.println(quest.toJson());
 			}
 		} catch (Exception e) { e.printStackTrace(); }
 	return quizz;
@@ -57,10 +57,10 @@ public static Quizz jsonparser(String filePath,String niveau) {
 
 	public static void main(String[] args) {
 		String chemin="./src/main/resources/";
-		String[] fichiers= {"animals","bakery","cultureGenerale","mediterranee","music","question","worldCountries"};
+		String[] fichiers= {"animals","bakery","culturegenerale","mediterranee","music","question","worldCountries"};
 		for(String str : fichiers) {
 
-			Quizz quizz=ParserJson.jsonparser(chemin+fichiers[0]+".json","débutant");
+			Quizz quizz=ParserJson.jsonparser(chemin+fichiers[2]+".json","débutant");
 		}
 	}
 }

@@ -7,7 +7,6 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.util.stream.Stream;
 
 import org.json.JSONObject;
 
@@ -116,10 +115,12 @@ public class Client {
 		writer.println(str);
 	}
 	
-	public void creerGroupe(String label) {
+	public void creerGroupe(String label,String theme) {
+		
 		JSONObject object= new JSONObject();
 		object.put("type", "creerGroupe");
 		object.put("data", label);
+		object.put("theme", theme);
 		envoyerSMS(object.toString());
 	}
 	
@@ -131,6 +132,13 @@ public class Client {
 		envoyerSMS(object.toString());
 	}
 	
+	public void quitterGroupe(String label) {
+		JSONObject object =new JSONObject();
+		object.put("type", "quitterGroupe");
+		object.put("data", label);
+		
+		envoyerSMS(object.toString());
+	}
 	public void inscrire() {
 		
 		JSONObject objectUser = new JSONObject();
@@ -142,20 +150,43 @@ public class Client {
         envoyer("inscrire",objectUser.toString());
         
 	}
-
 	
-	public static void main(String[] agrs) {
+	public void deconnecter() {
+		JSONObject object =new JSONObject();
+		object.put("type", "deconnecter");
+		object.put("data", "deconnecter");
+		
+		envoyerSMS(object.toString());
+	}
+	
+	public void commencer() {
+		JSONObject object=new JSONObject();
+		object.put("type","commencer");
+		envoyerSMS(object.toString());
+	}
+	
+	public static void main(String[] agrs) throws InterruptedException {
 		Client client= new Client("4deZZZZ","soume","avatar");
 		
 		client.setServerLocation("192.168.56.1", 8990);
 		
 		if(client.connectionServer()) {
 			client.communication();
-			client.creerGroupe("team");
-			client.creerGroupe("te");
-			client.creerGroupe("team");
-			client.creerGroupe("te");
+			client.creerGroupe("team","animals");
+			client.commencer();
 		}
 		
+		Client client2= new Client("4","soume","avatar");
+		
+		client2.setServerLocation("192.168.56.1", 8990);
+		if(client2.connectionServer()) {
+			client2.communication();
+			client2.creerGroupe("team2","animals");
+			client2.commencer();
+		}
+		
+		Thread.sleep(60000);
+		client.deconnecter();
+		client2.deconnecter();
 	}
 }

@@ -19,6 +19,7 @@ public class ThreadUserForServer extends Thread{
 	private User user;
 	private Group groupe;
 	private EtatGame etatOfUser=new EtatGame();
+	private boolean deconnexion=false;
 	
 	public ThreadUserForServer(Socket clientServerSocket, Serveur serveur) {
 		socketUser=clientServerSocket;
@@ -35,10 +36,8 @@ public class ThreadUserForServer extends Thread{
 	public void run() {
 
 		int i=0;
-		while(i<15){
+		while(!deconnexion){
 			try{
-
-				salutation(""+i);
 				treatMessageIfReceive();
 				Thread.sleep(1000);
 				i++;
@@ -176,24 +175,13 @@ public class ThreadUserForServer extends Thread{
 	 * @param data
 	 * @return
 	 */
-	public boolean joindreUnGroupe(String data) {
-		JSONObject object= new JSONObject(data);
-		String labelGroupe=object.getString("label");
-		return serveur.ajouterDansGroupe(labelGroupe,this);
-	}
-	
-	/**
-	 * 
-	 * @param data
-	 * @return
-	 */
-	public boolean creerGroupe(String label) {
-		
+	public boolean joindreUnGroupe(String label) {
 		
 		boolean test=false;
 		
 		if(groupe==null) {
-			test=serveur.creerGroupe(label,this);
+			test=serveur.ajouterDansGroupe(label,this);
+			
 		}
 		else {
 			sendMessage("creerGroupe","Vous avez dèjà un groupe : "+groupe.getLabel());
@@ -202,6 +190,44 @@ public class ThreadUserForServer extends Thread{
 		return test;
 	}
 	
+	/**
+	 * 
+	 * @param data
+	 * @return
+	 */
+	public boolean creerGroupe(String label,String theme) {
+		
+		
+		boolean test=false;
+		
+		if(groupe==null) {
+			test=serveur.creerGroupe(label,theme,this);
+		}
+		else {
+			sendMessage("creerGroupe","Vous avez dèjà un groupe : "+groupe.getLabel());
+		}
+
+		return test;
+	}
+	
+	public boolean quitterGroupe(String label) {
+			
+		
+		boolean test=false;
+		
+		if(groupe!=null&&(groupe.getLabel().toLowerCase().equals(label.toLowerCase()))) {
+			test=serveur.quitterGroupe(label,this);
+			if(test==true) {
+				groupe=null;
+				sendMessage("quitterGroupe","Vous venez de quitter le groupe :"+label);
+			}
+		}
+		else {
+			sendMessage("quitterGroupe","Vous n'etes dans un groupe");
+		}
+
+		return test;
+	}
 	/**
 	 * 
 	 * @param message
@@ -221,15 +247,16 @@ public class ThreadUserForServer extends Thread{
 			else
 			if(type.equals("creerGroupe")) {
 
-				creerGroupe(object.getString("data"));
+				creerGroupe(object.getString("data"),object.getString("theme"));
 			}
 			else
 			if(type.equals("joindreGroupe")) {
-				 joindreUnGroupe(object.getJSONObject("data").toString());
+				 joindreUnGroupe(object.getString("data"));
 			}
 			else
 			if(type.equals("commencer")) {
 				etatOfUser.setEtat("pret");
+				sendMessage("etat","vous venez de change d'état maintenant tu es pret ");
 			}
 			else
 			if(type.equals("etatConnexion")) {
@@ -243,7 +270,14 @@ public class ThreadUserForServer extends Thread{
 			if(type.equals("connexion")) {
 				
 			}
-			
+			else
+			if(type.equals("quitterGroupe")) {
+				quitterGroupe(object.getString("data"));
+			}
+			else
+			if(type.equals("deconnecter")) {
+				deconnecter();
+			}
 			
 		}
 		
@@ -251,8 +285,9 @@ public class ThreadUserForServer extends Thread{
 	
 
 	public void deconnecter() {
-		writer.println("deconnexion");
+		envoyer("fin");
 		serveur.deconnecterUser(this);
+		deconnexion=true;
 	}
 	public void setEtatOfUser(String etat) {
 		etatOfUser.setEtat(etat);
@@ -279,6 +314,10 @@ public class ThreadUserForServer extends Thread{
 		//verification de la db
 		//instanciation de user et serveur puis informerautre
 		return test;
+	}
+	
+	public EtatGame getEtatUser() {
+		return etatOfUser;
 	}
 	
 	public void inscrire(String jsonString) {
