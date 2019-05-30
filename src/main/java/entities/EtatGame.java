@@ -24,4 +24,9 @@ public class EtatGame {
 	public void setEtat(String value) {
 		etat=value;
 	}
+	
+	@Override 
+	public String toString() {
+		return etat;
+	}
 }

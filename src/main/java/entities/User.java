@@ -26,7 +26,14 @@ public class User {
 		this.lastname = lastname;
 		this.avatar = avatar;
 	}
-
+	
+	public User(String email, String firstname, String lastname) {
+		this.email = email;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.avatar="";
+	}
+	
 	public String getLastname() {
 		return lastname;
 	}
@@ -94,7 +101,7 @@ public class User {
 		userJson.put("email", email);
 		userJson.put("avatar", avatar);
 		object.put("type", "user");
-		object.put("user", userJson);
+		object.put("data", userJson);
 		return object.toString();
 	}
 

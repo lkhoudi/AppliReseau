@@ -39,7 +39,7 @@ public class Quizz {
 	
 	public boolean finish() {
 	
-		return idQuestion >=questions.size();
+		return idQuestion+1 >=questions.size();
 	}
 	
 	public void recommence() {
