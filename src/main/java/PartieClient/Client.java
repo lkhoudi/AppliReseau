@@ -10,6 +10,8 @@ import java.net.UnknownHostException;
 
 import org.json.JSONObject;
 
+import Serveur.parser.ParserJson;
+import entities.Question;
 import entities.User;
 
 
@@ -71,7 +73,7 @@ public class Client {
 			public void run() {
 				String reponse="";
 				while(!reponse.equals("fin")) {
-						reponse=treatMessage();
+						reponse=treat();
 					
 				}
 			}
@@ -82,20 +84,8 @@ public class Client {
 		return true;
 	}
 	
-	public String treatMessage() {
-		String str="";
-		try {
-			if(reader.ready()) {
-				
-				str=reader.readLine();
-				if(!str.equals(""))
-					System.out.println(str);
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return str;
-	}
+
+	
 	public void repondre(int idQuestion, String response) {
 			JSONObject object= new JSONObject();
 			object.put("type", "reponse");
@@ -124,6 +114,54 @@ public class Client {
 		envoyerSMS(object.toString());
 	}
 	
+	public String treat() {
+		try {
+			if(reader.ready()) {
+				String message=reader.readLine();
+				treadMSG(message);
+				System.out.println(message);
+				return message;
+			}
+		} catch (IOException e) {
+				System.out.println(" pas de message ");
+		}
+		return "";
+	}
+	
+	
+	public void treadMSG(String message) {
+	
+		if((message!=null)&&(!message.equals(""))){
+			System.out.println(message);
+			JSONObject object= new JSONObject(message);
+			String type=object.getString("type");
+			
+			if(type.equals("question")) {
+				String objectQuestion =object.getString("data");
+				System.out.println(objectQuestion);
+				afficherQuestion(objectQuestion);
+			}
+			else
+			if(type.equals("creerGroupe")) {
+				System.out.println(object.getString("data"));
+			}
+			else
+			if(type.equals("joindreGroupe")) {
+				System.out.println(object.getString("data"));
+			}
+			else
+			if(type.equals("reponseGroupe")) {
+				System.out.println(object.getString("data"));
+			}
+			else
+				if(type.equals("users")) {
+					
+				}
+				else
+				System.out.println(message);
+			
+		}
+	}
 	public void rejoindreGroupe(String label) {
 		JSONObject object =new JSONObject();
 		object.put("type", "joindreGroupe");
@@ -149,6 +187,19 @@ public class Client {
         objectUser.put("password", user.getPassword());
         envoyer("inscrire",objectUser.toString());
         
+	}
+	
+	public void afficherQuestion(String question) {
+		System.out.println(question);
+		Question quest=ParserJson.parserQuestion(question);
+		
+		System.out.println(" Question "+quest.getQuestion());
+		Object proposition[]=quest.getPropositions().toArray();
+		
+		for(int i=0; i<proposition.length;i++) {
+			System.out.println(" "+i+ " :"+proposition[i].toString());
+			// id to answer
+		}
 	}
 	
 	public void deconnecter() {

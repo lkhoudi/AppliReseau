@@ -49,7 +49,7 @@ public class Group {
 		this.label=label;
 		users=new HashMap<ThreadUserForServer,Map<Integer,String>>();
 		this.serveur=serveur;
-		System.out.println("Cr�ation d'un groupe nom : "+label  );
+		System.out.println("Création d'un groupe nom : "+label  );
 	}
 	/**
 	 * 
@@ -81,9 +81,12 @@ public class Group {
 	 * 
 	 * @param message
 	 */
-	public synchronized  void envoyerAll(String message) {
+	public synchronized  void envoyerAll(String type,String message) {
+		JSONObject object= new JSONObject();
+		object.put("type", type);
+		object.put("data", message);
 		for( Entry<ThreadUserForServer, Map<Integer, String>> elm: users.entrySet()) {
-			elm.getKey().envoyer(message);
+			elm.getKey().envoyer(object.toString());
 		}
 	}
 	
@@ -164,21 +167,8 @@ public class Group {
 	public synchronized  void sendQuestion(Question quest) {
 		if(etat.estEnCours()) {
 			this.question=quest;
-			JSONObject object= new JSONObject();
-			object.put("type", "question");
-			JSONObject object2=new JSONObject();
-			object2.put("id", quest.getId());
-			object2.put("question", quest.getQuestion());
-			JSONArray array= new JSONArray();
-			List<String> propositions=quest.getPropositions();
-			for(String str: propositions) {
-				JSONObject ob =new JSONObject();
-				ob.put("proposition", str);
-				array.put(ob.toString());
-			}
-			object2.put("propositions", array);
-			object.put("data", object2.toString());
-			envoyerAll(object.toString());
+			System.out.println(quest.toJSon());
+			envoyerAll("question",quest.toJson());
 		}
 	}
 	/**
@@ -217,7 +207,7 @@ public class Group {
 	public synchronized  boolean allMemberPret() {
 		
 		//envoyerAll("le serveur est entrain de tester si tous les joueurs de "+label+"  sont prets");
-		envoyerAll("le nombre de user : "+users.size());
+		//envoyerAll("le nombre de user : "+users.size());
 		for(ThreadUserForServer user :users.keySet()) {
 			user.sendMessage("testEtat","le serveur est entrain de tester si tu es pret : "+user.getEtatUser().toString());
 			if(!user.estPret()) {
@@ -232,13 +222,13 @@ public class Group {
 		boolean test=false;
 		
 		if(allMemberPret()) {
-			envoyerAll("Actuellement tous les membres de "+label+" sont prets");
+			envoyerAll("information","Actuellement tous les membres de "+label+" sont prets");
 			for(ThreadUserForServer user : users.keySet()) {
 				user.setEtatOfUser("encours");
 				user.sendMessage("etat", "ton etat est encours");
 			}
 			etat.setEtat("encours");
-			envoyerAll("le jeu est maintenant en cours");
+			envoyerAll("information","le jeu est maintenant en cours");
 			test=true;
 		}
 		return test;

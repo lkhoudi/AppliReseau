@@ -93,16 +93,13 @@ public class Jeu extends Thread{
 	}
 	
 	public void sendAll(String type, String message) {
-		JSONObject object= new JSONObject();
-		
-		object.put("type",type);
-		object.put("data",message);
-		envoyerSMS(object.toString());
+	
+		envoyerSMS(type,message);
 	}
 	
-	private void envoyerSMS(String message) {
+	private void envoyerSMS(String type,String message) {
 		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) 
-			group.getKey().envoyerAll(message);
+			group.getKey().envoyerAll(type,message);
 	}
 	
 	/**

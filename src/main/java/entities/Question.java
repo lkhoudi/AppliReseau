@@ -70,7 +70,7 @@ public class Question {
 		this.propositions = propositions;
 	}
 
-	public String getAnecdode() {
+	public String getAnecdote() {
 		return anecdote;
 	}
 
@@ -95,4 +95,24 @@ public class Question {
 		return object.toString();
 	}
 	
+	public String toJSon() {
+		JSONObject object2=new JSONObject();
+		
+		
+		object2.put("question", getQuestion());
+		JSONArray array= new JSONArray();
+		List<String> propositions=getPropositions();
+		
+		for(String str: propositions) {
+			JSONObject ob =new JSONObject();
+			ob.put("proposition", str);
+			array.put(ob.toString());
+		}
+		object2.put("réponse",getReponse());
+		object2.put("anecdote",getAnecdote());
+		object2.put("propositions", array);
+		object2.put("id",1332);
+		return object2.toString();
+		
+	}
 }

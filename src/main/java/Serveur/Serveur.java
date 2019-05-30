@@ -308,7 +308,7 @@ public class Serveur extends Thread{
 		for(Group groupe : listesGroupes) {
 			
 			if(theme.toLowerCase().equals(groupe.getTheme().toLowerCase())) {
-				groupe.envoyerAll(" sur le point de lancer la partie le th�me du ");
+				groupe.envoyerAll("information"," sur le point de lancer la partie : "+theme);
 				groupe.demarrer();
 				jeu.addGroup(groupe);
 				

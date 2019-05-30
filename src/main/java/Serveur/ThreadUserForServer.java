@@ -29,7 +29,7 @@ public class ThreadUserForServer extends Thread{
 			writer= new PrintWriter(socketUser.getOutputStream(),true);
 			String reponse=reader.readLine();
 			treatMessage(reponse);
-			writer.println("bonjour vous venez de vous connecter sur le port "+socketUser.getLocalPort());
+			sendMessage("information", "bonjour vous venez de vous connecter sur le port "+socketUser.getLocalPort());
 		}catch(IOException e) {}
 	}
 
@@ -46,7 +46,7 @@ public class ThreadUserForServer extends Thread{
 			catch(Exception e){}
 			
 		}
-		writer.println("fin");
+		sendMessage("information","fin");
 		try{
 			deconnecter();
 			socketUser.close();
@@ -70,7 +70,7 @@ public class ThreadUserForServer extends Thread{
 				
 			}
 		} catch (IOException e) {
-			System.out.println(" le serveur n'arrive pas à recevoir le message du client ");
+			System.out.println(" le serveur n'arrive pas ï¿½ recevoir le message du client ");
 		}
 		
 	}
@@ -184,7 +184,7 @@ public class ThreadUserForServer extends Thread{
 			
 		}
 		else {
-			sendMessage("creerGroupe","Vous avez dèjà un groupe : "+groupe.getLabel());
+			sendMessage("creerGroupe","Vous avez dï¿½jï¿½ un groupe : "+groupe.getLabel());
 		}
 
 		return test;
@@ -204,7 +204,7 @@ public class ThreadUserForServer extends Thread{
 			test=serveur.creerGroupe(label,theme,this);
 		}
 		else {
-			sendMessage("creerGroupe","Vous avez dèjà un groupe : "+groupe.getLabel());
+			sendMessage("creerGroupe","Vous avez dï¿½jï¿½ un groupe : "+groupe.getLabel());
 		}
 
 		return test;
@@ -256,7 +256,7 @@ public class ThreadUserForServer extends Thread{
 			else
 			if(type.equals("commencer")) {
 				etatOfUser.setEtat("pret");
-				sendMessage("etat","vous venez de change d'état maintenant tu es pret ");
+				sendMessage("etat","vous venez de change d'Ã©tat maintenant tu es pret ");
 			}
 			else
 			if(type.equals("etatConnexion")) {

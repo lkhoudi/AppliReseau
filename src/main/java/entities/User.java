@@ -101,7 +101,7 @@ public class User {
 		userJson.put("email", email);
 		userJson.put("avatar", avatar);
 		object.put("type", "user");
-		object.put("user", userJson);
+		object.put("data", userJson);
 		return object.toString();
 	}
 
