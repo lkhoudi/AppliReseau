@@ -114,7 +114,6 @@ public class Jeu extends Thread{
 		int i=0;
 		
 		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) {
-			group.getKey().envoyerAll("vous avez r�pondu");
 			if(group.getValue().containsKey(idQuestion)) {
 				i++;
 			}
