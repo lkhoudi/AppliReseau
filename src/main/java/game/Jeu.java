@@ -88,6 +88,7 @@ public class Jeu extends Thread{
 	 * To initialize the groups
 	 */
 	private void initialize() {
+		
 		groups=new HashMap<Group,Map<Integer,String>>();
 	}
 	
@@ -191,6 +192,7 @@ public class Jeu extends Thread{
 	 */
 	public boolean allGroupPret() {
 		boolean test=true;
+		
 		for(Group group: groups.keySet()) {
 			if(!group.allMemberPret()) {
 				test=false;

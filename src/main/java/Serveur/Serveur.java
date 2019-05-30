@@ -306,7 +306,9 @@ public class Serveur extends Thread{
 			
 		Jeu jeu=new Jeu(theme,niveau);
 		for(Group groupe : listesGroupes) {
-			if(theme.toLowerCase().equals(groupe.getLabel().toLowerCase())) {
+			
+			if(theme.toLowerCase().equals(groupe.getTheme().toLowerCase())) {
+				groupe.envoyerAll(" sur le point de lancer la partie le thème du ");
 				groupe.demarrer();
 				jeu.addGroup(groupe);
 				
