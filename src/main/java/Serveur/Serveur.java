@@ -32,11 +32,11 @@ public class Serveur extends Thread{
 	 */
 	public Serveur(int port)  {
 		//InetSocketAddress sAddr = new InetSocketAddress(host, port);
-		listesUsersSocket= new ArrayList<ThreadUserForServer>();
+		listesUsersSocket= (List<ThreadUserForServer>) new ArrayList<ThreadUserForServer>();
 		System.out.println(" lancement du serveur");
 		users=new ArrayList<User>();
 		listesGroupes= new ArrayList<Group>();
-		listesUsersSocket= new ArrayList<ThreadUserForServer>();
+		listesUsersSocket= (List<ThreadUserForServer>) new ArrayList<ThreadUserForServer>();
 		try {
 			server = new ServerSocket(port);
 			//server.bind(sAddr);

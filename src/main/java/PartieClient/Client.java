@@ -166,22 +166,26 @@ public class Client {
 	}
 	
 	public static void main(String[] agrs) throws InterruptedException {
+
 		Client client= new Client("njebzub","Rania1","avatar");
 		
-		client.setServerLocation("192.168.43.65", 8990);
 		
+		String add="192.168.43.65";
+		String add2="192.168.56.1";
+		
+		client.setServerLocation(add, 8990);
 		if(client.connectionServer()) {
 			client.communication();
 			client.rejoindreGroupe("team");
 			client.commencer();
 		}
-		
 		Client client2= new Client("4","Rania2","avatar");
 		
-		client2.setServerLocation("192.168.43.65", 8990);
+		client2.setServerLocation(add, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
 			client2.rejoindreGroupe("team2");
+			Thread.sleep(5000);
 			client2.commencer();
 		}
 		
