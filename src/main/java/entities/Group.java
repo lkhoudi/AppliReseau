@@ -49,7 +49,7 @@ public class Group {
 		this.label=label;
 		users=new HashMap<ThreadUserForServer,Map<Integer,String>>();
 		this.serveur=serveur;
-		System.out.println("Création d'un groupe nom : "+label  );
+		System.out.println("Crï¿½ation d'un groupe nom : "+label  );
 	}
 	/**
 	 * 

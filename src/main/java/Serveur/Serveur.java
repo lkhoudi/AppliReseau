@@ -32,11 +32,11 @@ public class Serveur extends Thread{
 	 */
 	public Serveur(int port)  {
 		//InetSocketAddress sAddr = new InetSocketAddress(host, port);
-		listesUsersSocket= new ArrayList<ThreadUserForServer>();
+		listesUsersSocket= (List<ThreadUserForServer>) new ArrayList<ThreadUserForServer>();
 		System.out.println(" lancement du serveur");
 		users=new ArrayList<User>();
 		listesGroupes= new ArrayList<Group>();
-		listesUsersSocket= new ArrayList<ThreadUserForServer>();
+		listesUsersSocket= (List<ThreadUserForServer>) new ArrayList<ThreadUserForServer>();
 		try {
 			server = new ServerSocket(port);
 			//server.bind(sAddr);
@@ -59,7 +59,7 @@ public class Serveur extends Thread{
 					}
 					if(canRunGame("animals")) {
 						//System.out.println("#############################################################");
-						 runGame("animals","débutant");
+						 runGame("animals","dï¿½butant");
 					}
 				}
 			}
@@ -100,7 +100,7 @@ public class Serveur extends Thread{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(" le serveur est éteint bye ...");
+		System.out.println(" le serveur est ï¿½teint bye ...");
 	}
 	
 	/**
@@ -174,7 +174,7 @@ public class Serveur extends Thread{
 					if(!group.contains(user)) {
 						group.addUser(user);
 						user.setGroup(group);
-						user.sendMessage("rejoindreGroupe", "tu as été bien ajouté dans "+group.getLabel());
+						user.sendMessage("rejoindreGroupe", "tu as ï¿½tï¿½ bien ajoutï¿½ dans "+group.getLabel());
 						testAdd=true;
 					}
 					break;
@@ -182,7 +182,7 @@ public class Serveur extends Thread{
 			}
 		}
 		else {
-			user.sendMessage("rejoudreGroupe","tu as déjà un groupe ");
+			user.sendMessage("rejoudreGroupe","tu as dï¿½jï¿½ un groupe ");
 		}
 		return testAdd;
 	}
@@ -198,21 +198,21 @@ public class Serveur extends Thread{
 		boolean testAdd=false;
 		Group groupe= new Group(label, this);
 		groupe.setTheme(theme);
-		System.out.println(" Vous etes sur le point de créer un groupe");
+		System.out.println(" Vous etes sur le point de crï¿½er un groupe");
 		
 		if((!(listesGroupes.contains(groupe))) &&(!userEstDansGroup(user))) {
 			groupe.addUser(user);
 			user.setGroup(groupe);
 			listesGroupes.add(groupe);
 			testAdd=true;
-			user.sendMessage("creerGroupe", "Le groupe "+label+" avec le theme :"+theme+" a été bien créé");
+			user.sendMessage("creerGroupe", "Le groupe "+label+" avec le theme :"+theme+" a ï¿½tï¿½ bien crï¿½ï¿½");
 		}
 		else
 			if(userEstDansGroup(user)) {
-				user.sendMessage("creerGroupe", "vous ete dèjà dans un groupe");
+				user.sendMessage("creerGroupe", "vous ete dï¿½jï¿½ dans un groupe");
 			}
 			else {
-				user.sendMessage("creerGroupe", "Veillez changer le nom de cet groupe car l existe dèjà");
+				user.sendMessage("creerGroupe", "Veillez changer le nom de cet groupe car l existe dï¿½jï¿½");
 			}
 		return testAdd;
 	}
@@ -243,7 +243,7 @@ public class Serveur extends Thread{
 		
 		if(element.getGroupe()!=null) {
 			element.getGroupe().removeUser(element);
-			element.sendMessage("deconnecter","Vous venez de vous déconnecter  bye");
+			element.sendMessage("deconnecter","Vous venez de vous dï¿½connecter  bye");
 			if(element.getGroupe().isEmpty()) {
 				
 				listesGroupes.remove(element.getGroupe());
@@ -308,7 +308,7 @@ public class Serveur extends Thread{
 		for(Group groupe : listesGroupes) {
 			
 			if(theme.toLowerCase().equals(groupe.getTheme().toLowerCase())) {
-				groupe.envoyerAll(" sur le point de lancer la partie le thème du ");
+				groupe.envoyerAll(" sur le point de lancer la partie le thï¿½me du ");
 				groupe.demarrer();
 				jeu.addGroup(groupe);
 				
