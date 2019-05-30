@@ -45,10 +45,13 @@ public static Quizz jsonparser(String filePath,String niveau) {
 				Question quest= new Question(id,reponse,  question);
 				JSONArray propositionsArray =element.getJSONArray("propositions");
 				Iterator<Object> propositions = propositionsArray.iterator();
+				for(int k=0; k<propositionsArray.length();k++) {
+					quest.addProposition(propositionsArray.getString(k));
+				}
 				String anecdote = element.getString("anecdote");
 				quest.setAnecdode(anecdote);
 				quizz.add(quest);
-				//System.out.println(quest.toJson());
+				System.out.println(quest.toJson());
 			}
 		} catch (Exception e) { e.printStackTrace(); }
 	return quizz;

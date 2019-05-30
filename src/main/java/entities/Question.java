@@ -3,6 +3,7 @@ package entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class Question {
@@ -83,7 +84,13 @@ public class Question {
 		object.put("question",question);
 		object.put("reponse", reponse);
 		object.put("anecdote", anecdote);
+		JSONArray jsonArray=new JSONArray();
 		
+	
+		for(int i=0; i<propositions.size(); i++)
+			jsonArray.put(propositions.get(i));
+		//System.out.println(propositions.toString());
+		object.put("propositions",jsonArray);
 		
 		return object.toString();
 	}

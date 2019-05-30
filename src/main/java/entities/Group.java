@@ -221,7 +221,7 @@ public class Group {
 		for(ThreadUserForServer user :users.keySet()) {
 			user.sendMessage("testEtat","le serveur est entrain de tester si tu es pret : "+user.getEtatUser().toString());
 			if(!user.estPret()) {
-				envoyerAll("teste pour commencer le jeu malheuresement "+user.getName()+ "n'est pas prets");
+				//envoyerAll("teste pour commencer le jeu malheuresement "+user.getName()+ "n'est pas prets");
 				return false;
 			}
 		}
