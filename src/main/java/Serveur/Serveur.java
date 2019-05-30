@@ -59,7 +59,7 @@ public class Serveur extends Thread{
 					}
 					if(canRunGame("animals")) {
 						//System.out.println("#############################################################");
-						 runGame("animals","d�butant");
+						 runGame("animals","débutant");
 					}
 				}
 			}

@@ -173,18 +173,18 @@ public class Client {
 		String add="192.168.43.65";
 		String add2="192.168.56.1";
 		
-		client.setServerLocation(add, 8990);
+		client.setServerLocation(add2, 8990);
 		if(client.connectionServer()) {
 			client.communication();
-			client.rejoindreGroupe("team");
+			client.creerGroupe("team","animals");
 			client.commencer();
 		}
 		Client client2= new Client("4","Rania2","avatar");
 		
-		client2.setServerLocation(add, 8990);
+		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
-			client2.rejoindreGroupe("team2");
+			client2.creerGroupe("team2","animals");
 			Thread.sleep(5000);
 			client2.commencer();
 		}

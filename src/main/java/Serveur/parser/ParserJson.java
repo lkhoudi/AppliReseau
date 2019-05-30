@@ -31,7 +31,7 @@ public static Quizz jsonparser(String filePath,String niveau) {
 	        } 
 			 
 			JSONObject jsonObject =new JSONObject(string.toString());
-			String theme = (String) jsonObject.get("thème");
+			String theme = (String) jsonObject.get("thÃ¨me");
 			JSONObject data = jsonObject.getJSONObject("quizz");
 			
 			quizz=new Quizz(theme,niveau);
@@ -40,7 +40,7 @@ public static Quizz jsonparser(String filePath,String niveau) {
 			for(int i=0; i<array.length();i++) {
 				JSONObject element=array.getJSONObject(i);
 				int id=element.getInt("id");
-				String reponse=element.getString("réponse");
+				String reponse=element.getString("rÃ©ponse");
 				String question=element.getString("question");
 				Question quest= new Question(id,reponse,  question);
 				JSONArray propositionsArray =element.getJSONArray("propositions");
@@ -63,7 +63,7 @@ public static Quizz jsonparser(String filePath,String niveau) {
 		String[] fichiers= {"animals","bakery","culturegenerale","mediterranee","music","question","worldCountries"};
 		for(String str : fichiers) {
 
-			Quizz quizz=ParserJson.jsonparser(chemin+fichiers[2]+".json","débutant");
+			Quizz quizz=ParserJson.jsonparser(chemin+fichiers[0]+".json","dÃ©butant");
 		}
 	}
 }
