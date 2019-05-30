@@ -57,7 +57,7 @@ public class Client {
 			inscrire();
 			test= true;
 		} catch (IOException e) {
-			System.out.println(" problème : le serveur n'est pas disponible");
+			System.out.println(" problï¿½me : le serveur n'est pas disponible");
 			test=false;
 		} 
 		
@@ -166,22 +166,22 @@ public class Client {
 	}
 	
 	public static void main(String[] agrs) throws InterruptedException {
-		Client client= new Client("4deZZZZ","soume","avatar");
+		Client client= new Client("njebzub","Rania1","avatar");
 		
-		client.setServerLocation("192.168.56.1", 8990);
+		client.setServerLocation("192.168.43.65", 8990);
 		
 		if(client.connectionServer()) {
 			client.communication();
-			client.creerGroupe("team","animals");
+			client.rejoindreGroupe("team");
 			client.commencer();
 		}
 		
-		Client client2= new Client("4","soume","avatar");
+		Client client2= new Client("4","Rania2","avatar");
 		
-		client2.setServerLocation("192.168.56.1", 8990);
+		client2.setServerLocation("192.168.43.65", 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
-			client2.creerGroupe("team2","animals");
+			client2.rejoindreGroupe("team2");
 			client2.commencer();
 		}
 		
