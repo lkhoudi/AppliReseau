@@ -113,7 +113,7 @@ public class Jeu extends Thread{
 		int i=0;
 		
 		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) {
-			group.getKey().envoyerAll("vous avez répondu");
+			group.getKey().envoyerAll("vous avez rï¿½pondu");
 			if(group.getValue().containsKey(idQuestion)) {
 				i++;
 			}
@@ -133,7 +133,7 @@ public class Jeu extends Thread{
 	}
 
 	/**
-	 * This method help as to send a question for all team
+	 * This method send a question for all team
 	 */
 	public void sendQuestion() {
 		Question question=questions.getQuestion();
@@ -176,7 +176,7 @@ public class Jeu extends Thread{
 	}
 	
 	/**
-	 * This method modifiate the etat of all team 
+	 * This method modifies the state of all team members 
 	 */
 	public void startAllGroup() {
 		for(Group group: groups.keySet()) {
@@ -186,7 +186,7 @@ public class Jeu extends Thread{
 	}
 	
 	/**
-	 * Testing if all team are finish to there preparation 
+	 * Testing if all team members are prepared for the start
 	 * @return
 	 */
 	public boolean allGroupPret() {
@@ -201,7 +201,7 @@ public class Jeu extends Thread{
 	}
 	
 	/**
-	 * This method parser the data to an object
+	 * This method parses the data into an object
 	 */
 	private void initializeData() {
 		String chemin="./src/main/resources/";
