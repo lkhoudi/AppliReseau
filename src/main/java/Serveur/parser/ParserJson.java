@@ -57,9 +57,10 @@ public static Quizz jsonparser(String filePath,String niveau) {
 		Question question;
 		
 		JSONObject object= new JSONObject(stringQuestion);
-		int id=object.getInt("id");
+		
 		String reponse=object.getString("réponse");
 		String quest=object.getString("question");
+		Integer id=object.getInt("id");
 		question= new Question(id,reponse,  quest);
 		
 		JSONArray propositionsArray =object.getJSONArray("propositions");
@@ -86,12 +87,13 @@ public static Quizz jsonparser(String filePath,String niveau) {
 	public static List<User> parserListUser(String usersString){
 		List<User> users= new ArrayList();
 
-		JSONObject jsonObject =new JSONObject(usersString);
+		JSONArray jsonArray =new JSONArray(usersString);
 
-		JSONArray array= jsonObject.getJSONArray("data");
-		
-		for(int i=0;i<array.length();i++) {
-			users.add(parserUser(array.getJSONObject(i).toString()));
+		for(int i=0;i<jsonArray.length();i++) {
+			System.out.println("json array " + jsonArray);
+			
+			System.out.println(jsonArray.getJSONObject(i).toString());
+			//users.add(parserUser(jsonArray.getJSONObject(i).toString()));
 		}
 		return users;
 	}

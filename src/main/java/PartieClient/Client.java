@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.List;
 
 import org.json.JSONObject;
 
@@ -88,7 +89,7 @@ public class Client {
 	
 	public void repondre(int idQuestion, String response) {
 			JSONObject object= new JSONObject();
-			object.put("type", "reponse");
+			object.put("type", "réponse");
 			object.put("data", response);
 			envoyerSMS(object.toString());
 	}
@@ -119,7 +120,6 @@ public class Client {
 			if(reader.ready()) {
 				String message=reader.readLine();
 				treadMSG(message);
-				System.out.println(message);
 				return message;
 			}
 		} catch (IOException e) {
@@ -138,7 +138,6 @@ public class Client {
 			
 			if(type.equals("question")) {
 				String objectQuestion =object.getString("data");
-				System.out.println(objectQuestion);
 				afficherQuestion(objectQuestion);
 			}
 			else
@@ -155,11 +154,19 @@ public class Client {
 			}
 			else
 				if(type.equals("users")) {
-					
+					afficherUsers(object.getString("data"));
 				}
 				else
 				System.out.println(message);
 			
+		}
+	}
+	
+	public void afficherUsers(String message) {
+		List<User> users=ParserJson.parserListUser(message);
+		
+		for(User user: users) {
+			System.out.println("email :"+user.getEmail()+" lastName "+user.getLastname()+" s'est connecté");
 		}
 	}
 	public void rejoindreGroupe(String label) {
@@ -190,7 +197,7 @@ public class Client {
 	}
 	
 	public void afficherQuestion(String question) {
-		System.out.println(question);
+		
 		Question quest=ParserJson.parserQuestion(question);
 		
 		System.out.println(" Question "+quest.getQuestion());

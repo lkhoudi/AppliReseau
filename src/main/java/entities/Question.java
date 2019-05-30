@@ -78,22 +78,7 @@ public class Question {
 		this.anecdote = anectode;
 	}
 	
-	public String toJson() {
-		JSONObject object=new JSONObject();
-		
-		object.put("question",question);
-		object.put("reponse", reponse);
-		object.put("anecdote", anecdote);
-		JSONArray jsonArray=new JSONArray();
-		
 	
-		for(int i=0; i<propositions.size(); i++)
-			jsonArray.put(propositions.get(i));
-		//System.out.println(propositions.toString());
-		object.put("propositions",jsonArray);
-		
-		return object.toString();
-	}
 	
 	public String toJSon() {
 		JSONObject object2=new JSONObject();
@@ -104,14 +89,14 @@ public class Question {
 		List<String> propositions=getPropositions();
 		
 		for(String str: propositions) {
-			JSONObject ob =new JSONObject();
-			ob.put("proposition", str);
-			array.put(ob.toString());
+			//JSONObject ob =new JSONObject();
+			//ob.put("proposition", str);
+			array.put(str);
 		}
 		object2.put("réponse",getReponse());
 		object2.put("anecdote",getAnecdote());
 		object2.put("propositions", array);
-		object2.put("id",1332);
+		object2.put("id",getId());
 		return object2.toString();
 		
 	}

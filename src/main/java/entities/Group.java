@@ -152,7 +152,7 @@ public class Group {
 		if(contains(user)) {
 			JSONObject object=new JSONObject(response);
 			int idQuestion=object.getInt("id");
-			String reponse=object.getString("response");
+			String reponse=object.getString("réponse");
 			Map<Integer,String > lastValue=users.get(user);
 			lastValue.put(idQuestion,reponse);
 			users.replace(user, lastValue);
@@ -168,7 +168,7 @@ public class Group {
 		if(etat.estEnCours()) {
 			this.question=quest;
 			System.out.println(quest.toJSon());
-			envoyerAll("question",quest.toJson());
+			envoyerAll("question",quest.toJSon());
 		}
 	}
 	/**

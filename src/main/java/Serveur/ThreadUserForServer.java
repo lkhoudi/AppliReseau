@@ -70,7 +70,7 @@ public class ThreadUserForServer extends Thread{
 				
 			}
 		} catch (IOException e) {
-			System.out.println(" le serveur n'arrive pas � recevoir le message du client ");
+			System.out.println(" le serveur n'arrive pas à recevoir le message du client ");
 		}
 		
 	}
@@ -184,7 +184,7 @@ public class ThreadUserForServer extends Thread{
 			
 		}
 		else {
-			sendMessage("creerGroupe","Vous avez d�j� un groupe : "+groupe.getLabel());
+			sendMessage("creerGroupe","Vous avez déjà un groupe : "+groupe.getLabel());
 		}
 
 		return test;
@@ -204,7 +204,7 @@ public class ThreadUserForServer extends Thread{
 			test=serveur.creerGroupe(label,theme,this);
 		}
 		else {
-			sendMessage("creerGroupe","Vous avez d�j� un groupe : "+groupe.getLabel());
+			sendMessage("creerGroupe","Vous avez déjà un groupe : "+groupe.getLabel());
 		}
 
 		return test;
