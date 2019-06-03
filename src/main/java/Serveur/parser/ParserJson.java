@@ -88,12 +88,10 @@ public static Quizz jsonparser(String filePath,String niveau) {
 		List<User> users= new ArrayList();
 
 		JSONArray jsonArray =new JSONArray(usersString);
-
+		
 		for(int i=0;i<jsonArray.length();i++) {
-			System.out.println("json array " + jsonArray);
 			
-			System.out.println(jsonArray.getJSONObject(i).toString());
-			//users.add(parserUser(jsonArray.getJSONObject(i).toString()));
+			users.add(parserUser( jsonArray.getJSONObject(i).toString()));
 		}
 		return users;
 	}
@@ -104,7 +102,10 @@ public static Quizz jsonparser(String filePath,String niveau) {
 		String[] fichiers= {"animals","bakery","culturegenerale","mediterranee","music","question","worldCountries"};
 		for(String str : fichiers) {
 
-			Quizz quizz=ParserJson.jsonparser(chemin+fichiers[0]+".json","débutant");
+			//Quizz quizz=ParserJson.jsonparser(chemin+fichiers[0]+".json","débutant");
 		}
+		
+		JSONArray arr= new JSONArray("[]");
+		System.out.println(arr.length());
 	}
 }

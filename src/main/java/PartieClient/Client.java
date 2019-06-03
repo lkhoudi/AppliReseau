@@ -154,6 +154,7 @@ public class Client {
 			}
 			else
 				if(type.equals("users")) {
+					System.out.println(object.getString("data"));
 					afficherUsers(object.getString("data"));
 				}
 				else
