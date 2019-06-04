@@ -74,7 +74,6 @@ public static Quizz jsonparser(String filePath,String niveau) {
 	
 	public static User parserUser(String userString) {
 		User user;
-		
 		JSONObject object =new JSONObject(userString);
 		String email=object.getString("email");
 		String firstname=object.getString("firstname");
@@ -86,7 +85,9 @@ public static Quizz jsonparser(String filePath,String niveau) {
 	
 	public static List<User> parserListUser(String usersString){
 		List<User> users= new ArrayList();
-
+		System.out.println(" vous tenter de parser ...=======================");
+		System.out.println(usersString);
+		System.out.println("_________________________________");
 		JSONArray jsonArray =new JSONArray(usersString);
 		
 		for(int i=0;i<jsonArray.length();i++) {
@@ -105,7 +106,7 @@ public static Quizz jsonparser(String filePath,String niveau) {
 			//Quizz quizz=ParserJson.jsonparser(chemin+fichiers[0]+".json","débutant");
 		}
 		
-		JSONArray arr= new JSONArray("[]");
-		System.out.println(arr.length());
+		JSONArray arr= new JSONArray("{\"firstname\":\"Rania2\",\"avatar\":\"\",\"email\":\"4\",\"lastname\":\"avatar\"}");
+		System.out.println(arr);
 	}
 }

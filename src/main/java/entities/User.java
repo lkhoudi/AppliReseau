@@ -9,7 +9,7 @@ public class User {
 	private String lastname;
 	private String password;
 	private boolean active;
-	private String avatar;
+	private String avatar="inconnu";
 	
 	public User(String email, String firstname, String lastname, String password, boolean active, String avatar) {
 		this.email = email;
@@ -20,11 +20,11 @@ public class User {
 		this.avatar=avatar;
 	}
 
-	public User(String email, String firstname, String lastname, String avatar) {
+	public User(String email, String firstname, String lastname, String password) {
 		this.email = email;
 		this.firstname = firstname;
 		this.lastname = lastname;
-		this.avatar = avatar;
+		this.password = password;
 	}
 	
 	public User(String email, String firstname, String lastname) {
@@ -88,21 +88,28 @@ public class User {
 		}
 		User user=(User) anObject;
 		
-		return user.firstname.equals(firstname)&&(user.avatar.equals(avatar))&&(user.email.equals(email));
+		return user.email.equals(email);
 	}
 	
 	
-	public String toJson() {
-		JSONObject object =new JSONObject();
+	public String toJsonString() {
 		JSONObject userJson= new JSONObject();
 		
 		userJson.put("firstname", firstname);
 		userJson.put("lastname", lastname);
 		userJson.put("email", email);
 		userJson.put("avatar", avatar);
-		object.put("type", "user");
-		object.put("data", userJson);
-		return object.toString();
+		return userJson.toString();
+	}
+	
+	public JSONObject toJsonObject() {
+		JSONObject userJson= new JSONObject();
+		
+		userJson.put("firstname", firstname);
+		userJson.put("lastname", lastname);
+		userJson.put("email", email);
+		userJson.put("avatar", avatar);
+		return userJson;
 	}
 
 }
