@@ -26,6 +26,7 @@ public class Client {
 	private Socket socketClient;
 	private BufferedReader reader; 
 	private PrintWriter writer; 
+	private boolean deconnecter=false;
 	
 	public Client(String email, String firstname, String lastname,int port, InetAddress adresse) {
 		user= new User( email,firstname,  lastname);
@@ -72,10 +73,8 @@ public class Client {
 		Thread connexionThread = new Thread( new Runnable() {
 			
 			public void run() {
-				String reponse="";
-				while(!reponse.equals("fin")) {
-						reponse=treat();
-					
+				while(!deconnecter) {
+						treat();
 				}
 			}
 		});
@@ -129,7 +128,7 @@ public class Client {
 	}
 	
 	
-	public void treadMSG(String message) {
+	public synchronized void treadMSG(String message) {
 	
 		if((message!=null)&&(!message.equals(""))){
 			System.out.println(message);
@@ -153,20 +152,51 @@ public class Client {
 				System.out.println(object.getString("data"));
 			}
 			else
-				if(type.equals("users")) {
-					System.out.println(object.getString("data"));
-					afficherUsers(object.getString("data"));
-				}
-				else
+			if(type.equals("users")) {
+				afficherUsers(object.getString("data"));
+			}
+			else
+			if(type.equals("user")) {
+				afficherUser(object.getString("data"));
+			}
+			else
+			if(type.equals("fin")) {
+				System.out.println(object.getString("data"));
+				deconnecter=true;
+			}
+			else
+			if(type.equals("message")) {
+				System.out.println(" mesasge receive");
+				System.out.println("voici le message qque vous avez recu "+ object.toString());
+			}
+			else
 				System.out.println(message);
 			
 		}
 	}
 	
 	public void afficherUsers(String message) {
-		List<User> users=ParserJson.parserListUser(message);
 		
+		List<User> users=ParserJson.parserListUser(message);
+		if(users.isEmpty()) {
+			System.out.println("vous etes le premier a vous connecté");
+		}
+		else
+			System.out.println("voici la liste des utilisateurs qui sont en ligne");
 		for(User user: users) {
+			afficher(user);
+		}
+		
+	}
+	
+	public void afficherUser(String message) {
+		System.out.println(message);
+		User user=ParserJson.parserUser(message);
+		afficher(user);
+	}
+	
+	public void afficher(User user) {
+		if(user!=null) {
 			System.out.println("email :"+user.getEmail()+" lastName "+user.getLastname()+" s'est connecté");
 		}
 	}
@@ -200,7 +230,7 @@ public class Client {
 	public void afficherQuestion(String question) {
 		
 		Question quest=ParserJson.parserQuestion(question);
-		
+		   
 		System.out.println(" Question "+quest.getQuestion());
 		Object proposition[]=quest.getPropositions().toArray();
 		
@@ -236,20 +266,69 @@ public class Client {
 		if(client.connectionServer()) {
 			client.communication();
 			client.creerGroupe("team","animals");
-			client.commencer();
+			//client.commencer();
 		}
-		Client client2= new Client("4","Rania2","avatar");
+		Client client2= new Client("2","Rania2","avatar");
 		
 		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
 			client2.creerGroupe("team2","animals");
-			Thread.sleep(5000);
-			client2.commencer();
+			
+			//client2.commencer();
 		}
 		
-		Thread.sleep(60000);
-		client.deconnecter();
-		client2.deconnecter();
+		Client client3= new Client("3","Rania3","avatar");
+		
+		client3.setServerLocation(add2, 8990);
+		if(client3.connectionServer()) {
+			client3.communication();
+			client3.rejoindreGroupe("team2" );
+			
+			//client3.commencer();
+		}
+		
+		Client client4= new Client("4","Rania4","avatar");
+		
+		client4.setServerLocation(add2, 8990);
+		if(client4.connectionServer()) {
+			client4.communication();
+			client4.rejoindreGroupe("team2" );
+			
+			Thread.sleep(5000);
+			//client4.commencer();
+		}
+		
+		Client client5= new Client("5","Rania5","avatar");
+		Thread.sleep(10000);
+		
+		client5.setServerLocation(add2, 8990);
+		if(client5.connectionServer()) {
+			client5.communication();
+			client5.creerGroupe("team3","animals");
+			
+			//client5.commencer();
+		}
+		
+		
+		Client client6= new Client("6","Rania5","avatar");
+		//Thread.sleep(5000);
+		
+		client6.setServerLocation(add2, 8990);
+		if(client6.connectionServer()) {
+			client6.communication();
+			client6.creerGroupe("team4","animals");
+			
+			//client5.commencer();
+		}
+		
+		client3.envoyer("message", "{\"data\":comment vas}");
+		client6.envoyer("message", "{\"data\":comment vas}");
+		client5.envoyer("message", "{\"data\":comment vas}");
+		client2.envoyer("message", "{\"data\":comment vas}");
+		client4.envoyer("message", "{\"data\":comment vas}");
+		//Thread.sleep(60000);
+		//client.deconnecter();
+		//client2.deconnecter();
 	}
 }

@@ -76,13 +76,13 @@ public class Serveur extends Thread{
 		System.out.println(" Serveur listening ...");
 		
 		try {
-			while(i<6) {
+			while(i<16) {
 				
 				Socket socket =  server.accept();
 				System.out.println(" Serveur accepted on connexion ...");
 				ThreadUserForServer userSocket=new ThreadUserForServer(socket,this);
 				userSocket.start();
-				listesUsersSocket.add(userSocket);
+				//listesUsersSocket.add(userSocket);
 				i++;
 			}
 		} catch (IOException e) {
@@ -133,7 +133,7 @@ public class Serveur extends Thread{
 		JSONArray array= new JSONArray();
 		
 		for(User user: users) {
-			array.put(user.toJson());
+			array.put(user.toJsonString());
 		}
 		
 		return array.toString();
@@ -144,10 +144,21 @@ public class Serveur extends Thread{
 		JSONArray array= new JSONArray();
 		
 		for(User user: users) {
+			System.out.println(user.toString());
 			if(!user.equals(uti))
-				array.put(user.toJson());
+				array.put(user.toJsonObject());
 		}
 		
+		return array.toString();
+	}
+	
+	
+	public synchronized String getAllGroupeJson() {
+		JSONArray array= new JSONArray();
+		
+		for(Group group : listesGroupes) {
+			array.put(group.toJsonDescription());
+		}
 		return array.toString();
 	}
 	/**
@@ -287,6 +298,9 @@ public class Serveur extends Thread{
 		return test;
 	}
 	
+	public int getSizeUser() {
+		return listesUsersSocket.size();
+	}
 	public synchronized int nbGroupe(String theme) {
 		int i=0;
 		
@@ -318,7 +332,11 @@ public class Serveur extends Thread{
 			
 		
 	}
-	
+	public void sendAll(String type, String message) {
+		for(ThreadUserForServer threadUser : listesUsersSocket) {
+			threadUser.sendMessage(type,message);
+		}
+	}
 	/**
 	 * 
 	 * @param args

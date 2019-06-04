@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 import Serveur.Serveur;
 import Serveur.ThreadUserForServer;
@@ -209,7 +210,7 @@ public class Group {
 		//envoyerAll("le serveur est entrain de tester si tous les joueurs de "+label+"  sont prets");
 		//envoyerAll("le nombre de user : "+users.size());
 		for(ThreadUserForServer user :users.keySet()) {
-			user.sendMessage("testEtat","le serveur est entrain de tester si tu es pret : "+user.getEtatUser().toString());
+			//user.sendMessage("testEtat","état de "+user.getName()+" est "+user.getEtatUser().toString());
 			if(!user.estPret()) {
 				//envoyerAll("teste pour commencer le jeu malheuresement "+user.getName()+ "n'est pas prets");
 				return false;
@@ -237,7 +238,43 @@ public class Group {
 		theme=them;
 	}
 	
+	
+	public String listUsers() {
+		
+		JSONArray array= new JSONArray();
+		
+		for(ThreadUserForServer user: users.keySet()) {
+			array.put(user.getUser().toJsonString());
+		}
+		
+		return array.toString();
+	}
+	
+	
+	public synchronized String getUsersJSONWithout(ThreadUserForServer uti) {
+		
+		JSONArray array= new JSONArray();
+		
+		for(ThreadUserForServer user: users.keySet()) {
+			if(!user.equals(uti))
+				array.put(user.getUser().toJsonObject());
+		}
+		
+		return array.toString();
+	}
+	
+	public synchronized String toJsonDescription() {
+		JSONObject object =new JSONObject();
+		
+		object.put("thème", theme);
+		object.put("label", label);
+		return object.toString();
+	}
 	public synchronized String getTheme() {
 		return theme;
+	}
+	
+	public Set<ThreadUserForServer> getUsers(){
+		return users.keySet();
 	}
 }
