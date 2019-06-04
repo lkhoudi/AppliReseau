@@ -51,7 +51,7 @@ public class Client {
 		}
 	}
 	
-	private boolean connectionServer()  {
+	public boolean connectionServer()  {
 		boolean test=false;
 		try {
 			socketClient = new Socket(serveurAdresse, portServeur);
@@ -226,11 +226,11 @@ public class Client {
 	
 	public static void main(String[] agrs) throws InterruptedException {
 
-		Client client= new Client("njebzub","Rania1","avatar");
+		Client client= new Client("mail","Rania1","avatar");
 		
 		
 		String add="192.168.43.65";
-		String add2="172.17.2.206";
+		String add2="192.168.43.53";
 		
 		client.setServerLocation(add2, 8990);
 		if(client.connectionServer()) {
