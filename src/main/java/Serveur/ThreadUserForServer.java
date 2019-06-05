@@ -24,23 +24,20 @@ public class ThreadUserForServer extends Thread{
 	public ThreadUserForServer(Socket clientServerSocket, Serveur serveur) {
 		socketUser=clientServerSocket;
 		this.serveur=serveur;
+		groupe=null;
 		try{
 			reader=new BufferedReader(new InputStreamReader(socketUser.getInputStream()));
 			writer= new PrintWriter(socketUser.getOutputStream(),true);
 			treatMessageIfReceive();
-			sendMessage("information", "bonjour vous venez de vous connecter sur le port "+socketUser.getLocalPort());
+			//sendMessage("information", "bonjour vous venez de vous connecter sur le port "+socketUser.getLocalPort());
 		}catch(IOException e) {}
 	}
 
 	public void run() {
 
-		int i=0;
 		while(!deconnexion){
 			try{
 				treatMessageIfReceive();
-				Thread.sleep(1000);
-				i++;
-
 			}
 			catch(Exception e){}
 			
@@ -102,7 +99,7 @@ public class ThreadUserForServer extends Thread{
 	
 	public void sendGroupes() {
 		String usersString=serveur.getAllGroupeJson();
-		
+		System.out.println(usersString);
 		sendMessage("groupes",usersString);
 	}
 	public Group getGroupe() {
@@ -133,7 +130,7 @@ public class ThreadUserForServer extends Thread{
 	/**
 	 * 
 	 */
-	public synchronized void informerAutre() {
+	public  void informerAutre() {
 		if(serveur.getSizeUser()>1)
 			sendMessage("users",serveur.getUsersJSONWithout(user));
 		for(ThreadUserForServer threadUser : serveur.getListesUsersSocket()) {
@@ -191,7 +188,7 @@ public class ThreadUserForServer extends Thread{
 	 * @param data
 	 * @return
 	 */
-	public synchronized boolean joindreUnGroupe(String label) {
+	public  boolean joindreUnGroupe(String label) {
 		
 		boolean test=false;
 		
@@ -213,25 +210,29 @@ public class ThreadUserForServer extends Thread{
 	 * @param data
 	 * @return
 	 */
-	public synchronized boolean creerGroupe(String label,String theme) {
+	public  boolean creerGroupe(String label,String theme) {
 		
+		 
 		
 		boolean test=false;
-		
+		System.out.println("vous tentez de créer un groupe ");
 		if(groupe==null) {
+			
 			test=serveur.creerGroupe(label,theme,this);
+			if(test)
+				System.out.println(" le groupe est créé");
 			serveur.sendAll("groupe",groupe.toJsonDescription());
 			sendMessage("tonGroupe",groupe.toJsonDescription());
 		}
 		else {
 			sendMessage("creerGroupe","Vous avez déjà un groupe : "+groupe.getLabel());
-			
+			System.out.println("vous ne pouvez pas créer groupe "+groupe.toJsonDescription());
 		}
 
 		return test;
 	}
 	
-	public synchronized boolean quitterGroupe(String label) {
+	public  boolean quitterGroupe(String label) {
 			
 		
 		boolean test=false;
@@ -253,7 +254,7 @@ public class ThreadUserForServer extends Thread{
 	 * 
 	 * @param message
 	 */
-	public synchronized void treatMessage(String message) {
+	public  void treatMessage(String message) {
 		
 		if((message!=null)&&(!message.equals(""))){
 
@@ -331,12 +332,12 @@ public class ThreadUserForServer extends Thread{
 		}
 	}
 	
-	public synchronized void deconnecter() {
+	public  void deconnecter() {
 		serveur.deconnecterUser(this);
 		deconnexion=true;
 		sendMessage("fin","vous n'etes plus connecté");
 	}
-	public synchronized void setEtatOfUser(String etat) {
+	public  void setEtatOfUser(String etat) {
 		etatOfUser.setEtat(etat);
 	}
 	
@@ -353,7 +354,7 @@ public class ThreadUserForServer extends Thread{
 	}
 	
 	
-	public synchronized  boolean connexion(String jsonString) {
+	public   boolean connexion(String jsonString) {
 		boolean test=false;
 		JSONObject objectUser=new JSONObject(jsonString);
 		String email=objectUser.getString("email");
@@ -369,11 +370,11 @@ public class ThreadUserForServer extends Thread{
 		return test;
 	}
 	
-	public synchronized EtatGame getEtatUser() {
+	public  EtatGame getEtatUser() {
 		return etatOfUser;
 	}
 	
-	public synchronized  void inscrire(String jsonString) {
+	public   void inscrire(String jsonString) {
 		JSONObject objectUser=new JSONObject(jsonString);
 		String firstname=objectUser.getString("firstname");
 		String lastname=objectUser.getString("lastname");

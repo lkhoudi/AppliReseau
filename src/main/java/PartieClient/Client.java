@@ -269,12 +269,12 @@ public class Client {
 			//client.commencer();
 		}
 		Client client2= new Client("2","Rania2","avatar");
-		
+		Thread.sleep(5000);
 		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
 			client2.creerGroupe("team2","animals");
-			
+			 
 			//client2.commencer();
 		}
 		
@@ -283,50 +283,17 @@ public class Client {
 		client3.setServerLocation(add2, 8990);
 		if(client3.connectionServer()) {
 			client3.communication();
-			client3.rejoindreGroupe("team2" );
+			//client3.rejoindreGroupe("team2" );
 			
 			//client3.commencer();
 		}
 		
-		Client client4= new Client("4","Rania4","avatar");
-		
-		client4.setServerLocation(add2, 8990);
-		if(client4.connectionServer()) {
-			client4.communication();
-			client4.rejoindreGroupe("team2" );
-			
-			Thread.sleep(5000);
-			//client4.commencer();
-		}
-		
-		Client client5= new Client("5","Rania5","avatar");
-		Thread.sleep(10000);
-		
-		client5.setServerLocation(add2, 8990);
-		if(client5.connectionServer()) {
-			client5.communication();
-			client5.creerGroupe("team3","animals");
-			
-			//client5.commencer();
-		}
 		
 		
-		Client client6= new Client("6","Rania5","avatar");
-		//Thread.sleep(5000);
 		
-		client6.setServerLocation(add2, 8990);
-		if(client6.connectionServer()) {
-			client6.communication();
-			client6.creerGroupe("team4","animals");
-			
-			//client5.commencer();
-		}
 		
 		client3.envoyer("message", "{\"data\":comment vas}");
-		client6.envoyer("message", "{\"data\":comment vas}");
-		client5.envoyer("message", "{\"data\":comment vas}");
 		client2.envoyer("message", "{\"data\":comment vas}");
-		client4.envoyer("message", "{\"data\":comment vas}");
 		//Thread.sleep(60000);
 		//client.deconnecter();
 		//client2.deconnecter();

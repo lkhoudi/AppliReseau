@@ -45,7 +45,6 @@ public static Quizz jsonparser(String filePath,String niveau) {
 				
 				Question quest=parserQuestion(array.getJSONObject(i).toString());
 				quizz.add(quest);
-				//System.out.println(quest.toJson());
 			}
 		} catch (Exception e) { e.printStackTrace(); }
 	return quizz;
@@ -84,10 +83,8 @@ public static Quizz jsonparser(String filePath,String niveau) {
 	}
 	
 	public static List<User> parserListUser(String usersString){
-		List<User> users= new ArrayList();
-		System.out.println(" vous tenter de parser ...=======================");
-		System.out.println(usersString);
-		System.out.println("_________________________________");
+		List<User> users= new ArrayList<User>();
+		
 		JSONArray jsonArray =new JSONArray(usersString);
 		
 		for(int i=0;i<jsonArray.length();i++) {
