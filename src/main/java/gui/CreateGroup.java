@@ -272,27 +272,17 @@ public class CreateGroup extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String add = "10.11.9.26";
-        String userName = jTextField1.getText();
-        String groupName = jTextField2.getText();
-        System.out.println("\n\nGroupName : " + groupName);
-
-        String theme = "";
-        for (Enumeration<AbstractButton> buttons = buttonGroup1.getElements(); buttons.hasMoreElements();) {
-            AbstractButton button = buttons.nextElement();
-
-            if (button.isSelected()) {
-                 theme = button.getText();
-                 System.out.println("\n\nTheme : " + theme);
-            }
-        }
+        String add = "";
+        String groupName = jTextField1.getText();
+        String userName = jTextField2.getText();
+        String groupTheme = buttonGroup1.getSelection().toString();
 
         Client client = new Client("", userName, ""); 
         client.setServerLocation(add, 8990);
             
         if(client.connectionServer()) {
 			client.communication();
-			client.creerGroupe(groupName, theme);
+			client.creerGroupe(groupName, groupTheme);
 			client.commencer();
 			new Game().setVisible(true);
 			this.setVisible(false);
