@@ -185,7 +185,7 @@ public class ThreadUserForServer extends Thread{
 	
 	/**
 	 * 
-	 * @param data
+	 * @param
 	 * @return
 	 */
 	public  boolean joindreUnGroupe(String label) {
@@ -207,7 +207,7 @@ public class ThreadUserForServer extends Thread{
 	
 	/**
 	 * 
-	 * @param data
+	 * @param
 	 * @return
 	 */
 	public  boolean creerGroupe(String label,String theme) {
@@ -278,7 +278,7 @@ public class ThreadUserForServer extends Thread{
 			else
 			if(type.equals("commencer")) {
 				etatOfUser.setEtat("pret");
-				sendMessage("etat","vous venez de change d'état maintenant tu es pret ");
+				sendMessage("etat","vous venez de changer d'état maintenant tu es pret ");
 			}
 			else
 			if(type.equals("etatConnexion")) {

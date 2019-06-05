@@ -229,11 +229,11 @@ public class Client {
 	public static void main(String[] agrs) throws InterruptedException {
 
 		Client client= new Client("mail","Rania1","avatar");
-		
-		
+
+
 		String add="192.168.43.65";
-		String add2="192.168.43.53";
-		
+		String add2="10.11.9.26";
+
 		client.setServerLocation(add2, 8990);
 		if(client.connectionServer()) {
 			client.communication();
@@ -254,4 +254,15 @@ public class Client {
 		client.deconnecter();
 		client2.deconnecter();
 	}
+
+//	public static void main(String[] s) {
+//		Client client = new Client("", "Lydia", "");
+//		client.setServerLocation("192.168.43.53", 8990);
+//
+//		if (client.connectionServer()) {
+//			client.communication();
+//			client.creerGroupe("G1", "Animals");
+//			client.commencer();
+//		}
+//	}
 }
