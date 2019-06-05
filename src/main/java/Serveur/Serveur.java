@@ -71,7 +71,7 @@ public class Serveur extends Thread{
 	/**
 	 * 
 	 */
-	public synchronized void run() {
+	public void run() {
 		int i=1;
 		System.out.println(" Serveur listening ...");
 		
