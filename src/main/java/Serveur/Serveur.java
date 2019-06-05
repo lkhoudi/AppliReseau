@@ -71,7 +71,7 @@ public class Serveur extends Thread{
 	/**
 	 * 
 	 */
-	public  void run() {
+	public synchronized void run() {
 		int i=1;
 		System.out.println(" Serveur listening ...");
 		
@@ -205,22 +205,22 @@ public class Serveur extends Thread{
 	 * @param user
 	 * @return
 	 */
-	public synchronized boolean creerGroupe(String label,String theme, ThreadUserForServer user) {
+	public  boolean creerGroupe(String label,String theme, ThreadUserForServer user) {
 		boolean testAdd=false;
 		Group groupe= new Group(label, this);
 		groupe.setTheme(theme);
-		System.out.println(" Vous etes sur le point de cr�er un groupe");
+		System.out.println(" +++++++++++++++++++++++++++++++++++++++ ");
 		
 		if((!(listesGroupes.contains(groupe))) &&(!userEstDansGroup(user))) {
 			groupe.addUser(user);
 			user.setGroup(groupe);
 			listesGroupes.add(groupe);
 			testAdd=true;
-			user.sendMessage("creerGroupe", "Le groupe "+label+" avec le theme :"+theme+" a �t� bien cr��");
+			user.sendMessage("creerGroupe", "Le groupe "+label+" avec le theme :"+theme+" a été bien créé");
 		}
 		else
 			if(userEstDansGroup(user)) {
-				user.sendMessage("creerGroupe", "vous ete d�j� dans un groupe");
+				user.sendMessage("creerGroupe", "vous ete déjà dans un groupe");
 			}
 			else {
 				user.sendMessage("creerGroupe", "Veillez changer le nom de cet groupe car l existe d�j�");
@@ -234,7 +234,7 @@ public class Serveur extends Thread{
 	 * @return
 	 */
 	
-	public synchronized boolean userEstDansGroup(ThreadUserForServer user) {
+	public  boolean userEstDansGroup(ThreadUserForServer user) {
 		boolean test=false;
 		for(Group groupe: listesGroupes) {
 			if(groupe.contains(user)) {

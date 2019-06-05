@@ -77,7 +77,7 @@ public class Client {
 				String reponse="";
 				while(!reponse.equals("fin")) {
 						reponse=treat();
-					
+
 				}
 			}
 		});
@@ -167,7 +167,7 @@ public class Client {
 	
 	public void afficherUsers(String message) {
 		List<User> users=ParserJson.parserListUser(message);
-		
+
 		for(User user: users) {
 			System.out.println("email :"+user.getEmail()+" lastName "+user.getLastname()+" s'est connecté");
 		}
@@ -202,7 +202,7 @@ public class Client {
 	public void afficherQuestion(String question) {
 		
 		Question quest=ParserJson.parserQuestion(question);
-		
+
 		System.out.println(" Question "+quest.getQuestion());
 		Object proposition[]=quest.getPropositions().toArray();
 		
@@ -241,7 +241,7 @@ public class Client {
 			client.commencer();
 		}
 		Client client2= new Client("4","Rania2","avatar");
-		
+		Thread.sleep(5000);
 		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
@@ -249,7 +249,7 @@ public class Client {
 			Thread.sleep(5000);
 			client2.commencer();
 		}
-		
+
 		Thread.sleep(60000);
 		client.deconnecter();
 		client2.deconnecter();
