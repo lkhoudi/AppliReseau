@@ -10,9 +10,12 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import PartieClient.Groupe;
+import PartieClient.Message;
 import entities.Question;
 import entities.Quizz;
 import entities.User;
@@ -94,6 +97,40 @@ public static Quizz jsonparser(String filePath,String niveau) {
 		return users;
 	}
 	
+	
+	public static Groupe parserGroupe(String userString)  {
+		
+		JSONObject object =new JSONObject(userString);
+		String label=object.getString("label");
+		String theme=object.getString("thème");
+
+		return new  Groupe( label,  theme);
+	}
+
+	public static List<Groupe> parserListGroupes(String usersString) throws JSONException {
+		List<Groupe> teams= new ArrayList();
+		JSONArray jsonArray =new JSONArray(usersString);
+
+		for(int i=0;i<jsonArray.length();i++) {
+			teams.add(parserGroupe(jsonArray.get(i).toString()));
+		}
+		return teams;
+	}
+
+	 public static Message parserMessage(String message )  {
+		 JSONObject object = null;
+		 Message message1=null;
+		 try {
+			 object = new JSONObject(message);
+			 String email = object.getString("email");
+			 String msg=object.getString("message");
+			 message1=new Message(email,msg);
+		 } catch (JSONException e) {
+			 e.printStackTrace();
+		 }
+
+		 return  message1;
+	 }
 	
 	public static void main(String[] args) {
 		String chemin="./src/main/resources/";
