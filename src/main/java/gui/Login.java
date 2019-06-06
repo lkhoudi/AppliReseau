@@ -178,8 +178,6 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        setjList1("G2");
-        setjList1("G1");
         pack();
     }// </editor-fold>//GEN-END:initComponents
 

@@ -9,6 +9,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.List;
 
+import entities.Group;
 import gui.Game;
 import gui.Login;
 import gui.Walcome;
@@ -150,10 +151,11 @@ public class Client {
 	
 	public void treadMSG(String message) {
 			System.out.println("\n\n\n treat msg");
+			System.out.println("\n\n\n msg " + message);
+
 		if((message!=null)&&(!message.equals(""))){
 			System.out.println(message);
 			JSONObject object= new JSONObject(message);
-			Login.setjList1("G3");
 			String type=object.getString("type");
 			
 			if(type.equals("question")) {
@@ -166,7 +168,7 @@ public class Client {
 			if(type.equals("creerGroupe")) {
 				System.out.println(object.getString("data"));
 				Groupe team=ParserJson.parserGroupe(object.getString("data"));
-				Login.setjList1("G3");
+				Login.setjList1(team.getLabel());
 				if(!groupes.contains(team)) {
 					groupes.add(team);
 				}
@@ -200,7 +202,7 @@ public class Client {
 			if(type.equals("message")) {
 				System.out.println(object.getString("data"));
 				Message msg =ParserJson.parserMessage(object.getString("data"));
-
+				Game.setjList1(msg.getEmail()+" : "+msg.getMsg());
 				if(!messages.contains(msg)) {
 						messages.add(msg);
 					}
