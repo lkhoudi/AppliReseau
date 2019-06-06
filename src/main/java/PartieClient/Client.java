@@ -9,6 +9,8 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.List;
 
+import gui.Game;
+import gui.Walcome;
 import org.json.JSONObject;
 
 import Serveur.parser.ParserJson;
@@ -143,13 +145,15 @@ public class Client {
 	
 	
 	public void treadMSG(String message) {
-	
+			System.out.println("\n\n\n treat msg");
 		if((message!=null)&&(!message.equals(""))){
 			System.out.println(message);
 			JSONObject object= new JSONObject(message);
 			String type=object.getString("type");
 			
 			if(type.equals("question")) {
+				System.out.println("\n\n\n question");
+
 				String objectQuestion =object.getString("data");
 				afficherQuestion(objectQuestion);
 			}
@@ -244,13 +248,16 @@ public class Client {
 	}
 	
 	public void afficherQuestion(String question) {
-		
+
 		Question quest=ParserJson.parserQuestion(question);
 
 		System.out.println(" Question "+quest.getQuestion());
-		Object proposition[] = quest.getPropositions().toArray();
-		currentQuestion = quest;
-		
+
+		Game.setjLabel2(quest);
+        currentQuestion = quest;
+		Walcome.client.currentQuestion = currentQuestion;
+        Object proposition[]=quest.getPropositions().toArray();
+
 		for(int i=0; i<proposition.length;i++) {
 			System.out.println(" "+i+ " :"+proposition[i].toString());
 			// id to answer

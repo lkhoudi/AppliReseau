@@ -253,9 +253,7 @@ public class Game extends javax.swing.JFrame {
     }
 
     //Fill with questions
-    public void setjLabel2() {
-        Question question = Walcome.client.getCurrentQuestion();
-        System.out.println("\n\n\n\n\nJlabel" + jLabel2);
+    public static void setjLabel2(Question question) {
         jLabel2.setText(question.getQuestion());
     }
 
@@ -279,7 +277,7 @@ public class Game extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel2;
+    private static javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
