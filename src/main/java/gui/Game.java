@@ -266,16 +266,15 @@ public class Game extends javax.swing.JFrame {
     }
 
     public static void setButtonGroup1(List<String> s) {
-        int i = 0;
-        AbstractButton button = null;
-        for (Enumeration<AbstractButton> buttons = buttonGroup1.getElements(); i<4;) {
-            System.out.println("\nNb buttons : " +buttonGroup1.getButtonCount());
-            button = buttons.nextElement();
-            button.setText(s.get(i));
-            System.out.println("\ni : " + i);
-            i++;
-        }
-        button.setText(s.get(i));
+
+        jRadioButton1.setText(s.get(0));
+        jRadioButton2.setText(s.get(1));
+        jRadioButton3.setText(s.get(2));
+        jRadioButton4.setText(s.get(3));
+        buttonGroup1.add(jRadioButton1);
+        buttonGroup1.add(jRadioButton2);
+        buttonGroup1.add(jRadioButton3);
+        buttonGroup1.add(jRadioButton4);
 
     }
 
@@ -305,9 +304,9 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
+    private static javax.swing.JRadioButton jRadioButton1;
+    private static javax.swing.JRadioButton jRadioButton2;
+    private static javax.swing.JRadioButton jRadioButton3;
+    private static javax.swing.JRadioButton jRadioButton4;
     // End of variables declaration//GEN-END:variables
 }
