@@ -5,6 +5,8 @@
  */
 package gui;
 
+import javax.swing.*;
+
 /**
  *
  * @author khoudi
@@ -59,9 +61,8 @@ public class End extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 102));
         jLabel1.setText("Συγχαρητήρια! Έχετε κερδίσει ένα ταξίδι στη Μύκονο");
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setIcon(new ImageIcon("./src/main/resources/Mykonos.jpg"));
 
-        jLabel4.setText("jLabel4");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -141,6 +142,15 @@ public class End extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+
+
+    public void setjLabel4(String winnerName, String userScore) {
+
+        jLabel4.setFont(new java.awt.Font("Ani", 3, 40)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel4.setText(winnerName +" ! Score : "+userScore);
+    }
 
     /**
      * @param args the command line arguments
