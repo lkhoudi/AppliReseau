@@ -57,9 +57,9 @@ public class Serveur extends Thread{
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					if(canRunGame("animals")) {
+					if(canRunGame("Animals")) {
 						//System.out.println("#############################################################");
-						 runGame("animals","débutant");
+						 runGame("Animals","débutant");
 					}
 				}
 			}

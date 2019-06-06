@@ -48,6 +48,8 @@ public static Quizz jsonparser(String filePath,String niveau) {
 				
 				Question quest=parserQuestion(array.getJSONObject(i).toString());
 				quizz.add(quest);
+
+				System.out.println(quest.toJSon());
 			}
 		} catch (Exception e) { e.printStackTrace(); }
 	return quizz;
