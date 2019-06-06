@@ -1,7 +1,6 @@
 package Serveur;
 
 import java.io.IOException;
-import java.net.BindException;
 import java.net.ServerSocket;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,11 +53,9 @@ public class Serveur extends Thread{
 					try {
 						Thread.sleep(7000);
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 					if(canRunGame("Animals")) {
-						//System.out.println("#############################################################");
 						 runGame("Animals","débutant");
 					}
 				}
@@ -290,13 +287,11 @@ public class Serveur extends Thread{
 	public  boolean canRunGame(String theme) {
 		boolean test=true;
 		if(nbGroupe(theme)<2) {
-			System.out.println(" le nombre insuffisant");
 			test=false;
 		}
 		else
 			for(Group groupe: listesGroupes) {
 				if(!groupe.allMemberPret()) {
-					System.out.println(" groupe "+groupe.getLabel()+" nest pas pret");
 					test=false;
 					break;
 				}
@@ -319,7 +314,6 @@ public class Serveur extends Thread{
 	}
 	
 	public  void runGame(String theme, String niveau) {
-		System.out.println("testing est pret pour jouer");
 		if(!canRunGame(theme)) {
 			return;
 		}
@@ -331,7 +325,6 @@ public class Serveur extends Thread{
 				groupe.envoyerAll("information"," sur le point de lancer la partie : "+theme);
 				groupe.demarrer();
 				jeu.addGroup(groupe);
-				//System.out.println(groupe.getLabel()+" est pret pour jouer");
 				
 			}
 		}

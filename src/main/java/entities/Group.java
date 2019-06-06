@@ -15,7 +15,7 @@ import org.json.JSONObject;
 public class Group {
 	private Map<ThreadUserForServer,Map<Integer,String>> users;
 	private Map<Integer, String> responseGroupe;
-	private Map<Integer,Integer> points;
+	 
 	private Serveur serveur;
 	private String label;
 	private EtatGame etat= new EtatGame();
@@ -52,7 +52,9 @@ public class Group {
 		users=new HashMap<ThreadUserForServer,Map<Integer,String>>();
 		this.serveur=serveur;
 		System.out.println("Création d'un groupe nom : "+label  );
-		this.points=new HashMap<Integer,Integer>();
+		 
+		responseGroupe= new HashMap();
+		 
 		
 	}
 	/**
@@ -143,11 +145,13 @@ public class Group {
 		}
 		if(response!=null) {
 			responseGroupe.put(idQuestion, response);
-			setPointGroupe(idQuestion);
+			
+			//System.out.println(" reponse de "+label+"  est "+response);
 		}
+		
 		return response;
 	}
-	
+	 
 	public synchronized  boolean contains(ThreadUserForServer user) {
 		return users.containsKey(user);
 	}
@@ -166,19 +170,12 @@ public class Group {
 		lastValue.put(idQuestion,reponse);
 		users.replace(user, lastValue);
 		for(Map.Entry<Integer, String> ele:lastValue.entrySet()) {
-			System.out.println(" pour "+ele.getKey()+" voici ca reponse "+ele.getValue());
+			System.out.print(" pour "+ele.getKey()+" voici ca reponse "+ele.getValue());
 		}
 		
 	}
 	
-	public void setPointGroupe(Integer id) {
-		if(question!=null && question.getReponse().equals(responseGroup(id))) {
-			points.put(id,10);
-		}
-		else
-			points.put(id, 0);
-		
-	}
+	
 	
 	/**
 	 * 
@@ -200,7 +197,7 @@ public class Group {
 		int i=0;
 		for(Entry<ThreadUserForServer,Map<Integer,String>> user: users.entrySet()) {
 			if(user.getValue().containsKey(idQuestion)) {
-				System.out.println(user.getKey().getName() +" a répondu");
+				//System.out.println(user.getKey().getName() +" a répondu");
 				i++;
 			}
 		}
@@ -274,21 +271,13 @@ public class Group {
 	public Serveur getServeur() {
 		return serveur;
 	}
-	public int nbPoint() {
-		int i=0;
-		
-		for(Map.Entry<Integer, Integer> point :points.entrySet()) {
-			i+=point.getValue();
-		}
-		
-		return i;
-	}
+	 
 	
 	
-	public void endGame() {
+	public void endGame(int i) {
 		JSONObject object= new JSONObject();
 		
-		object.put("point", nbPoint());
+		object.put("point", i);
 		envoyerAll("point",object.toString());
 	}
 	
@@ -318,5 +307,9 @@ public class Group {
 	
 	public Set<ThreadUserForServer> getUsers(){
 		return users.keySet();
+	}
+	
+	public Map<Integer,String> getResponseGroupe(){
+		return responseGroupe;
 	}
 }

@@ -109,10 +109,10 @@ public class Jeu extends Thread{
 	 */
 	public boolean allResponseGetted(int idQuestion) {
 		int i=0;
-		System.out.println(" test si toutes les réponses ont été recues ...");
+		 
 		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) {
 			if(group.getValue().containsKey(idQuestion)) {
-				System.out.println(group.getKey().getLabel()+" a répondu "+idQuestion);
+				//System.out.println(group.getKey().getLabel()+" a répondu "+idQuestion);
 				i++;
 			}
 			else {
@@ -121,7 +121,7 @@ public class Jeu extends Thread{
 					if(reponse!=null) {
 						
 						group.getValue().put(idQuestion, reponse);
-						System.out.println(group.getKey().getLabel()+" a répondu "+idQuestion);
+						//System.out.println(group.getKey().getLabel()+" a répondu "+idQuestion);
 						i++;
 					}
 					
@@ -153,11 +153,7 @@ public class Jeu extends Thread{
 			startAllGroup();
 		sendQuestion();
 		while(!etat.estFini()) {
-			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+			
 			if(allResponseGetted(questions.getQuestion().getId())) {
 				//envoyerResultat si pas fini
 				// envoyer Resultat final si fini et changer etat
@@ -180,11 +176,11 @@ public class Jeu extends Thread{
 		Group gr=null;
 		int i=0;
 		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) {
-			group.getKey().endGame();
+			group.getKey().endGame(getPointGroup(group.getKey()));
 			if(i==0) {
 				gr=group.getKey();
 			}else {
-				if(gr.nbPoint()<group.getKey().nbPoint()) 
+				if(getPointGroup(gr)<getPointGroup(group.getKey())) 
 					gr=group.getKey();
 			}
 		}
@@ -193,12 +189,32 @@ public class Jeu extends Thread{
 	}
 	
 	
+	public int getPointGroup(Group group) {
+		int nb=0;
+		Quizz questionsTag=data();
+		
+		Map<Integer,String> elements=group.getResponseGroupe();
+		
+		for(Map.Entry<Integer,String> ele:elements.entrySet()) {
+			
+			System.out.println("groupe "+group.getLabel()+"  "+ele.getKey()+"  reponse "+ele.getValue());
+			Question quest=questions.getQuestion(ele.getKey());
+			
+			if(quest!=null) {
+				if(quest.getReponse().equals(ele.getValue())) {
+					System.out.println(" bonne réponse "+quest.getId()+" : "+quest.getReponse());
+					nb++;
+				}
+			}
+		}
+		return nb;
+	}
 	
 	public void sendWinner(Group gr) {
 		if(gr!=null) {
 			JSONObject object= new JSONObject();
 			object.put("label", gr.getLabel());
-			object.put("nbPoint", gr.nbPoint());
+			object.put("nbPoint", getPointGroup(gr));
 			
 			for(Group group: groups.keySet()) {
 				group.envoyerAll("endGame",object.toString());
@@ -235,7 +251,11 @@ public class Jeu extends Thread{
 	 * This method parses the data into an object
 	 */
 	private void initializeData() {
+		
+		questions=data();
+	}
+	private Quizz data() {
 		String chemin="./src/main/resources/";
-		questions=ParserJson.jsonparser(chemin+themeGame+".json",niveau);
+		return ParserJson.jsonparser(chemin+themeGame+".json",niveau);
 	}
 }

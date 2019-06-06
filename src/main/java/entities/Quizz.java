@@ -70,11 +70,13 @@ public class Quizz {
 		this.niveau = niveau;
 	}
 	
-	public Question getQuestion(int idQestion) {
-		Question question=null;
+	public Question getQuestion(int idQes) {
 		
+		for(Question ques: questions)
+			if(ques.getId()==idQes)
+				return ques;
 		
-		return question;
+		return null;
 	}
 	/*
 	

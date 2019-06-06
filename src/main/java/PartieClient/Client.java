@@ -150,8 +150,6 @@ public class Client {
 	
 	
 	public void treadMSG(String message) {
-			System.out.println("\n\n\n treat msg");
-			System.out.println("\n\n\n msg " + message);
 
 		if((message!=null)&&(!message.equals(""))){
 			System.out.println(message);
@@ -159,7 +157,7 @@ public class Client {
 			String type=object.getString("type");
 			
 			if(type.equals("question")) {
-				System.out.println("\n\n\n question");
+				//System.out.println("\n\n\n question");
 
 				String objectQuestion =object.getString("data");
 				afficherQuestion(objectQuestion);
@@ -223,7 +221,6 @@ public class Client {
 				JSONObject objectData= new JSONObject(object.getString("data"));
 				String label=objectData.getString("label");
 				int npoint=objectData.getInt("nbPoint");
-				System.out.println(object.toString());
 			}
 			else
 			if(type.equals("point")) {

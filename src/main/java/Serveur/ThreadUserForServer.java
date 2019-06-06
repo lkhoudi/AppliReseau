@@ -103,7 +103,6 @@ public class ThreadUserForServer extends Thread{
 	
 	public void sendGroupes() {
 		String usersString=serveur.getAllGroupeJson();
-		System.out.println(usersString);
 		sendMessage("groupes",usersString);
 	}
 	public Group getGroupe() {
