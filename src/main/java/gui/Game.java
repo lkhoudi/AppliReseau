@@ -31,6 +31,8 @@ public class Game extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        jLabel2.setText("lkfmerjkglhkjhrgkfjbthjrbhdyzeg");
+
 
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -275,6 +277,7 @@ public class Game extends javax.swing.JFrame {
     //Fill with questions
     public void setjLabel2() {
         Question question = Walcome.client.getCurrentQuestion();
+        System.out.println("\n\n\n\n\nJlabel" + jLabel2);
         jLabel2.setText(question.getQuestion());
     }
 
