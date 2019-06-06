@@ -5,11 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import entities.EtatGame;
 import entities.Group;
 import entities.User;
 import org.json.JSONObject;
+
+import Serveur.parser.ConnectionBuilder;
 
 public class ThreadUserForServer extends Thread{
 	private Serveur serveur;
@@ -286,7 +290,7 @@ public class ThreadUserForServer extends Thread{
 			}
 			else
 			if(type.equals("inscrire")) {
-				System.out.println(object.getJSONObject("data").toString());
+				//System.out.println(object.getJSONObject("data").toString());
 				inscrire(object.getJSONObject("data").toString());
 				sendGroupes();
 			}
@@ -381,9 +385,28 @@ public class ThreadUserForServer extends Thread{
 		String email=objectUser.getString("email");
 		String avatar=objectUser.getString("avatar");
 		user= new User(email,firstname, lastname,avatar);
+		
+		if(objectUser.has("password")) {
+			user.setPassword(objectUser.getString("password"));
+			insertionDB();
+		}
 		serveur.addUser(user);
 		serveur.addUserSocket(this);
 		informerAutre();
 		//inserer l'utilisateur dans la base de donn�es
+		
+	}
+	
+	
+	public boolean insertionDB()  {
+		boolean test=false;
+		ConnectionBuilder.setInfo("RESEAU", "root", "");
+		try {
+			ConnectionBuilder.insertData(user);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return test;
 	}
 }

@@ -271,28 +271,59 @@ public class Client {
 	
 	public static void main(String[] agrs) throws InterruptedException {
 
-		Client client= new Client("mail","Rania1","avatar");
+		Client client1= new Client("client1","client1","avatar");
 		
 		
 		String add="192.168.43.65";
-		String add2="192.168.1.17";
+		String add2="192.168.43.221";
 		
-		client.setServerLocation(add2, 8990);
-		if(client.connectionServer()) {
-			client.communication();
-			client.creerGroupe("team","animals");
-			//client.commencer();
+		client1.setServerLocation(add2, 8990);
+		if(client1.connectionServer()) {
+			client1.communication();
+			client1.creerGroupe("team1","animals");
+			
 		}
 		
-		Client client2= new Client("4","Rania2","avatar");
-		
+		Client client2= new Client("client2","Rania2","avatar");
+		//Thread.sleep(1000);
 		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
-			client2.rejoindreGroupe("team");
+			client2.creerGroupe("team2","animals");
 			client2.envoyerGroupeMessage("bonjour");
-			//client2.commencer();
+			client2.commencer();
 		}
+		
+		Client client3= new Client("client3","Rania2","avatar");
+		//Thread.sleep(1000);
+		client3.setServerLocation(add2, 8990);
+		if(client3.connectionServer()) {
+			client3.communication();
+			client3.rejoindreGroupe("team");
+			//client3.envoyerGroupeMessage("bonjour");
+			client2.commencer();
+		}
+		Thread.sleep(1000);
+		Client client4= new Client("client4","Rania2","avatar");
+		//Thread.sleep(1000);
+		client4.setServerLocation(add2, 8990);
+		if(client4.connectionServer()) {
+			client4.communication();
+			client4.rejoindreGroupe("team");
+			//client4.envoyerGroupeMessage("bonjour");
+			client2.commencer();
+		}
+		Thread.sleep(10000);
+		Client client5= new Client("client5","Rania2","avatar");
+		//
+		client5.setServerLocation(add2, 8990);
+		if(client5.connectionServer()) {
+			client5.communication();
+			client5.rejoindreGroupe("team");
+			client5.envoyerGroupeMessage("bonjour");
+			client2.commencer();
+		}
+		client1.commencer();
 
 		//client.deconnecter();
 		//client2.deconnecter();
