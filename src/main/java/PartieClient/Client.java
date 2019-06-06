@@ -222,8 +222,11 @@ public class Client {
 				JSONObject objectData= new JSONObject(object.getString("data"));
 				String label=objectData.getString("label");
 				int npoint=objectData.getInt("nbPoint");
+				End end = new End();
 				End.setjLabel4(label, npoint+"");
-				new End().setVisible(true);
+				end.setVisible(true);
+
+
 				System.out.println("End : " + object.getString("data"));
 
 			}

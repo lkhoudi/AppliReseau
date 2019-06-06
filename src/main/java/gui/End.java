@@ -146,7 +146,6 @@ public class End extends javax.swing.JFrame {
 
 
     public static void setjLabel4(String winnerName, String userScore) {
-
         jLabel4.setFont(new java.awt.Font("Ani", 3, 40)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 153));
         jLabel4.setText(winnerName +" ! Score : "+userScore);
