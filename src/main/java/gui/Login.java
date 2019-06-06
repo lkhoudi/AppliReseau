@@ -178,8 +178,8 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        setjList1("Groupe1");
-
+        setjList1("G2");
+        setjList1("G1");
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -202,6 +202,7 @@ public class Login extends javax.swing.JFrame {
 
     public static void setjList1(String groupLabel) {
         model.addElement(groupLabel);
+        jList1.setModel(model);
         System.out.println("Groups : " + model);
     }
 

@@ -313,9 +313,10 @@ public class Game extends javax.swing.JFrame {
 
     }
 
-    public static void setjList1(String message) {
-        model.addElement(message);
-        jList1 =  new JList<String>(model);
+    public static void setjList1(String messageChat) {
+        model.addElement(messageChat);
+        jList1.setModel(model);
+        System.out.println("Groups : " + model);
     }
 
     public void setjPanel3(JPanel jPanel3) {

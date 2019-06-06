@@ -153,6 +153,7 @@ public class Client {
 		if((message!=null)&&(!message.equals(""))){
 			System.out.println(message);
 			JSONObject object= new JSONObject(message);
+			Login.setjList1("G3");
 			String type=object.getString("type");
 			
 			if(type.equals("question")) {
@@ -165,7 +166,7 @@ public class Client {
 			if(type.equals("creerGroupe")) {
 				System.out.println(object.getString("data"));
 				Groupe team=ParserJson.parserGroupe(object.getString("data"));
-				Login.setjList1(team.getLabel());
+				Login.setjList1("G3");
 				if(!groupes.contains(team)) {
 					groupes.add(team);
 				}
