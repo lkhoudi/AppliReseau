@@ -54,39 +54,38 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel3" min="-2" pref="592" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jButton1" min="-2" pref="119" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel4" min="-2" pref="409" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jButton2" min="-2" pref="119" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace pref="79" max="32767" attributes="0"/>
-                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jButton1" min="-2" pref="119" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButton3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButton4" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace pref="311" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel4" min="-2" pref="409" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jButton2" min="-2" pref="119" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="jLabel3" min="-2" pref="592" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" pref="453" max="-2" attributes="0"/>
+                  <EmptySpace pref="27" max="32767" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -95,23 +94,31 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="107" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                          <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                          <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                           <Component id="jLabel4" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -133,12 +140,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="269" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="295" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="451" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="501" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -157,76 +164,6 @@
             <Property name="text" type="java.lang.String" value="Send"/>
           </Properties>
         </Component>
-        <Container class="javax.swing.JPanel" name="jPanel3">
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jRadioButton1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel2" alignment="0" min="-2" pref="354" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="59" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="161" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="132" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jRadioButton1"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jRadioButton1"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton2ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jRadioButton1"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jRadioButton1"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel2"/>
-              </Properties>
-            </Component>
-          </SubComponents>
-        </Container>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -256,6 +193,25 @@
               <Border info="null"/>
             </Property>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton3ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton4">
         </Component>
       </SubComponents>
     </Container>
