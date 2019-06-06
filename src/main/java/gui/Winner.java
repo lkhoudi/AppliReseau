@@ -60,7 +60,7 @@ public class Winner extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/raniaballa/Desktop/Mykonos lead-xlarge.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("./src/main/resources/Mykonos.jpg")); // NOI18N
         jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
