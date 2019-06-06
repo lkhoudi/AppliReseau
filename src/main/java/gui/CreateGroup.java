@@ -82,7 +82,11 @@ public class CreateGroup extends javax.swing.JFrame {
         jButton1.setText("Create");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                try {
+                    jButton1ActionPerformed(evt);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -272,7 +276,7 @@ public class CreateGroup extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) throws InterruptedException {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String groupName = jTextField1.getText();
         String userName = jTextField2.getText();
@@ -296,6 +300,7 @@ public class CreateGroup extends javax.swing.JFrame {
             Walcome.client.communication();
             Walcome.client.creerGroupe(groupName, groupTheme);
             Walcome.client.commencer();
+            Thread.sleep(1000);
             Game game = new Game();
 			game.setVisible(true);
 			this.setVisible(false);
