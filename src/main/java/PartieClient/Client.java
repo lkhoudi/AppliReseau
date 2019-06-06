@@ -20,7 +20,8 @@ import java.util.ArrayList;
 
 
 public class Client {
-	
+
+	private Question currentQuestion;
 	private User user;
 	private InetAddress serveurAdresse;
 	private int portServeur;
@@ -37,7 +38,14 @@ public class Client {
 		setServerLocation(adresse,port);
 	}
 	
-	
+	public Client() {
+	}
+
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 	public Client(String email, String firstname, String lastname) {
 		user= new User( email,firstname,  lastname);
 	}
@@ -241,6 +249,7 @@ public class Client {
 
 		System.out.println(" Question "+quest.getQuestion());
 		Object proposition[]=quest.getPropositions().toArray();
+		currentQuestion = quest;
 		
 		for(int i=0; i<proposition.length;i++) {
 			System.out.println(" "+i+ " :"+proposition[i].toString());
@@ -268,7 +277,15 @@ public class Client {
 		object.put("type","commencer");
 		envoyerSMS(object.toString());
 	}
-	
+
+	public Question getCurrentQuestion() {
+		return currentQuestion;
+	}
+
+	public void setCurrentQuestion(Question currentQuestion) {
+		this.currentQuestion = currentQuestion;
+	}
+
 	public static void main(String[] agrs) throws InterruptedException {
 
 		Client client= new Client("mail","Rania1","avatar");

@@ -6,6 +6,8 @@
 package gui;
 
 import PartieClient.Client;
+import entities.Group;
+import entities.User;
 
 import javax.swing.*;
 import java.util.Enumeration;
@@ -272,21 +274,32 @@ public class CreateGroup extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String add = "192.168.43.53";
         String groupName = jTextField1.getText();
         String userName = jTextField2.getText();
-        String groupTheme = buttonGroup1.getSelection().toString();
+        String groupTheme = "";
 
-        Client client = new Client("", userName, ""); 
-        client.setServerLocation(add, 8990);
+        for (Enumeration<AbstractButton> buttons = buttonGroup1.getElements(); buttons.hasMoreElements();) {
+            AbstractButton button = buttons.nextElement();
+
+            if (button.isSelected()) {
+                groupTheme = button.getText();
+                System.out.println("\n\nTheme : " + groupTheme);
+            }
+        }
+
+        //Client client = new Client("", userName, "");
+        //client.setServerLocation(add, 8990);
+        User user = new User("", userName, "");
+        Walcome.client.setUser(user);
             
-        if(client.connectionServer()) {
-			client.communication();
-			client.creerGroupe(groupName, groupTheme);
-			client.commencer();
-			new Game().setVisible(true);
+        if(Walcome.client.connectionServer()) {
+            Walcome.client.communication();
+            Walcome.client.creerGroupe(groupName, groupTheme);
+            Walcome.client.commencer();
+            Game game = new Game();
+			game.setVisible(true);
 			this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+        }//GEN-LAST:event_jButton1ActionPerformed
     }
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
@@ -326,6 +339,7 @@ public class CreateGroup extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

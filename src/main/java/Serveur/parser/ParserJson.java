@@ -131,16 +131,12 @@ public static Quizz jsonparser(String filePath,String niveau) {
 
 		 return  message1;
 	 }
-	
+
 	public static void main(String[] args) {
 		String chemin="./src/main/resources/";
-		String[] fichiers= {"animals","bakery","culturegenerale","mediterranee","music","question","worldCountries"};
+		String[] fichiers= {"Animals","Bakery","General Culture","Mediterranean","Music","World Countries"};
 		for(String str : fichiers) {
-
-			//Quizz quizz=ParserJson.jsonparser(chemin+fichiers[0]+".json","débutant");
+			Quizz quizz=ParserJson.jsonparser(chemin+fichiers[0]+".json","débutant");
 		}
-		
-		JSONArray arr= new JSONArray("{\"firstname\":\"Rania2\",\"avatar\":\"\",\"email\":\"4\",\"lastname\":\"avatar\"}");
-		System.out.println(arr);
 	}
 }
