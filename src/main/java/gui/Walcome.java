@@ -23,7 +23,7 @@ public class Walcome extends javax.swing.JFrame {
     public Walcome() {
         initComponents();
         ClientBuilder.client = new Client();
-        add = "192.168.43.53";
+        add = "192.168.43.152";
         client = new Client();
         port = 8990;
         ClientBuilder.client.setServerLocation(add, port);
