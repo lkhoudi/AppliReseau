@@ -15,7 +15,7 @@
           "Se reposer"
         ],
         "réponse": "Se rafraichir",
-        "anecdote": "Les ours polaires peuvent rapidement avoir trop chaud sous leur fourrure trés épaisse et leur couche de graisse isolante."
+        "anecdote": "Les ours polaires peuvent rapidement avoir trop chaud sous leur fourrure très épaisse et leur couche de graisse isolante."
       },
       {
         "id": 2,
@@ -27,7 +27,7 @@
           "Nageoire ventrale"
         ],
         "réponse": "Nageoire dorsale",
-        "anecdote": "Malgré qu'ils soient des poissons, les hippocampes ne nagent que trés lentement en effectuant des mouvements onduleux."
+        "anecdote": "Malgré qu'ils soient des poissons, les hippocampes ne nagent que très lentement en effectuant des mouvements onduleux."
       },
       {
         "id": 3,
@@ -55,27 +55,27 @@
       },
       {
         "id": 5,
-        "question": "Quelle lourde et pénible téche incombe é la reine des fourmis ?",
+        "question": "Quelle lourde et pénible tâche incombe la reine des fourmis ?",
         "propositions": [
-          "Chercher é manger",
-          "Pondre des ufs",
+          "Chercher et manger",
+          "Pondre des oeufs",
           "Défendre le nid",
           "Tuer les méles"
         ],
         "réponse": "Pondre des ufs",
-        "anecdote": "La reine est la seule fourmi du nid é pondre des ufs qui sont en réalité des larves écloses dont naitront les futures fourmis."
+        "anecdote": "La reine est la seule fourmi du nid et pondre des oeufs qui sont en réalité des larves écloses dont naitront les futures fourmis."
       },
       {
         "id": 6,
-        "question": "Qu'est-ce que les coccinelles aiment tout particuliérement manger ?",
+        "question": "Qu'est-ce que les coccinelles aiment tout particulièrement manger ?",
         "propositions": [
-          "éécorces",
+          "encorces",
           "Pétales",
           "Pucerons",
-          "ééxcréments"
+          "éxcréments"
         ],
         "réponse": "Pucerons",
-        "anecdote": "Considérées comme animaux utiles, on éléve les coccinelles puis on les utilise pour combattre écologiquement les parasites."
+        "anecdote": "Considérées comme animaux utiles, on élève les coccinelles puis on les utilise pour combattre écologiquement les parasites."
       },
       {
         "id": 7,
@@ -111,11 +111,11 @@
           "Palais"
         ],
         "réponse": "Langue",
-        "anecdote": "Telle une lime, la langue réche de la limace répe les plantes tendres en petits morceaux et dépouille ainsi les jeunes salades."
+        "anecdote": "Telle une lime, la langue rêche de la limace rêpe les plantes tendres en petits morceaux et dépouille ainsi les jeunes salades."
       },
       {
         "id": 10,
-        "question": "Que montre le loup le plus faible aprés une lutte pour la hiérarchie ?",
+        "question": "Que montre le loup le plus faible après une lutte pour la hiérarchie ?",
         "propositions": [
           "Sa langue",
           "Son ventre",
@@ -123,7 +123,7 @@
           "Ses dents"
         ],
         "réponse": "Son ventre",
-        "anecdote": "Le loup inférieur n'est ainsi pas blessé mais devra é l'avenir se soumettre au méle dominant, selon leur hiérarchie prononcée."
+        "anecdote": "Le loup inférieur n'est ainsi pas blessé mais devra é l'avenir se soumettre au mâle dominant, selon leur hiérarchie prononcée."
       }
     ],
     "confirmé": [
@@ -137,11 +137,11 @@
           "Maladie"
         ],
         "réponse": "Usure des dents",
-        "anecdote": "Lorsque la derniére molaire est usée par la mastication, l'éléphant ne peut plus de nourrir suffisamment et meurt tristement de faim."
+        "anecdote": "Lorsque la dernière molaire est usée par la mastication, l'éléphant ne peut plus de nourrir suffisamment et meurt tristement de faim."
       },
       {
         "id": 12,
-        "question": "Gréce é quelle partie de son corps la taupe s'oriente-t-elle sous terre ?",
+        "question": "Grâce é quelle partie de son corps la taupe s'oriente-t-elle sous terre ?",
         "propositions": [
           "Yeux",
           "Vibrisses",
@@ -153,10 +153,10 @@
       },
       {
         "id": 13,
-        "question": "éé part le cheval, é quel autre animal le tapir est-il apparenté ?",
+        "question": "A part le cheval, à quel autre animal le tapir est-il apparenté ?",
         "propositions": [
           "Hamster",
-          "ééléphant",
+          "éléphant",
           "Cochon",
           "Rhinocéros"
         ],
@@ -165,7 +165,7 @@
       },
       {
         "id": 14,
-        "question": "Comment les mille-pattes se protégent-ils de leurs prédateurs ?",
+        "question": "Comment les mille-pattes se protègent-ils de leurs prédateurs ?",
         "propositions": [
           "En mordant",
           "Par leurs sécrétions",
@@ -177,7 +177,7 @@
       },
       {
         "id": 15,
-        "question": "Quels animaux volent souvent aux hyénes la proie qu'elles ont chassée ?",
+        "question": "Quels animaux volent souvent aux hyènes la proie qu'elles ont chassée ?",
         "propositions": [
           "Buffles",
           "Guépards",
@@ -185,11 +185,11 @@
           "Lions"
         ],
         "réponse": "Lions",
-        "anecdote": "Les hyénes chassent généralement en meute d'environ quarante individus des animaux tels que les zébres ou les gnous."
+        "anecdote": "Les hyènes chassent généralement en meute d'environ quarante individus des animaux tels que les zèbres ou les gnous."
       },
       {
         "id": 16,
-        "question": "Combien pése environ la plus petite espéce de musaraigne connue ?",
+        "question": "Combien pèse environ la plus petite espèce de musaraigne connue ?",
         "propositions": [
           "20 grammes",
           "70 grammes",
@@ -201,14 +201,14 @@
       },
       {
         "id": 17,
-        "question": "De quelle maniére le lynx a-t-il l'habitude de marquer son territoire ?",
+        "question": "De quelle manière le lynx a-t-il l'habitude de marquer son territoire ?",
         "propositions": [
           "Poils",
           "Excréments",
-          "ééraflures",
+          "éraflures",
           "Souris mortes"
         ],
-        "réponse": "ééraflures",
+        "réponse": "éraflures",
         "anecdote": "Outre des éraflures, les lynx utilisent parfois également leur urine comme marque odorante afin de délimiter leur domaine."
       },
       {
@@ -221,11 +221,11 @@
           "60 km/h"
         ],
         "réponse": "120 km/h",
-        "anecdote": "Le plus rapide des animaux ne peut maintenir cette vitesse que sur quelques centaines de métres, laissant une chance aux gazelles."
+        "anecdote": "Le plus rapide des animaux ne peut maintenir cette vitesse que sur quelques centaines de mètres, laissant une chance aux gazelles."
       },
       {
         "id": 19,
-        "question": "Comment les cloportes se protégent-ils des attaques ?",
+        "question": "Comment les cloportes se protègent-ils des attaques ?",
         "propositions": [
           "En s'enroulant",
           "En s'enterrant",
@@ -251,7 +251,7 @@
     "expert": [
       {
         "id": 21,
-        "question": "Aprés combien de temps un bébé tigre reééoit-il de la viande pour la premiére fois ?",
+        "question": "Après combien de temps un bébé tigre réerait-il de la viande pour la première fois ?",
         "propositions": [
           "Six ans",
           "Un mois",
@@ -259,7 +259,7 @@
           "Six mois"
         ],
         "réponse": "Six mois",
-        "anecdote": "Au cours des six premiers mois, les bébés tigres qui ne connaissent pas leur pére sont allaités par leur mére."
+        "anecdote": "Au cours des six premiers mois, les bébés tigres qui ne connaissent pas leur père sont allaités par leur mère."
       },
       {
         "id": 22,
@@ -283,7 +283,7 @@
           "Voir"
         ],
         "réponse": "Boire",
-        "anecdote": "Le liquide que le fennec absorbe gréce é son alimentation lui suffit et est donc admirablement adapté é la vie dans le désert."
+        "anecdote": "Le liquide que le fennec absorbe grâce é son alimentation lui suffit et est donc admirablement adapté é la vie dans le désert."
       },
       {
         "id": 24,
@@ -295,11 +295,11 @@
           "Macao"
         ],
         "réponse": "Hyacinthe",
-        "anecdote": "Ce perroquet d'environ 150 cm, queue comprise, posséde un plumage bleu clair uni et vit principalement en Bolivie et au Brésil."
+        "anecdote": "Ce perroquet d'environ 150 cm, queue comprise, possède un plumage bleu clair uni et vit principalement en Bolivie et au Brésil."
       },
       {
         "id": 25,
-        "question": "De maniére générale, combien d'heures par jour un panda géant est-il occupé é manger ?",
+        "question": "De manière générale, combien d'heures par jour un panda géant est-il occupé é manger ?",
         "propositions": [
           "Huit",
           "Douze",
@@ -307,11 +307,11 @@
           "Quatre"
         ],
         "réponse": "Seize",
-        "anecdote": "Le panda géant mange uniquement des jeunes pousses de bambou mais celles-ci ne sont toutefois pas trés nourrissantes."
+        "anecdote": "Le panda géant mange uniquement des jeunes pousses de bambou mais celles-ci ne sont toutefois pas très nourrissantes."
       },
       {
         "id": 26,
-        "question": "Combien de temps un bébé morse est-il allaité par sa mére ?",
+        "question": "Combien de temps un bébé morse est-il allaité par sa mère ?",
         "propositions": [
           "1 an",
           "1 mois",
@@ -319,7 +319,7 @@
           "6 mois"
         ],
         "réponse": "18 mois",
-        "anecdote": "Aprés une période de 12 mois de gestation, le bébé morse pése plus de 50 kg et sait déjé nager au bout de deux semaines seulement."
+        "anecdote": "Après une période de 12 mois de gestation, le bébé morse pèse plus de 50 kg et sait déjà nager au bout de deux semaines seulement."
       },
       {
         "id": 27,
@@ -331,7 +331,7 @@
           "Foie"
         ],
         "réponse": "Sang",
-        "anecdote": "Les martres boivent uniquement le sang et laissent le reste, préférant manger des lapins, des ufs, des lézards ou des insectes."
+        "anecdote": "Les martres boivent uniquement le sang et laissent le reste, préférant manger des lapins, des oeufs, des lézards ou des insectes."
       },
       {
         "id": 28,
@@ -349,17 +349,17 @@
         "id": 29,
         "question": "Durant quelle saison de l'année peut-on entendre le hibou crier ?",
         "propositions": [
-          "éété",
+          "été",
           "Automne",
           "Printemps",
           "Hiver"
         ],
         "réponse": "Printemps",
-        "anecdote": "Le hibou méle crie en avril et en mai pour attirer l'attention d'une femelle qui restera alors toute sa vie fidélement é ses cétés."
+        "anecdote": "Le hibou mâle crie en avril et en mai pour attirer l'attention d'une femelle qui restera alors toute sa vie fidèlement à ses tétés."
       },
       {
         "id": 30,
-        "question": "De combien de piquants est composée la fourrure du hérisson méle ?",
+        "question": "De combien de piquants est composée la fourrure du hérisson mâle ?",
         "propositions": [
           "4 000",
           "8 000",
@@ -367,7 +367,7 @@
           "12 000"
         ],
         "réponse": "16 000",
-        "anecdote": "En cas de danger, le hérisson peut ainsi dresser ses nombreux piquants et s'enrouler sur lui-méme pour se protéger des ennemis."
+        "anecdote": "En cas de danger, le hérisson peut ainsi dresser ses nombreux piquants et s'enrouler sur lui-même pour se protéger des ennemis."
       }
       ]
   }
