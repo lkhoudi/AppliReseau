@@ -177,16 +177,33 @@ public class Jeu extends Thread{
 	}
 	
 	private void finisGame() {
+		Group gr=null;
+		int i=0;
 		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) {
-			//group.getKey().endGame();
-			sendWinner();
+			group.getKey().endGame();
+			if(i==0) {
+				gr=group.getKey();
+			}else {
+				if(gr.nbPoint()<group.getKey().nbPoint()) 
+					gr=group.getKey();
+			}
 		}
+		
+		sendWinner(gr);
 	}
 	
 	
 	
-	public void sendWinner() {
-		
+	public void sendWinner(Group gr) {
+		if(gr!=null) {
+			JSONObject object= new JSONObject();
+			object.put("label", gr.getLabel());
+			object.put("nbPoint", gr.nbPoint());
+			
+			for(Group group: groups.keySet()) {
+				group.envoyerAll("endGame",object.toString());
+			}
+		}
 	}
 	/**
 	 * This method modifies the state of all team members 

@@ -141,7 +141,10 @@ public class Group {
 				}
 			}
 		}
-		
+		if(response!=null) {
+			responseGroupe.put(idQuestion, response);
+			setPointGroupe(idQuestion);
+		}
 		return response;
 	}
 	
@@ -222,12 +225,13 @@ public class Group {
 		return label.equals(group.getLabel());
 	}
 	
-	public synchronized  boolean allMemberPret() {
+	public  boolean allMemberPret() {
 		
 		//envoyerAll("le serveur est entrain de tester si tous les joueurs de "+label+"  sont prets");
 		//envoyerAll("le nombre de user : "+users.size());
 		for(ThreadUserForServer user :users.keySet()) {
 			//user.sendMessage("testEtat","état de "+user.getName()+" est "+user.getEtatUser().toString());
+			System.out.println("état de "+user.getName()+" est "+user.getEtatUser().toString());
 			if(!user.estPret()) {
 				//envoyerAll("teste pour commencer le jeu malheuresement "+user.getName()+ "n'est pas prets");
 				return false;
@@ -270,7 +274,25 @@ public class Group {
 	public Serveur getServeur() {
 		return serveur;
 	}
-
+	public int nbPoint() {
+		int i=0;
+		
+		for(Map.Entry<Integer, Integer> point :points.entrySet()) {
+			i+=point.getValue();
+		}
+		
+		return i;
+	}
+	
+	
+	public void endGame() {
+		JSONObject object= new JSONObject();
+		
+		object.put("point", nbPoint());
+		envoyerAll("point",object.toString());
+	}
+	
+	
 	public synchronized String getUsersJSONWithout(ThreadUserForServer uti) {
 		
 		JSONArray array= new JSONArray();

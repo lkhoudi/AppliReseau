@@ -219,6 +219,20 @@ public class Client {
 					}
 			}
 			else
+			if(type.equals("endGame")) {
+				JSONObject objectData= new JSONObject(object.getString("data"));
+				String label=objectData.getString("label");
+				int npoint=objectData.getInt("nbPoint");
+				System.out.println(object.toString());
+			}
+			else
+			if(type.equals("point")) {
+				JSONObject pointObject= new JSONObject(object.getString("data"));
+				int point=pointObject.getInt("point");
+				
+				System.out.println(object.toString());
+			}
+			else
 				System.out.println(message);
 			}
 
