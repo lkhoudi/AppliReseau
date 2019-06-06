@@ -336,11 +336,13 @@ public class Serveur extends Thread{
 			
 		
 	}
+	
 	public void sendAll(String type, String message) {
 		for(ThreadUserForServer threadUser : listesUsersSocket) {
 			threadUser.sendMessage(type,message);
 		}
 	}
+	
 	/**
 	 * 
 	 * @param args

@@ -169,6 +169,14 @@ public class Client {
 				}
 			}
 			else
+			if(type.equals("groupe")) {
+				System.out.println(object.getString("data"));
+				Groupe team=ParserJson.parserGroupe(object.getString("data"));
+				if(!groupes.contains(team)) {
+					groupes.add(team);
+				}
+			}
+			else
 			if(type.equals("joindreGroupe")) {
 				System.out.println(object.getString("data"));
 			}
@@ -343,7 +351,7 @@ public class Client {
 			//client4.envoyerGroupeMessage("bonjour");
 			client2.commencer();
 		}
-		Thread.sleep(10000);
+		Thread.sleep(9000);
 		Client client5= new Client("client5","client5","avatar");
 		//
 		client5.setServerLocation(add2, 8990);
@@ -353,7 +361,7 @@ public class Client {
 			client5.envoyerGroupeMessage("bonjour");
 			client2.commencer();
 		}
-		client1.commencer();
+		//client1.commencer();
 
 		//client.deconnecter();
 		//client2.deconnecter();
