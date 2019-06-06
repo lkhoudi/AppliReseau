@@ -265,10 +265,11 @@ public class ThreadUserForServer extends Thread{
 			JSONObject object= new JSONObject(message);
 			String type=object.getString("type");
 			
-			if(type.equals("reponse")) {
-				if(etatOfUser.estEnCours()) {
-					groupe.setResponse(this, object.getString("reponse"));
-				}
+			if(type.equals("réponse")) {
+				System.out.println(" réponse de "+user.getEmail());
+				System.out.println(object.getJSONObject("data"));
+				groupe.setResponse(this, object.getString("data"));
+				
 			}
 			else
 			if(type.equals("creerGroupe")) {

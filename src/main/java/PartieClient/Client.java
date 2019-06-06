@@ -102,8 +102,11 @@ public class Client {
 	
 	public void repondre(int idQuestion, String response) {
 			JSONObject object= new JSONObject();
+			JSONObject objectR= new JSONObject();
 			object.put("type", "réponse");
-			object.put("data", response);
+            objectR.put("id",idQuestion);
+            objectR.putOpt("réponse",response);
+            object.put("data", objectR);
 			envoyerSMS(object.toString());
 	}
 	
@@ -293,9 +296,10 @@ public class Client {
 		
 		
 		String add="192.168.43.65";
-		String add2="192.168.43.62";
+		String add2="192.168.43.221";
 		
 		client1.setServerLocation(add2, 8990);
+		
 		if(client1.connectionServer()) {
 			client1.communication();
 			client1.creerGroupe("team1","animals");
@@ -303,7 +307,7 @@ public class Client {
 		}
 		
 		
-		Client client2= new Client("client2","client1","avatar");
+		Client client2= new Client("client2","client2","avatar");
 
 		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
@@ -313,17 +317,18 @@ public class Client {
 			client2.commencer();
 		}
 		
-		Client client3= new Client("client3","Rania2","avatar");
+		Client client3= new Client("client3","client3","avatar");
 		//Thread.sleep(1000);
 		client3.setServerLocation(add2, 8990);
 		if(client3.connectionServer()) {
 			client3.communication();
 			client3.rejoindreGroupe("team");
 			//client3.envoyerGroupeMessage("bonjour");
-			client2.commencer();
+			client3.commencer();
 		}
 		Thread.sleep(1000);
-		Client client4= new Client("client4","Rania2","avatar");
+		
+		Client client4= new Client("client4","client4","avatar");
 		//Thread.sleep(1000);
 		client4.setServerLocation(add2, 8990);
 		if(client4.connectionServer()) {
@@ -333,7 +338,7 @@ public class Client {
 			client2.commencer();
 		}
 		Thread.sleep(10000);
-		Client client5= new Client("client5","Rania2","avatar");
+		Client client5= new Client("client5","client5","avatar");
 		//
 		client5.setServerLocation(add2, 8990);
 		if(client5.connectionServer()) {
