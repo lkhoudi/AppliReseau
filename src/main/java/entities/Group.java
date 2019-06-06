@@ -93,7 +93,7 @@ public class Group {
 	
 	/**
 	 * 
-	 * @param number
+	 * @param
 	 * @param message
 	 */
 	public synchronized  void envoyerSauf(String email, String message) {
@@ -249,8 +249,11 @@ public class Group {
 		
 		return array.toString();
 	}
-	
-	
+
+	public Serveur getServeur() {
+		return serveur;
+	}
+
 	public synchronized String getUsersJSONWithout(ThreadUserForServer uti) {
 		
 		JSONArray array= new JSONArray();

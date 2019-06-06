@@ -20,7 +20,8 @@ import java.util.ArrayList;
 
 
 public class Client {
-	
+
+	private Question currentQuestion;
 	private User user;
 	private InetAddress serveurAdresse;
 	private int portServeur;
@@ -30,14 +31,21 @@ public class Client {
     private List<Groupe> groupes= new ArrayList<Groupe>();
     private List<User> users= new ArrayList<User>();
     private List<Message> messages = new ArrayList<Message>();
-    
+
 	
 	public Client(String email, String firstname, String lastname,int port, InetAddress adresse) {
 		user= new User( email,firstname,  lastname);
 		setServerLocation(adresse,port);
 	}
 	
-	
+	public Client() {
+	}
+
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 	public Client(String email, String firstname, String lastname) {
 		user= new User( email,firstname,  lastname);
 	}
@@ -164,7 +172,7 @@ public class Client {
 			else
 			if(type.equals("users")) {
 				//System.out.println(object.getString("data"));
-								
+
 				afficherUsers(object.getString("data"));
 			}
 			else
@@ -182,7 +190,7 @@ public class Client {
 			if(type.equals("message")) {
 				System.out.println(object.getString("data"));
 				Message msg =ParserJson.parserMessage(object.getString("data"));
-				
+
 				if(!messages.contains(msg)) {
 						messages.add(msg);
 					}
@@ -190,9 +198,9 @@ public class Client {
 			else
 				System.out.println(message);
 			}
-			
-			
-		
+
+
+
 	}
 	
 	public void afficherUsers(String message) {
@@ -204,10 +212,10 @@ public class Client {
 					System.out.println(" ajout d'un user  "+user.getEmail());
 				}
 			}
-		
+
 	}
-	
-	
+
+
 	public void rejoindreGroupe(String label) {
 		JSONObject object =new JSONObject();
 		object.put("type", "joindreGroupe");
@@ -241,6 +249,7 @@ public class Client {
 
 		System.out.println(" Question "+quest.getQuestion());
 		Object proposition[]=quest.getPropositions().toArray();
+		currentQuestion = quest;
 		
 		for(int i=0; i<proposition.length;i++) {
 			System.out.println(" "+i+ " :"+proposition[i].toString());
@@ -254,7 +263,7 @@ public class Client {
 		object.put("data",message.toJson());
 		envoyerSMS(object.toString());
 	}
-	
+
 	public void deconnecter() {
 		JSONObject object =new JSONObject();
 		object.put("type", "deconnecter");
@@ -268,14 +277,23 @@ public class Client {
 		object.put("type","commencer");
 		envoyerSMS(object.toString());
 	}
-	
+
+	public Question getCurrentQuestion() {
+		return currentQuestion;
+	}
+
+	public void setCurrentQuestion(Question currentQuestion) {
+		this.currentQuestion = currentQuestion;
+	}
+
 	public static void main(String[] agrs) throws InterruptedException {
+
 
 		Client client1= new Client("client1","client1","avatar");
 		
 		
 		String add="192.168.43.65";
-		String add2="192.168.43.221";
+		String add2="192.168.43.62";
 		
 		client1.setServerLocation(add2, 8990);
 		if(client1.connectionServer()) {
@@ -284,8 +302,9 @@ public class Client {
 			
 		}
 		
-		Client client2= new Client("client2","Rania2","avatar");
-		//Thread.sleep(1000);
+		
+		Client client2= new Client("client2","client1","avatar");
+
 		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
@@ -328,4 +347,15 @@ public class Client {
 		//client.deconnecter();
 		//client2.deconnecter();
 	}
+
+//	public static void main(String[] s) {
+//		Client client = new Client("", "Lydia", "");
+//		client.setServerLocation("192.168.43.53", 8990);
+//
+//		if (client.connectionServer()) {
+//			client.communication();
+//			client.creerGroupe("G1", "Animals");
+//			client.commencer();
+//		}
+//	}
 }

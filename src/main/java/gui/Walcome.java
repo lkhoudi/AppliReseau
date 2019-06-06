@@ -5,17 +5,29 @@
  */
 package gui;
 
+import PartieClient.Client;
+
 /**
  *
  * @author khoudi
  */
 public class Walcome extends javax.swing.JFrame {
 
+    private final String add;
+    public static Client client;
+    private int port;
     /**
      * Creates new form Walcome
      */
+
     public Walcome() {
         initComponents();
+        ClientBuilder.client = new Client();
+        add = "192.168.43.53";
+        client = new Client();
+        port = 8990;
+        ClientBuilder.client.setServerLocation(add, port);
+        client = ClientBuilder.client;
     }
 
     /**
