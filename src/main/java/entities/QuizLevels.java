@@ -1,4 +1,4 @@
-package com.quiz.demoQuiz.entity;
+package entities;
 
 public enum QuizLevels {
     BEGINNER("débutant"),
