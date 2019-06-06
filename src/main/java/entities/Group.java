@@ -109,6 +109,7 @@ public class Group {
 	
 	public synchronized  String responseGroup(int idQuestion) {
 		String response=null;
+		System.out.println(" la recherche de la réponse du groupe ");
 		if(allResponseGetted(idQuestion)) {
 			Map<String,Integer> resp=new HashMap<>();
 			
@@ -150,14 +151,17 @@ public class Group {
 	 * @param response
 	 */
 	public synchronized  void setResponse(ThreadUserForServer user, String response) {
-		if(contains(user)) {
-			JSONObject object=new JSONObject(response);
-			int idQuestion=object.getInt("id");
-			String reponse=object.getString("réponse");
-			Map<Integer,String > lastValue=users.get(user);
-			lastValue.put(idQuestion,reponse);
-			users.replace(user, lastValue);
+		System.out.println("ajout de la response de "+user.getName());
+		JSONObject object=new JSONObject(response);
+		int idQuestion=object.getInt("id");
+		String reponse=object.getString("réponse");
+		Map<Integer,String > lastValue=users.get(user);
+		lastValue.put(idQuestion,reponse);
+		users.replace(user, lastValue);
+		for(Map.Entry<Integer, String> ele:lastValue.entrySet()) {
+			System.out.println(" pour "+ele.getKey()+" voici ca reponse "+ele.getValue());
 		}
+		
 	}
 	
 	
@@ -181,6 +185,7 @@ public class Group {
 		int i=0;
 		for(Entry<ThreadUserForServer,Map<Integer,String>> user: users.entrySet()) {
 			if(user.getValue().containsKey(idQuestion)) {
+				System.out.println(user.getKey().getName() +" a répondu");
 				i++;
 			}
 		}

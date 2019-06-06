@@ -114,6 +114,7 @@ public class Serveur extends Thread{
 	 * @param user
 	 */
 	public  void addUser(User user) {
+		if(user!=null)
 		users.add(user);
 	}
 	
@@ -193,7 +194,7 @@ public class Serveur extends Thread{
 			}
 		}
 		else {
-			user.sendMessage("rejoudreGroupe","tu as d�j� un groupe ");
+			user.sendMessage("rejoudreGroupe","tu as déjà un groupe ");
 		}
 		return testAdd;
 	}
