@@ -272,7 +272,7 @@ public class CreateGroup extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String add = "";
+        String add = "192.168.43.53";
         String groupName = jTextField1.getText();
         String userName = jTextField2.getText();
         String groupTheme = buttonGroup1.getSelection().toString();

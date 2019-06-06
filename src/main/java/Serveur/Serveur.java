@@ -71,7 +71,7 @@ public class Serveur extends Thread{
 	/**
 	 * 
 	 */
-	public synchronized void run() {
+	public void run() {
 		int i=1;
 		System.out.println(" Serveur listening ...");
 		
@@ -94,7 +94,7 @@ public class Serveur extends Thread{
 	/**
 	 * 
 	 */
-	private synchronized void closeConnexion() {
+	private  void closeConnexion() {
 		try {
 			server.close();
 		} catch (IOException e) {
@@ -106,21 +106,21 @@ public class Serveur extends Thread{
 	/**
 	 * @param usersocket
 	 */
-	public synchronized void addUserSocket(ThreadUserForServer usersocket) {
+	public  void addUserSocket(ThreadUserForServer usersocket) {
 		listesUsersSocket.add(usersocket);
 	}
 	
 	/**
 	 * @param user
 	 */
-	public synchronized void addUser(User user) {
+	public  void addUser(User user) {
 		users.add(user);
 	}
 	
 	/**
 	 * @return
 	 */
-	public synchronized List<User> getUsers(){
+	public  List<User> getUsers(){
 		return users;
 	}
 	
@@ -128,7 +128,7 @@ public class Serveur extends Thread{
 	 * 
 	 * @return
 	 */
-	public synchronized String getUsersJSON() {
+	public  String getUsersJSON() {
 		JSONObject object=new JSONObject();
 		JSONArray array= new JSONArray();
 		
@@ -139,21 +139,21 @@ public class Serveur extends Thread{
 		return array.toString();
 	}
 	
-	public synchronized String getUsersJSONWithout(User uti) {
+	public  String getUsersJSONWithout(User uti) {
 		JSONObject object=new JSONObject();
 		JSONArray array= new JSONArray();
 		
-		for(User user: users) {
-			System.out.println(user.toString());
-			if(!user.equals(uti))
-				array.put(user.toJsonObject());
+		for(User userr: users) {
+			System.out.println(userr.toString());
+			if(!userr.equals(uti))
+				array.put(userr.toJsonObject());
 		}
 		
 		return array.toString();
 	}
 	
 	
-	public synchronized String getAllGroupeJson() {
+	public  String getAllGroupeJson() {
 		JSONArray array= new JSONArray();
 		
 		for(Group group : listesGroupes) {
@@ -165,7 +165,7 @@ public class Serveur extends Thread{
 	 * 
 	 * @return
 	 */
-	public synchronized List<ThreadUserForServer> getListesUsersSocket(){
+	public  List<ThreadUserForServer> getListesUsersSocket(){
 		return listesUsersSocket;
 	}
 	
@@ -175,7 +175,7 @@ public class Serveur extends Thread{
 	 * @param user
 	 * @return
 	 */
-	public synchronized boolean ajouterDansGroupe(String label,ThreadUserForServer user) {
+	public  boolean ajouterDansGroupe(String label,ThreadUserForServer user) {
 		boolean testAdd=false;
 		
 		if(!userEstDansGroup(user)) {
@@ -208,22 +208,25 @@ public class Serveur extends Thread{
 	public  boolean creerGroupe(String label,String theme, ThreadUserForServer user) {
 		boolean testAdd=false;
 		Group groupe= new Group(label, this);
-		groupe.setTheme(theme);
-		System.out.println(" +++++++++++++++++++++++++++++++++++++++ ");
+		groupe.setTheme(theme); 
 		
 		if((!(listesGroupes.contains(groupe))) &&(!userEstDansGroup(user))) {
 			groupe.addUser(user);
 			user.setGroup(groupe);
 			listesGroupes.add(groupe);
 			testAdd=true;
-			user.sendMessage("creerGroupe", "Le groupe "+label+" avec le theme :"+theme+" a été bien créé");
+			JSONObject object =new JSONObject();
+	        object.put("label",label);
+	        object.put("thème",theme);
+	        object.put("info", "groupe créé");
+			user.sendMessage("creerGroupe", object.toString());
 		}
 		else
 			if(userEstDansGroup(user)) {
-				user.sendMessage("creerGroupe", "vous ete déjà dans un groupe");
+				user.sendMessage("info", "vous ete déjà dans un groupe");
 			}
 			else {
-				user.sendMessage("creerGroupe", "Veillez changer le nom de cet groupe car l existe d�j�");
+				user.sendMessage("info", "Veillez changer le nom de cet groupe car l existe d�j�");
 			}
 		return testAdd;
 	}
@@ -246,7 +249,7 @@ public class Serveur extends Thread{
 	}
 	
 	
-	public synchronized void deconnecterUser(ThreadUserForServer element) {
+	public  void deconnecterUser(ThreadUserForServer element) {
 		
 		
 		System.out.println("deconnection de "+element.getUser().getEmail());
@@ -265,7 +268,7 @@ public class Serveur extends Thread{
 	}
 	
 	
-	public synchronized boolean quitterGroupe(String label,ThreadUserForServer user) {
+	public  boolean quitterGroupe(String label,ThreadUserForServer user) {
 		boolean test=false;
 		
 		for(Group groupe : listesGroupes) {
@@ -283,7 +286,7 @@ public class Serveur extends Thread{
 		return test;
 	}
 	
-	public synchronized boolean canRunGame(String theme) {
+	public  boolean canRunGame(String theme) {
 		boolean test=true;
 		if(nbGroupe(theme)<2) {
 			test=false;
@@ -301,7 +304,7 @@ public class Serveur extends Thread{
 	public int getSizeUser() {
 		return listesUsersSocket.size();
 	}
-	public synchronized int nbGroupe(String theme) {
+	public  int nbGroupe(String theme) {
 		int i=0;
 		
 		for(Group groupe: listesGroupes) {
@@ -311,7 +314,7 @@ public class Serveur extends Thread{
 		return i;
 	}
 	
-	public synchronized void runGame(String theme, String niveau) {
+	public  void runGame(String theme, String niveau) {
 		
 		if(!canRunGame(theme)) {
 			return;

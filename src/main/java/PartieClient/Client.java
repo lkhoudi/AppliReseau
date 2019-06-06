@@ -27,7 +27,10 @@ public class Client {
 	private Socket socketClient;
 	private BufferedReader reader; 
 	private PrintWriter writer;
-        private List<Groupe> groupe= new ArrayList<Groupe>();
+    private List<Groupe> groupes= new ArrayList<Groupe>();
+    private List<User> users= new ArrayList<User>();
+    private List<Message> messages = new ArrayList<Message>();
+
 	
 	public Client(String email, String firstname, String lastname,int port, InetAddress adresse) {
 		user= new User( email,firstname,  lastname);
@@ -62,7 +65,7 @@ public class Client {
 			inscrire();
 			test= true;
 		} catch (IOException e) {
-			System.out.println(" probl�me : le serveur n'est pas disponible");
+			System.out.println(" probléme : le serveur n'est pas disponible");
 			test=false;
 		} 
 		
@@ -145,6 +148,10 @@ public class Client {
 			else
 			if(type.equals("creerGroupe")) {
 				System.out.println(object.getString("data"));
+				Groupe team=ParserJson.parserGroupe(object.getString("data"));
+				if(!groupes.contains(team)) {
+					groupes.add(team);
+				}
 			}
 			else
 			if(type.equals("joindreGroupe")) {
@@ -155,23 +162,52 @@ public class Client {
 				System.out.println(object.getString("data"));
 			}
 			else
-				if(type.equals("users")) {
-					System.out.println(object.getString("data"));
-					afficherUsers(object.getString("data"));
+			if(type.equals("users")) {
+				//System.out.println(object.getString("data"));
+
+				afficherUsers(object.getString("data"));
+			}
+			else
+			if(type.equals("groupes")) {
+				System.out.println(object.getString("data"));
+				List<Groupe> teams =ParserJson.parserListGroupes(object.getString("data"));
+				for(Groupe team :teams) {
+					if(!groupes.contains(team)) {
+						groupes.add(team);
+						System.out.println(" ajout d'un groupe "+team.getLabel());
+					}
 				}
-				else
+			}
+			else
+			if(type.equals("message")) {
+				System.out.println(object.getString("data"));
+				Message msg =ParserJson.parserMessage(object.getString("data"));
+
+				if(!messages.contains(msg)) {
+						messages.add(msg);
+					}
+			}
+			else
 				System.out.println(message);
-			
-		}
+			}
+
+
+
 	}
 	
 	public void afficherUsers(String message) {
 		List<User> users=ParserJson.parserListUser(message);
 
 		for(User user: users) {
-			System.out.println("email :"+user.getEmail()+" lastName "+user.getLastname()+" s'est connecté");
-		}
+			if(!users.contains(user)) {
+					users.add(user);
+					System.out.println(" ajout d'un user  "+user.getEmail());
+				}
+			}
+
 	}
+
+
 	public void rejoindreGroupe(String label) {
 		JSONObject object =new JSONObject();
 		object.put("type", "joindreGroupe");
@@ -211,7 +247,14 @@ public class Client {
 			// id to answer
 		}
 	}
-	
+	public void envoyerGroupeMessage(String str) {
+		Message message =new Message(user.getEmail(),str);
+		JSONObject object=new JSONObject();
+		object.put("type", "message");
+		object.put("data",message.toJson());
+		envoyerSMS(object.toString());
+	}
+
 	public void deconnecter() {
 		JSONObject object =new JSONObject();
 		object.put("type", "deconnecter");
@@ -232,27 +275,27 @@ public class Client {
 
 
 		String add="192.168.43.65";
-		String add2="10.11.9.26";
+		String add2="192.168.43.53";
 
 		client.setServerLocation(add2, 8990);
 		if(client.connectionServer()) {
 			client.communication();
 			client.creerGroupe("team","animals");
-			client.commencer();
+			//client.commencer();
 		}
+
 		Client client2= new Client("4","Rania2","avatar");
-		Thread.sleep(5000);
+
 		client2.setServerLocation(add2, 8990);
 		if(client2.connectionServer()) {
 			client2.communication();
-			client2.creerGroupe("team2","animals");
-			Thread.sleep(5000);
-			client2.commencer();
+			client2.rejoindreGroupe("team");
+			client2.envoyerGroupeMessage("bonjour");
+			//client2.commencer();
 		}
 
-		Thread.sleep(60000);
-		client.deconnecter();
-		client2.deconnecter();
+		//client.deconnecter();
+		//client2.deconnecter();
 	}
 
 //	public static void main(String[] s) {
