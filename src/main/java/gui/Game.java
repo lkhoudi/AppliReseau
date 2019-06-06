@@ -308,6 +308,7 @@ public class Game extends javax.swing.JFrame {
 
     }
 
+
     public static void setButtonGroup1(List<String> s) {
         jRadioButton1.setText(s.get(0));
         jRadioButton2.setText(s.get(1));

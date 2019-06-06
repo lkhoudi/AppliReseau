@@ -145,7 +145,7 @@ public class End extends javax.swing.JFrame {
 
 
 
-    public void setjLabel4(String winnerName, String userScore) {
+    public static void setjLabel4(String winnerName, String userScore) {
 
         jLabel4.setFont(new java.awt.Font("Ani", 3, 40)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 153));
@@ -192,7 +192,7 @@ public class End extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private static  javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables

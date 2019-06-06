@@ -10,6 +10,7 @@ import java.net.UnknownHostException;
 import java.util.List;
 
 import entities.Group;
+import gui.End;
 import gui.Game;
 import gui.Login;
 import gui.Walcome;
@@ -221,6 +222,10 @@ public class Client {
 				JSONObject objectData= new JSONObject(object.getString("data"));
 				String label=objectData.getString("label");
 				int npoint=objectData.getInt("nbPoint");
+				End.setjLabel4(label, npoint+"");
+				new End().setVisible(true);
+				System.out.println("End : " + object.getString("data"));
+
 			}
 			else
 			if(type.equals("point")) {
