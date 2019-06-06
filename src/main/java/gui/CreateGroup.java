@@ -302,8 +302,6 @@ public class CreateGroup extends javax.swing.JFrame {
             Walcome.client.commencer();
             Thread.sleep(1000);
             Game game = new Game();
-            //Show question
-            game.setjLabel2();
 			game.setVisible(true);
 			this.setVisible(false);
         }//GEN-LAST:event_jButton1ActionPerformed
