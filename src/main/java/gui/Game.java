@@ -88,8 +88,6 @@ public class Game extends javax.swing.JFrame {
 
         jRadioButton4.setText("jRadioButton1");
 
-        jLabel2.setText("jLabel2");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -277,7 +275,6 @@ public class Game extends javax.swing.JFrame {
     //Fill with questions
     public void setjLabel2() {
         Question question = Walcome.client.getCurrentQuestion();
-        this.jLabel2 = new JLabel();
         jLabel2.setText(question.getQuestion());
     }
 
