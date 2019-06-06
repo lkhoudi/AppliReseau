@@ -115,11 +115,6 @@ public class Game extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane2.setViewportView(jList1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -236,6 +231,7 @@ public class Game extends javax.swing.JFrame {
                 response = button.getText();
                 System.out.println("\n\nresponse : " + response);
                 Walcome.client.repondre(Walcome.client.getCurrentQuestion().getId(), response);
+                buttonGroup1.clearSelection();
             }
         }
 
@@ -314,6 +310,7 @@ public class Game extends javax.swing.JFrame {
     //Fill with questions
     public static void setjLabel2(Question question) {
         jLabel2.setText(question.getQuestion());
+
     }
 
     public static void setButtonGroup1(List<String> s) {

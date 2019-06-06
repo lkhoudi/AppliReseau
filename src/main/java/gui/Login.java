@@ -192,6 +192,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         String groupSelected = jList1.getSelectedValue();
         Walcome.client.rejoindreGroupe(groupSelected);
+        Walcome.client.commencer();
         new Game().setVisible(true);
         this.setVisible(false);
 
