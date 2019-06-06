@@ -167,6 +167,7 @@ public class Jeu extends Thread{
 					sendQuestion();
 				}
 				else {
+					finisGame();
 					etat.setEtat("fini");
 				}
 				
@@ -175,6 +176,18 @@ public class Jeu extends Thread{
 		// Envoyer resultat final
 	}
 	
+	private void finisGame() {
+		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) {
+			//group.getKey().endGame();
+			sendWinner();
+		}
+	}
+	
+	
+	
+	public void sendWinner() {
+		
+	}
 	/**
 	 * This method modifies the state of all team members 
 	 */

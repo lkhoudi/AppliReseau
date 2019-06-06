@@ -15,6 +15,7 @@ import org.json.JSONObject;
 public class Group {
 	private Map<ThreadUserForServer,Map<Integer,String>> users;
 	private Map<Integer, String> responseGroupe;
+	private Map<Integer,Integer> points;
 	private Serveur serveur;
 	private String label;
 	private EtatGame etat= new EtatGame();
@@ -51,6 +52,8 @@ public class Group {
 		users=new HashMap<ThreadUserForServer,Map<Integer,String>>();
 		this.serveur=serveur;
 		System.out.println("Création d'un groupe nom : "+label  );
+		this.points=new HashMap<Integer,Integer>();
+		
 	}
 	/**
 	 * 
@@ -164,6 +167,14 @@ public class Group {
 		
 	}
 	
+	public void setPointGroupe(Integer id) {
+		if(question!=null && question.getReponse().equals(responseGroup(id))) {
+			points.put(id,10);
+		}
+		else
+			points.put(id, 0);
+		
+	}
 	
 	/**
 	 * 

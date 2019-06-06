@@ -266,9 +266,9 @@ public class ThreadUserForServer extends Thread{
 			String type=object.getString("type");
 			
 			if(type.equals("réponse")) {
-				System.out.println(" réponse de "+user.getEmail());
+				
 				System.out.println(object.getJSONObject("data"));
-				groupe.setResponse(this, object.getString("data"));
+				groupe.setResponse(this, object.getJSONObject("data").toString());
 				
 			}
 			else
