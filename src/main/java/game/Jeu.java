@@ -109,19 +109,22 @@ public class Jeu extends Thread{
 	 */
 	public boolean allResponseGetted(int idQuestion) {
 		int i=0;
-		
+		System.out.println(" test si toutes les réponses ont été recues ...");
 		for(Entry<Group,Map<Integer,String>> group: groups.entrySet()) {
 			if(group.getValue().containsKey(idQuestion)) {
+				System.out.println(group.getKey().getLabel()+" a répondu "+idQuestion);
 				i++;
 			}
 			else {
 				if(group.getKey().allResponseGetted(idQuestion)) {
 					String reponse=group.getKey().responseGroup(idQuestion);
 					if(reponse!=null) {
-						group.getValue().put(idQuestion, reponse);
 						
+						group.getValue().put(idQuestion, reponse);
+						System.out.println(group.getKey().getLabel()+" a répondu "+idQuestion);
+						i++;
 					}
-					i++;
+					
 				}
 			}
 		}
@@ -145,7 +148,7 @@ public class Jeu extends Thread{
 	 */
 	@Override
 	public void run() {
-		sendAll("welcome", "sms");
+		///sendAll("welcome", "sms");
 		if(allGroupPret())
 			startAllGroup();
 		sendQuestion();
