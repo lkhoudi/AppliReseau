@@ -82,7 +82,11 @@ public class CreateGroup extends javax.swing.JFrame {
         jButton1.setText("Create");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                try {
+                    jButton1ActionPerformed(evt);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
