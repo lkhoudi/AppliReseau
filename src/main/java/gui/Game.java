@@ -268,8 +268,11 @@ public class Game extends javax.swing.JFrame {
     public static void setButtonGroup1(List<String> s) {
         int i = 0;
         for (Enumeration<AbstractButton> buttons = buttonGroup1.getElements(); buttons.hasMoreElements();) {
+            System.out.println("\nNb buttons : " +buttonGroup1.getButtonCount());
             AbstractButton button = buttons.nextElement();
             button.setText(s.get(i));
+            System.out.println("\ni : " + i);
+
             i++;
         }
     }
