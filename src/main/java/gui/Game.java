@@ -114,7 +114,6 @@ public class Game extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
-
         jScrollPane2.setViewportView(jList1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -122,7 +121,7 @@ public class Game extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 295, Short.MAX_VALUE)
+                .addGap(0, 319, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(137, 137, 137))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -179,7 +178,7 @@ public class Game extends javax.swing.JFrame {
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 387, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(34, 34, 34)
                 .addComponent(jButton2)
                 .addGap(55, 55, 55)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -189,10 +188,7 @@ public class Game extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -224,7 +220,6 @@ public class Game extends javax.swing.JFrame {
         // TODO add your handling code here:
         //send response
         String response = "";
-
         for (Enumeration<AbstractButton> buttons = buttonGroup1.getElements(); buttons.hasMoreElements();) {
             AbstractButton button = buttons.nextElement();
             if (button.isSelected()) {
@@ -232,6 +227,7 @@ public class Game extends javax.swing.JFrame {
                 System.out.println("\n\nresponse : " + response);
                 Walcome.client.repondre(Walcome.client.getCurrentQuestion().getId(), response);
                 buttonGroup1.clearSelection();
+                //anecdotes.add(Walcome.client.getCurrentQuestion().getAnecdote());
             }
         }
 
@@ -271,7 +267,6 @@ public class Game extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Game.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -314,8 +309,6 @@ public class Game extends javax.swing.JFrame {
     }
 
     public static void setButtonGroup1(List<String> s) {
-        System.out.println("\n\n\nList" + s);
-        System.out.println("\n\n\nList" + s.get(3));
         jRadioButton1.setText(s.get(0));
         jRadioButton2.setText(s.get(1));
         jRadioButton3.setText(s.get(2));
@@ -333,21 +326,7 @@ public class Game extends javax.swing.JFrame {
         System.out.println("Groups : " + model);
     }
 
-    public void setjPanel3(JPanel jPanel3) {
-//        JLabel question = new JLabel();
-//        String groupTheme = "";
-//
-//        for (Enumeration<AbstractButton> buttons = buttonGroup1.getElements(); buttons.hasMoreElements();) {
-//            AbstractButton button = buttons.nextElement();
-//
-//            if (button.isSelected()) {
-//                groupTheme = button.getText();
-//                System.out.println("\n\nTheme : " + groupTheme);
-//            }
-//        }
-//
-//        this.jPanel3 = jPanel3;
-    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private static javax.swing.ButtonGroup buttonGroup1;
@@ -355,6 +334,7 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private static javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private static javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
@@ -366,6 +346,7 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     private static DefaultListModel model = new DefaultListModel();
+    public static List<String> anecdotes;
 
 
     // End of variables declaration//GEN-END:variables

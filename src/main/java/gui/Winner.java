@@ -49,7 +49,7 @@ public class Winner extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Ani", 3, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 35)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 102));
         jLabel1.setText("Συγχαρητήρια! Έχετε κερδίσει ένα ταξίδι στη Μύκονο");
 
@@ -121,9 +121,13 @@ public class Winner extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
         
         new CreateGroup().setVisible(true);
         this.setVisible(false);
+=======
+      this.setVisible(false);
+>>>>>>> 50cfff0a10fb236787b1f8e08ec0446202a5171e
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
