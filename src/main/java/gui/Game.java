@@ -9,6 +9,7 @@ import entities.Question;
 
 import javax.swing.*;
 import java.util.Enumeration;
+import java.util.List;
 
 /**
  *
@@ -264,11 +265,11 @@ public class Game extends javax.swing.JFrame {
         jLabel2.setText(question.getQuestion());
     }
 
-    public static void setButtonGroup1(String[] s) {
+    public static void setButtonGroup1(List<String> s) {
         int i = 0;
         for (Enumeration<AbstractButton> buttons = buttonGroup1.getElements(); buttons.hasMoreElements();) {
             AbstractButton button = buttons.nextElement();
-            button.setText(s[i]);
+            button.setText(s.get(i));
             i++;
         }
     }

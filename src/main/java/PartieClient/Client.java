@@ -255,8 +255,7 @@ public class Client {
 		Game.setjLabel2(quest);
         currentQuestion = quest;
 		Walcome.client.currentQuestion = currentQuestion;
-        Object proposition[]=quest.getPropositions().toArray();
-		Game.setButtonGroup1((String[]) proposition);
+		Game.setButtonGroup1(quest.getPropositions());
 //		for(int i=0; i<proposition.length;i++) {
 //			System.out.println(" "+i+ " :"+proposition[i].toString());
 //			// id to answer
