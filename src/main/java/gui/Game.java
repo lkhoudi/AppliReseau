@@ -245,6 +245,7 @@ public class Game extends javax.swing.JFrame {
         // TODO add your handling code here:
         String msg = jTextArea1.getText();
         setjList1("Vous : "+msg);
+        Walcome.client.envoyerGroupeMessage(msg);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     

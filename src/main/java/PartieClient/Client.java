@@ -212,6 +212,7 @@ public class Client {
 			if(type.equals("message")) {
 				System.out.println(object.getString("data"));
 				Message msg =ParserJson.parserMessage(object.getString("data"));
+				System.out.println(msg);
 				Game.setjList1(msg.getEmail()+" : "+msg.getMsg());
 				if(!messages.contains(msg)) {
 						messages.add(msg);
