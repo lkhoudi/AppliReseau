@@ -177,6 +177,7 @@ public class Client {
 			if(type.equals("groupe")) {
 				System.out.println(object.getString("data"));
 				Groupe team=ParserJson.parserGroupe(object.getString("data"));
+				Login.setjList1(team.getLabel());
 				if(!groupes.contains(team)) {
 					groupes.add(team);
 				}
@@ -200,6 +201,7 @@ public class Client {
 				System.out.println(object.getString("data"));
 				List<Groupe> teams =ParserJson.parserListGroupes(object.getString("data"));
 				for(Groupe team :teams) {
+					Login.setjList1(team.getLabel());
 					if(!groupes.contains(team)) {
 						groupes.add(team);
 						System.out.println(" ajout d'un groupe "+team.getLabel());
