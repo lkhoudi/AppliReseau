@@ -293,10 +293,11 @@ public class CreateGroup extends javax.swing.JFrame {
 
         //Client client = new Client("", userName, "");
         //client.setServerLocation(add, 8990);
-        User user = new User("", userName, "");
+        User user = new User(userName, userName, userName);
         Walcome.client.setUser(user);
             
         if(Walcome.client.connectionServer()) {
+            Walcome.client.inscrire();
             Walcome.client.communication();
             Walcome.client.creerGroupe(groupName, groupTheme);
             Walcome.client.commencer();
