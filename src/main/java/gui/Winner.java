@@ -49,7 +49,7 @@ public class Winner extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Ani", 3, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 35)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 102));
         jLabel1.setText("Συγχαρητήρια! Έχετε κερδίσει ένα ταξίδι στη Μύκονο");
 
@@ -60,7 +60,7 @@ public class Winner extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("./src/main/resources/Mykonos.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/raniaballa/Desktop/Mykonos lead-xlarge.jpg")); // NOI18N
         jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
