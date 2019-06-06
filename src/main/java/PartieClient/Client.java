@@ -255,6 +255,7 @@ public class Client {
 		Question quest=ParserJson.parserQuestion(question);
 
 		System.out.println(" Question "+quest.getQuestion());
+
 		Game.setjLabel2(quest);
         currentQuestion = quest;
 		Walcome.client.currentQuestion = currentQuestion;
