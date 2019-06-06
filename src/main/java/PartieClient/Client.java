@@ -256,12 +256,11 @@ public class Client {
 		Game.setjLabel2(quest);
         currentQuestion = quest;
 		Walcome.client.currentQuestion = currentQuestion;
-        Object proposition[]=quest.getPropositions().toArray();
-
-		for(int i=0; i<proposition.length;i++) {
-			System.out.println(" "+i+ " :"+proposition[i].toString());
-			// id to answer
-		}
+		Game.setButtonGroup1(quest.getPropositions());
+//		for(int i=0; i<proposition.length;i++) {
+//			System.out.println(" "+i+ " :"+proposition[i].toString());
+//			// id to answer
+//		}
 	}
 	public void envoyerGroupeMessage(String str) {
 		Message message =new Message(user.getEmail(),str);
