@@ -69,7 +69,13 @@ public class Quizz {
 	public void setNiveau(String niveau) {
 		this.niveau = niveau;
 	}
-
+	
+	public Question getQuestion(int idQestion) {
+		Question question=null;
+		
+		
+		return question;
+	}
 	/*
 	
 	public String getTheme() {

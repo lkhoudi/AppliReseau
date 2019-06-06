@@ -363,6 +363,7 @@ public class Client {
 			client5.rejoindreGroupe("team");
 			client5.envoyerGroupeMessage("bonjour");
 			client2.commencer();
+			//client2.envoyerGroupeMessage ;
 		}
 		//client1.commencer();
 

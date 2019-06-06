@@ -319,8 +319,9 @@ public class ThreadUserForServer extends Thread{
 			}
 			else
 			if(type.equals("message")) {
-				System.out.println(object.getJSONObject("data").toString());
-				retransmettreMessage(object.getJSONObject("data").toString());
+				System.out.println(object.getString("data"));
+				//System.out.println(object.getJSONObject("data").toString());
+				retransmettreMessage(object.getString("data"));
 			}
 			
 
