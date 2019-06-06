@@ -10,6 +10,7 @@ import java.net.UnknownHostException;
 import java.util.List;
 
 import gui.Game;
+import gui.Login;
 import gui.Walcome;
 import org.json.JSONObject;
 
@@ -72,7 +73,7 @@ public class Client {
 			socketClient = new Socket(serveurAdresse, portServeur);
 			reader= new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
 			writer = new PrintWriter(socketClient.getOutputStream(),true);
-			inscrire();
+			//inscrire();
 			test= true;
 		} catch (IOException e) {
 			System.out.println(" probléme : le serveur n'est pas disponible");
@@ -164,6 +165,7 @@ public class Client {
 			if(type.equals("creerGroupe")) {
 				System.out.println(object.getString("data"));
 				Groupe team=ParserJson.parserGroupe(object.getString("data"));
+				Login.setjList1(team.getLabel());
 				if(!groupes.contains(team)) {
 					groupes.add(team);
 				}
