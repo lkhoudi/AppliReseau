@@ -248,7 +248,7 @@ public class Client {
 		Question quest=ParserJson.parserQuestion(question);
 
 		System.out.println(" Question "+quest.getQuestion());
-		Object proposition[]=quest.getPropositions().toArray();
+		Object proposition[] = quest.getPropositions().toArray();
 		currentQuestion = quest;
 		
 		for(int i=0; i<proposition.length;i++) {
