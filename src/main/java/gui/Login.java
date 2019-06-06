@@ -91,11 +91,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
+
         jScrollPane1.setViewportView(jList1);
 
         jButton2.setFont(new java.awt.Font("Ani", 3, 25)); // NOI18N
@@ -182,6 +178,8 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        setjList1("Groupe1");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -205,7 +203,6 @@ public class Login extends javax.swing.JFrame {
     public static void setjList1(String groupLabel) {
         model.addElement(groupLabel);
         System.out.println("Groups : " + model);
-        jList1 =  new JList<String>(model);
     }
 
     /**
@@ -253,13 +250,13 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private static javax.swing.JList<String> jList1;
+    private static DefaultListModel model = new DefaultListModel();
+    private static javax.swing.JList<String> jList1 =  new JList<String>(model);
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private static DefaultListModel model = new DefaultListModel();
 
     // End of variables declaration//GEN-END:variables
 }
